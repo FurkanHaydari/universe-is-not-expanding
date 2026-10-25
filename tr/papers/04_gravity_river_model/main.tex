@@ -42,7 +42,7 @@
     \textbf{Muhammed Furkan Haydari} \\
     \textit{Bağımsız Araştırmacı} \\
     \textit{İstanbul, Türkiye} \\
-    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947} \quad$\bullet$\quad \small DOI: \href{https://doi.org/10.5281/zenodo.23633034}{10.5281/zenodo.23633034}
 }
 
 \date{\today}
@@ -106,7 +106,7 @@ Bu yaklaşım, modern teorik fizikteki \textit{Türeyen Uzay-Zaman (Emergent Spa
 
 \subsection{Varyasyonel Temel: 3+1 ADM Eylemi ve Düz Uzayda Nehir Hızının Türetilişi}
 \label{sec:adm_eylem_p1}
-Nehir Modelindeki radyal vakum akış hızı $v(r) = -\sqrt{2GM/r}$ keyfi bir benzetim değildir; **düz Öklid uzayı kısıtı altındaki Einstein--Hilbert gravitasyon eyleminin doğrudan varyasyonel Euler--Lagrange çözümüdür.**
+Nehir Modelindeki radyal vakum akış hızı $v(r) = -\sqrt{2GM/r}$ keyfi bir benzetim değildir; \textbf{düz Öklid uzayı kısıtı altındaki Einstein--Hilbert gravitasyon eyleminin doğrudan varyasyonel Euler--Lagrange çözümüdür.}
 
 Genel Görelilikte uzay-zaman metriği Arnowitt--Deser--Misner (ADM) 3+1 ayrışımıyla yazılır:
 \begin{equation}
@@ -148,24 +148,26 @@ Sonsuzlukta durgunluk sınır şartı ($v(\infty) = 0$) uygulandığında, radya
 Bu noktada hakemler tarafından sıkça dile getirilen temel bir geometrik ayrım netleştirilmelidir: \textit{``Painlevé--Gullstrand metriğinde uzaysal dilimler düz ($\gamma_{ij} = \delta_{ij}$) ise, uzay-zaman gerçekten düz müdür? Yoksa Einstein eğriliği korunmakta mıdır?''}
 
 Diferansiyel geometride 3-boyutlu bir hiperyüzeyin içsel eğriliği ($^{(3)}R$) ile 4-boyutlu uzay-zamanın toplam eğriliği ($^{(4)}R_{\alpha\beta\gamma\delta}$) birbirinden tamamen farklı büyüklüklerdir:
-1. Painlevé--Gullstrand koordinatlarında serbest düşen bir gözlemcinin eş-zamanlılık dilimleri ($t_{\mathrm{PG}} = \text{sabit}$) içsel olarak Öklid düzlüğündedir: $\gamma_{ij} = \delta_{ij} \implies {}^{(3)}R \equiv 0$.
-2. Ancak 4-boyutlu manifold **kesin olarak eğridir.** Bu 4-boyutlu eğrilik, 3+1 ADM Gauss--Codazzi bağıntısı gereği doğrudan dışsal eğrilik tensörü ($K_{ij}$) tarafından üretilir:
-\begin{equation}
-    {}^{(4)}R = {}^{(3)}R + K_{ij} K^{ij} - K^2 = K_{ij} K^{ij} - K^2.
-    \label{eq:gauss_codazzi_ispat}
-\end{equation}
-3. Dışsal eğrilik tensörü, radyal vakum nehrinin hız gradyanı tensörüdür ($K_{ij} = -\frac{1}{2c}(\partial_i v_j + \partial_j v_i)$). $v(r) = -\sqrt{2GM/r}$ çözümü için dışsal eğrilik bileşenleri:
-\begin{equation}
-    K_{rr} = -\frac{1}{c} \frac{dv}{dr} = -\frac{1}{c} \sqrt{\frac{GM}{2r^3}}, \qquad K_{\theta\theta} = \frac{K_{\phi\phi}}{\sin^2\theta} = \frac{1}{c} \sqrt{2GMr},
-\end{equation}
-olup, 4-boyutlu Riemann tensörünün koordinat-bağımsız tekillik ve eğrilik ölçüsü olan **Kretschmann Skaları**:
-\begin{equation}
-    \mathcal{K} \equiv R^{\alpha\beta\gamma\delta} R_{\alpha\beta\gamma\delta} = \frac{48 G^2 M^2}{c^4 r^6},
-    \label{eq:kretschmann_ispat}
-\end{equation}
-olarak tamı tamına standart Schwarzschild değerini verir!
+\begin{enumerate}
+    \item Painlevé--Gullstrand koordinatlarında serbest düşen bir gözlemcinin eş-zamanlılık dilimleri ($t_{\mathrm{PG}} = \text{sabit}$) içsel olarak Öklid düzlüğündedir: $\gamma_{ij} = \delta_{ij} \implies {}^{(3)}R \equiv 0$.
+    \item Ancak 4-boyutlu manifold \textbf{kesin olarak eğridir.} Bu 4-boyutlu eğrilik, 3+1 ADM Gauss--Codazzi bağıntısı gereği doğrudan dışsal eğrilik tensörü ($K_{ij}$) tarafından üretilir:
+    \begin{equation}
+        {}^{(4)}R = {}^{(3)}R + K_{ij} K^{ij} - K^2 = K_{ij} K^{ij} - K^2.
+        \label{eq:gauss_codazzi_ispat}
+    \end{equation}
+    \item Dışsal eğrilik tensörü, radyal vakum nehrinin hız gradyanı tensörüdür ($K_{ij} = -\frac{1}{2c}(\partial_i v_j + \partial_j v_i)$). $v(r) = -\sqrt{2GM/r}$ çözümü için dışsal eğrilik bileşenleri:
+    \begin{equation}
+        K_{rr} = -\frac{1}{c} \frac{dv}{dr} = -\frac{1}{c} \sqrt{\frac{GM}{2r^3}}, \qquad K_{\theta\theta} = \frac{K_{\phi\phi}}{\sin^2\theta} = \frac{1}{c} \sqrt{2GMr},
+    \end{equation}
+    olup, 4-boyutlu Riemann tensörünün koordinat-bağımsız tekillik ve eğrilik ölçüsü olan \textbf{Kretschmann Skaları}:
+    \begin{equation}
+        \mathcal{K} \equiv R^{\alpha\beta\gamma\delta} R_{\alpha\beta\gamma\delta} = \frac{48 G^2 M^2}{c^4 r^6},
+        \label{eq:kretschmann_ispat}
+    \end{equation}
+    olarak tamı tamına standart Schwarzschild değerini verir!
+\end{enumerate}
 
-Bu türetim; Painlevé--Gullstrand Nehir Modelinin Genel Görelilikteki 4-boyutlu uzay-zaman eğriliğini reddetmediğini; aksine **eğriliğin durağan bir Öklid uzayındaki vakum akışının hız gradyanı ve kayma tensörü (shear) olarak tam analitik bir hidrodinamik temsilini sağladığını** ispatlar.
+Bu türetim; Painlevé--Gullstrand Nehir Modelinin Genel Görelilikteki 4-boyutlu uzay-zaman eğriliğini reddetmediğini; aksine \textbf{eğriliğin durağan bir Öklid uzayındaki vakum akışının hız gradyanı ve kayma tensörü (shear) olarak tam analitik bir hidrodinamik temsilini sağladığını} ispatlar.
 
 \subsection{Vakum Akışında İvmelenme Mekanizması: Euler Konvektif İvmesi ve $g = GM/r^2$ İspatı}
 \label{sec:ivmelenme_ispat_p1}
@@ -334,7 +336,7 @@ Yerel akış ivmesi bu değerin altına indiğinde ($g \ll a_0$), serbest vakum 
     g_{\mathrm{efektif}} = \sqrt{g_{\mathrm{Newton}} \cdot a_0} = \frac{\sqrt{GM a_0}}{r}.
     \label{eq:mond_limit}
 \end{equation}
-Dairesel yörünge dengesi $v^4 = G M a_0$ bağıntısını verir. Bu durum, galaksi dönüş eğrilerini ve Tully--Fisher yasasını karanlık maddeye tek bir gram ihtiyaç duymadan çözer.
+Dairesel yörünge dengesi $v^4 = G M a_0$ bağıntısını verir. Bu durum, Modifiye Newton Dinamiği'nin (MOND)~\cite{milgrom1983} fenomenolojik başarısını sağlar; galaksi dönüş eğrilerini ve Tully--Fisher yasasını karanlık maddeye ihtiyaç duymadan çözer.
 
 \begin{figure}[h!]
     \centering
@@ -408,7 +410,7 @@ Kütleçekimsel rejimde vakum akışı doyum sınırının çok altında olup 3D
     \left( \frac{v_{\mathrm{inflow}}(r)}{c} \right)^2 = \frac{2GM}{c^2 r} = \frac{r_s}{r}.
     \label{eq:kutlecekim_master}
 \end{equation}
-Bu bağıntı, dört temel kuvvetin ortak \textbf{Bütünleşik Vakum Akı Ana Formülü}'nün $\gamma = 1$ küresel dalıdır:
+Bu bağıntı, büyük monografide~\cite{main_paper} ve kardeş makalelerde (elektromanyetizma~\cite{paper2}, güçlü kuvvet~\cite{paper3}, zayıf kuvvet~\cite{paper4}) ayrıntılandırılan dört temel kuvvetin ortak \textbf{Bütünleşik Vakum Akı Ana Formülü}'nün $\gamma = 1$ küresel dalıdır:
 \begin{equation}
     \boxed{ \left( \frac{v_{\mathrm{inflow}}(r)}{c} \right)^2 = 2 \, \mathcal{C}_G \, r^{-1}, \quad \text{burada } \mathcal{C}_G \equiv \frac{GM}{c^2}. }
 \end{equation}

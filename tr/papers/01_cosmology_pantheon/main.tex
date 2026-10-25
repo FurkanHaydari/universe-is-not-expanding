@@ -66,7 +66,7 @@
     \textbf{Muhammed Furkan Haydari} \\
     \textit{Bağımsız Araştırmacı} \\
     \textit{İstanbul, Türkiye} \\
-    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947} \quad$\bullet$\quad \small DOI: \href{https://doi.org/10.5281/zenodo.23633034}{10.5281/zenodo.23633034}
 }
 
 \date{\today}
@@ -98,14 +98,14 @@
 \section{Giriş ve Konformal Çerçevelerin Gözlemsel Motivasyonları}
 \label{sec:giris_kozmo}
 
-Modern gözlemsel kozmoloji, genişleyen Friedmann--Lema\^itre--Robertson--Walker (FLRW) metriğine dayanan standart $\Lambda\mathrm{CDM}$ modeli üzerine kuruludur. Bu model büyük ölçekli yapıların dağılımını ve Tip Ia süpernova gözlemlerini açıklamakta başarılı olmuşsa da, kuramsal ve gözlemsel olarak önemli sorular barındırmaktadır:
+Modern gözlemsel kozmoloji, genişleyen Friedmann--Lema\^itre--Robertson--Walker (FLRW) metriğine dayanan standart $\Lambda\mathrm{CDM}$ modeli üzerine kuruludur. Bu model büyük ölçekli yapıların dağılımını ve Tip Ia süpernova gözlemlerini~\cite{riess1998,perlmutter1999} açıklamakta başarılı olmuşsa da, kuramsal ve gözlemsel olarak önemli sorular barındırmaktadır:
 \begin{enumerate}
     \item \textbf{Kozmolojik Sabit Problemi:} Gözlemlenen karanlık enerji yoğunluğu ($\rho_\Lambda \sim 10^{-47}\text{ GeV}^4$), kuantum alan teorisindeki vakum sıfır noktası enerjisi kestirimlerinden çok daha küçüktür.
     \item \textbf{Hubble Gerilimi ($H_0$ Tension):} Erken evren (Planck CMB) ölçümleri ($H_0 \approx 67.4\text{ km/s/Mpc}$) ile yerel evren (SH0ES Tip Ia süpernova ve Cepheid) ölçümleri ($H_0 \approx 73.0\text{ km/s/Mpc}$) arasında $5\sigma$ düzeyinde istatistiksel bir uyuşmazlık mevcuttur.
     \item \textbf{JWST Erken Olgun Galaksileri:} James Webb Uzay Teleskobu'nun $z > 10$ bölgesinde keşfettiği yüksek kütleli, parlak ve metalliğe sahip olgun galaksiler, standart hiyerarşik yapı oluşumunun izin verdiği ilk 300 milyon yıllık zaman penceresi için zorlayıcı kısıtlar getirmektedir.
 \end{enumerate}
 
-Christof Wetterich~\cite{wetterich2013} ve Fred Hoyle~\cite{hoyle1964} tarafından vurgulandığı üzere, bir uzay-zaman manifoldunun genişlemesi ile o manifold içinde yaşayan parçacıkların yerel kütle ve uzunluk ölçeklerinin büzülmesi arasında tam bir **konformal denklik (conformal equivalence)** kurulabilir. Bu çalışmada, uzayın genişlemesi varsayımına alternatif olarak, arka planın statik düz Minkowski uzayı olarak modellendiği ve gözlemlenen kozmolojik dinamiklerin atomların konformal skalar alan gradyanı boyunca büzülmesinden kaynaklandığı odaklanmış bir kozmoloji çerçevesi incelenmektedir.
+Christof Wetterich~\cite{wetterich2013} ve Fred Hoyle~\cite{hoyle1964} tarafından vurgulandığı üzere, bir uzay-zaman manifoldunun genişlemesi ile o manifold içinde yaşayan parçacıkların yerel kütle ve uzunluk ölçeklerinin büzülmesi arasında tam bir \textbf{konformal denklik (conformal equivalence)} kurulabilir. Bu çalışmada, uzayın genişlemesi varsayımına alternatif olarak, arka planın statik düz Minkowski uzayı olarak modellendiği ve gözlemlenen kozmolojik dinamiklerin atomların konformal skalar alan gradyanı boyunca büzülmesinden kaynaklandığı odaklanmış bir kozmoloji çerçevesi incelenmektedir.
 
 \section{Konformal Skalar-Tensör Eylemi ve Büzülme Alan Denklemleri}
 \label{sec:eylem_ilkesi_kozmo}
@@ -144,30 +144,32 @@ Atomik uzunluk standardını $\lambda(t) \equiv \chi_0 / \chi(t)$ olarak tanıml
     \lambda(t) = e^{-H_0 t} \implies \frac{\dot{\lambda}(t)}{\lambda(t)} = -H_0.
     \label{eq:hubble_baryon}
 \end{equation}
-\textbf{Kuramsal Sonuç ve Ölçek Kalkülüsü:} Evrensel ölçek daralması temposu ($H_0$), düz Minkowski zemininde yaşayan konformal skalar alan teorisinin **kararlı bir kozmolojik atraktörüdür.** 
+\textbf{Kuramsal Sonuç ve Ölçek Kalkülüsü:} Evrensel ölçek daralması temposu ($H_0$), düz Minkowski zemininde yaşayan konformal skalar alan teorisinin \textbf{kararlı bir kozmolojik atraktörüdür.} 
 
 \subsection{Enerji-Momentum Korunumu ve Einstein Çerçevesi Denkliği (Weyl Ayar Değişmezliği)}
 \label{sec:weyl_denkliği}
 
 Burada haklı bir teorik itiraz akla gelebilir: \textit{``$\chi(t) = \chi_0 e^{H_0 t}$ skalar alanının basıncı ($p_\chi = H_0^2\chi^2$) sıfır değilse, uzay-zaman manifoldunun metriği ($\eta_{\mu\nu}$) bu basınca tepki vermeden (backreaction olmaksızın) nasıl mutlak düz kalabilir?''}
 
-Bu açmaz, konformal skalar-tensör teorilerinde **Weyl Ayar Değişmezliği (Weyl Gauge Invariance)** ve çerçeve dönüşümü ile eksiksiz çözülür:
-1. Konformal eşlenim parametresi $\xi = 1/6$ seçildiğinde, skalar alanın Callan--Coleman--Jackiw (CCJ) iyileştirilmiş enerji-momentum tensörü:
-\begin{equation}
-    \Theta_{\mu\nu} = \partial_\mu\chi\partial_\nu\chi - \frac{1}{2}\eta_{\mu\nu}(\partial\chi)^2 - \eta_{\mu\nu}V(\chi) - \frac{1}{6}\left(\partial_\mu\partial_\nu - \eta_{\mu\nu}\Box\right)\chi^2,
-    \label{eq:ccj_tensor}
-\end{equation}
-olarak tanımlanır. Düz uzayda homojen alan için iyileştirme terimi tamı tamına kinematik basıncı dengeler.
-2. Daha da temelde, metrik tensör düz Minkowski uzayı olarak seçildiğinde ($g_{\mu\nu} = \eta_{\mu\nu}$), bu bir koordinat/ayar sabitlemesidir (Jordan frame Weyl gauge fixing).
-3. Einstein çerçevesine konformal dönüşüm uygulandığında:
-\begin{equation}
-    \tilde{g}_{\mu\nu} \equiv \left(\frac{\chi(x)}{\chi_0}\right)^2 g_{\mu\nu} = e^{2H_0 t} \eta_{\mu\nu},
-\end{equation}
-çizgisel eleman $d\tilde{s}^2 = -c^2 d\tau^2 + a^2(\tau) d\mathbf{x}^2$ biçiminde standart uzaysal düz de Sitter / FLRW metriğine dönüşür. Bu çerçevede Einstein alan denklemleri:
-\begin{equation}
-    \tilde{G}_{\mu\nu} = 8\pi G \tilde{T}_{\mu\nu},
-\end{equation}
-özdeş olarak sağlanır. Dicke (1962), Hoyle--Narlikar (1964) ve Wetterich (2013) tarafından ispatlandığı üzere; **genişleyen bir uzay-zaman metriği ile statik bir Minkowski uzayında büzülen atom cetvelleri Weyl konformal dönüşümü altında matematiksel olarak kesin bir eşdeğerlik sergiler.** Dolayısıyla düz arka plan seçimi alan denklemlerini ihlal etmez; serbestlik derecesinin metrikten skalar alana aktarıldığı tam bir ayar temsilidir.
+Bu açmaz, konformal skalar-tensör teorilerinde \textbf{Weyl Ayar Değişmezliği (Weyl Gauge Invariance)} ve çerçeve dönüşümü ile eksiksiz çözülür:
+\begin{enumerate}
+    \item Konformal eşlenim parametresi $\xi = 1/6$ seçildiğinde, skalar alanın Callan--Coleman--Jackiw (CCJ) iyileştirilmiş enerji-momentum tensörü:
+    \begin{equation}
+        \Theta_{\mu\nu} = \partial_\mu\chi\partial_\nu\chi - \frac{1}{2}\eta_{\mu\nu}(\partial\chi)^2 - \eta_{\mu\nu}V(\chi) - \frac{1}{6}\left(\partial_\mu\partial_\nu - \eta_{\mu\nu}\Box\right)\chi^2,
+        \label{eq:ccj_tensor}
+    \end{equation}
+    olarak tanımlanır (burada $\Box \equiv \eta^{\alpha\beta}\partial_\alpha\partial_\beta = \partial^\alpha\partial_\alpha$ d'Alembert dalga operatörüdür). Düz uzayda homojen alan için iyileştirme terimi tamı tamına kinematik basıncı dengeler.
+    \item Daha da temelde, metrik tensör düz Minkowski uzayı olarak seçildiğinde ($g_{\mu\nu} = \eta_{\mu\nu}$), bu bir koordinat/ayar sabitlemesidir (Jordan frame Weyl gauge fixing).
+    \item Einstein çerçevesine konformal dönüşüm uygulandığında:
+    \begin{equation}
+        \tilde{g}_{\mu\nu} \equiv \left(\frac{\chi(x)}{\chi_0}\right)^2 g_{\mu\nu} = e^{2H_0 t} \eta_{\mu\nu},
+    \end{equation}
+    çizgisel eleman $d\tilde{s}^2 = -c^2 d\tau^2 + a^2(\tau) d\mathbf{x}^2$ biçiminde standart uzaysal düz de Sitter / FLRW metriğine dönüşür. Bu çerçevede Einstein alan denklemleri:
+    \begin{equation}
+        \tilde{G}_{\mu\nu} = 8\pi G \tilde{T}_{\mu\nu},
+    \end{equation}
+    özdeş olarak sağlanır. Dicke (1962), Hoyle--Narlikar (1964) ve Wetterich (2013) tarafından ispatlandığı üzere; \textbf{genişleyen bir uzay-zaman metriği ile statik bir Minkowski uzayında büzülen atom cetvelleri Weyl konformal dönüşümü altında matematiksel olarak kesin bir eşdeğerlik sergiler.} Dolayısıyla düz arka plan seçimi alan denklemlerini ihlal etmez; serbestlik derecesinin metrikten skalar alana aktarıldığı tam bir ayar temsilidir.
+\end{enumerate}
 
 Ölçek-Zaman Kalkülüsü çerçevesinde, yerel ölçüm standartlarının zamansal değişimini içeren Ölçek-Kovaryant Türev Operatörü:
 \begin{equation}
@@ -200,7 +202,7 @@ Foton durağan vakum dokusu boyunca frekansını kaybetmeksizin yayılır ($\nu_
     1 + z \equiv \frac{\nu_{\mathrm{ref}}}{\nu_{\mathrm{em}}} = \frac{\lambda(t_e)}{\lambda(t_0)} = \frac{e^{-H_0 t_e}}{e^{-H_0 t_0}} = e^{H_0 (t_0 - t_e)} = e^{H_0 \Delta t}.
     \label{eq:redshift_analitik}
 \end{equation}
-Böylece kırmızıya kayma, uzayın gerilip fotonun dalga boyunu uzatmasından değil; **gözlemcinin atomik cetvel ve saatlerinin fotonun salındığı andan itibaren büzüşerek hızlanmasından** kaynaklanır.
+Böylece kırmızıya kayma, uzayın gerilip fotonun dalga boyunu uzatmasından değil; \textbf{gözlemcinin atomik cetvel ve saatlerinin fotonun salındığı andan itibaren büzüşerek hızlanmasından} kaynaklanır.
 
 \section{Parlaklık Mesafesi (\texorpdfstring{$d_L(z)$}{dL(z)}) ve Uzaklık Modülünün Analitik Türetilişi}
 \label{sec:dl_turetilis}
@@ -246,7 +248,7 @@ Astronomik uzaklık modülü ($\mu$):
 \section{Pantheon+ Tip Ia Süpernova Analizi ve Tam Kovaryans Matrisli İstatistiksel Uyum}
 \label{sec:pantheon_analizi}
 
-Türettiğimiz analitik $d_L(z)$ bağıntısını test etmek amacıyla, modern astrofiziğin en kapsamlı Tip Ia Süpernova derlemesi olan **Pantheon+** veri setini (Scolnic vd.~\cite{pantheon_scolnic}, Brout vd.~\cite{pantheon_brout}) kullandık. Analizde $z = 0.0101$ ile $z = 2.1000$ arasındaki 26 binned veri noktası ($z_i, \mu_{\mathrm{obs},i}, \sigma_i$) ele alındı.
+Türettiğimiz analitik $d_L(z)$ bağıntısını test etmek amacıyla, modern astrofiziğin en kapsamlı Tip Ia Süpernova derlemesi olan \textbf{Pantheon+} veri setini (Scolnic vd.~\cite{pantheon_scolnic}, Brout vd.~\cite{pantheon_brout}) kullandık. Analizde $z = 0.0101$ ile $z = 2.1000$ arasındaki 26 binned veri noktası ($z_i, \mu_{\mathrm{obs},i}, \sigma_i$) ele alındı.
 
 \subsection{Resmi Pantheon+ Kovaryans Matrisi ve Projeksiyonu}
 Astrofiziksel süpernova analizlerinde fotometrik sıfır noktası kalibrasyonu, filtre bandpass kaymaları ve galaktik ortam kütle adımı etkileri farklı kırmızıya kayma dilimlerindeki süpernovalar arasında belirgin sistematik kovaryanslar üretir. Yapay yaklaşımlar yerine doğrudan Scolnic vd.~\cite{pantheon_scolnic} ve Brout vd.~\cite{pantheon_brout} tarafından yayımlanan resmi Pantheon+ tam kovaryans matrisini ($\mathbf{C}_{\mathrm{full}} = \mathbf{C}_{\mathrm{stat}} + \mathbf{C}_{\mathrm{sys}}$) kullandık.
@@ -348,7 +350,7 @@ Genişlemeyen statik kozmoloji modellerine yöneltilen en klasik itiraz, Tolman 
 şeklinde sönümlenir. Naif durağan veya "yorgun ışık" modellerinde ise zaman genleşmesi bulunmadığından $SB \propto (1+z)^{-1}$ öngörülür; oysa Tolman~\cite{tolman1930} tarafından önerilen ve Lubin ile Sandage~\cite{lubin2001} tarafından Hubble Uzay Teleskobu verileriyle yapılan gözlemler $(1+z)^{-1}$ hipotezini $>5\sigma$ güvenle dışlamıştır.
 
 Modelimiz bu testi konformal diferansiyel geometri ile eksiksiz sağlar:
-Foton geodezikleri konformal dönüşümler altında sıfır (null, $ds^2 = 0$) kalır. Diferansiyel geometride foton demetlerinin korunumu gereği **Etherington Karşılıklılık Teoremi (Duality Relation)~\cite{etherington1933}** konformal metriklerde tam olarak geçerlidir:
+Foton geodezikleri konformal dönüşümler altında sıfır (null, $ds^2 = 0$) kalır. Diferansiyel geometride foton demetlerinin korunumu gereği \textbf{Etherington Karşılıklılık Teoremi (Duality Relation)~\cite{etherington1933}} konformal metriklerde tam olarak geçerlidir:
 \begin{equation}
     d_L(z) = (1+z)^2 d_A(z) \implies \frac{d_A(z)}{d_L(z)} = (1+z)^{-2}.
     \label{eq:etherington_korunumu_a}
@@ -358,7 +360,7 @@ Yüzey parlaklığı akının katı açıya oranı olduğundan:
     SB \equiv \frac{F_{\mathrm{obs}}}{\Delta \Omega} = \frac{L / (4\pi d_L^2)}{A / d_A^2} = \frac{L}{4\pi A} \left( \frac{d_A}{d_L} \right)^2 = SB_{\mathrm{intrinsik}} \, (1+z)^{-4}.
     \label{eq:tolman_ispat_a}
 \end{equation}
-Büzülen gözlemcinin ölçüm standartları da bu konformal ölçekle küçüldüğünden, ölçülen yüzey parlaklığı tamı tamına $(1+z)^{-4}$ olarak kaydedilir. Böylece Birleşik Büzülme Hipotezi, naif yorgun ışık modellerinin aksine **Lubin--Sandage Tolman testini tam analitik kesinlikle sağlar.**
+Büzülen gözlemcinin ölçüm standartları da bu konformal ölçekle küçüldüğünden, ölçülen yüzey parlaklığı tamı tamına $(1+z)^{-4}$ olarak kaydedilir. Böylece Birleşik Büzülme Hipotezi, naif yorgun ışık modellerinin aksine \textbf{Lubin--Sandage Tolman testini tam analitik kesinlikle sağlar.}
 
 \section{Süpernova Işık Eğrilerinde Zaman Genleşmesi ve Chandrasekhar Kütle Değişmezliği}
 \label{sec:zaman_genlesmesi_ve_chandrasekhar}
@@ -375,7 +377,7 @@ Dolayısıyla kaynakta geçen fiziksel bozunma süresi $\Delta t_e$, günümüz 
     \Delta t_{\mathrm{obs}} = \Delta t_e \, (1 + z),
     \label{eq:goldhaber_ispat}
 \end{equation}
-bağıntısıyla uzamış olarak kaydedilir. Bu türetim, **uzay-zaman metriğinin genişlemesine gerek duyulmaksızın, yerel atomik saatlerin büzülmesinden kaynaklanan gerçek bir kozmolojik zaman genleşmesi olduğunu ve Goldhaber testini sağladığını kanıtlar.**
+bağıntısıyla uzamış olarak kaydedilir. Bu türetim, \textbf{uzay-zaman metriğinin genişlemesine gerek duyulmaksızın, yerel atomik saatlerin büzülmesinden kaynaklanan gerçek bir kozmolojik zaman genleşmesi olduğunu ve Goldhaber testini sağladığını kanıtlar.}
 
 \subsection{Chandrasekhar Kütlesi ve Standart Mum Kararlılığı}
 Gözlemcilerin Tip Ia süpernovaları standart mum ($L_{\mathrm{em}} \approx \text{sabit}$) olarak kullanabilmesi, beyaz cücenin patlama anındaki kütlesinin evrensel Chandrasekhar kütle sınırıyla ($M_{\mathrm{Ch}}$) belirlenmesine dayanır. Rölativistik dejenere elektron gazının yerçekimsel çökmeye direnci incelendiğinde Chandrasekhar kütlesi:
@@ -429,23 +431,25 @@ Planck 2018 sıcaklık anizotropilerindeki ($\Delta T / T \sim 10^{-5}$) akustik
 \paragraph{Akustik Ufuk (\texorpdfstring{$r_s$}{r\_s}) ve Açısal Ölçek (\texorpdfstring{$\theta_*$}{theta\_*}) Kalibrasyonu:}
 Hakemler tarafından yöneltilen kritik bir soru şudur: \textit{``Modelinizde $z_* = 1090$ anındaki komoving koordinat mesafesi $D_M(z_*) = \frac{c}{H_0}\ln(1091) \approx 29\,800\text{ Mpc}$ çıkmaktadır. Oysa standart $\Lambda\mathrm{CDM}$ modelinde bu mesafe $\sim 14\,000\text{ Mpc}$'dir. Eğer mesafe iki katından fazlaysa, akustik tepe $\ell_1 \approx 220$ yerine $\ell_1 \approx 470$'e kaymaz mı?''}
 
-Bu görünür çelişki, **standart $\Lambda\mathrm{CDM}$'in genişleyen komoving cetveli ile durağan Öklid koordinatları arasındaki kalibrasyon farkının** netleştirilmesiyle çözülür:
-1. Standart modeldeki $r_s \approx 147.1\text{ Mpc}$ ses ufku, madde-egemen bir FLRW genişleme geçmişi üzerinden hesaplanmış bir komoving cetveldir.
-2. Statik Öklid uzayında ise foton-baryon plazmasının ses hızı $c_s = c/\sqrt{3(1+R_b)}$ olup, plazma çağında katettiği fiziksel ses ufku doğrudan koordinat integraliyle belirlenir:
-\begin{equation}
-    r_{s,\mathrm{coord}} = \int_{-\infty}^{t_*} c_s dt = c_s \Delta t_{\mathrm{sound}} \approx \frac{c}{\sqrt{3}} \cdot \frac{0.126}{H_0} \approx \mathbf{312\text{ Mpc}}.
-\end{equation}
-3. Gözlemlenen açısal ses ufku boyutu ($\theta_*$):
-\begin{equation}
-    \theta_* \equiv \frac{r_{s,\mathrm{coord}}}{D_M(z_*)} = \frac{312\text{ Mpc}}{29\,800\text{ Mpc}} \approx \mathbf{0.01047\text{ rad}} \approx 0.599^\circ.
-    \label{eq:theta_star_ispat}
-\end{equation}
-4. Akustik potansiyel kuyu faz kayması ($\phi_1 \approx 0.265$) hesaba katıldığında, birinci tepe noktasının multipol konumu:
-\begin{equation}
-    \ell_1 = \frac{\pi}{\theta_*} (1 - \phi_1) \approx \frac{3.14159}{0.01047} (1 - 0.265) \approx 300 \times 0.735 = \mathbf{220.5},
-    \label{eq:l1_tam_ispat}
-\end{equation}
-olarak Planck 2018 ölçümüyle ($\ell_1 = 220.6 \pm 0.5$) uyumlu çıkmaktadır.
+Bu görünür çelişki, \textbf{standart $\Lambda\mathrm{CDM}$'in genişleyen komoving cetveli ile durağan Öklid koordinatları arasındaki kalibrasyon farkının} netleştirilmesiyle çözülür:
+\begin{enumerate}
+    \item Standart modeldeki $r_s \approx 147.1\text{ Mpc}$ ses ufku, madde-egemen bir FLRW genişleme geçmişi üzerinden hesaplanmış bir komoving cetveldir.
+    \item Statik Öklid uzayında ise foton-baryon plazmasının ses hızı $c_s = c/\sqrt{3(1+R_b)}$ olup, plazma çağında katettiği fiziksel ses ufku doğrudan koordinat integraliyle belirlenir:
+    \begin{equation}
+        r_{s,\mathrm{coord}} = \int_{-\infty}^{t_*} c_s dt = c_s \Delta t_{\mathrm{sound}} \approx \frac{c}{\sqrt{3}} \cdot \frac{0.126}{H_0} \approx \mathbf{312\text{ Mpc}}.
+    \end{equation}
+    \item Gözlemlenen açısal ses ufku boyutu ($\theta_*$):
+    \begin{equation}
+        \theta_* \equiv \frac{r_{s,\mathrm{coord}}}{D_M(z_*)} = \frac{312\text{ Mpc}}{29\,800\text{ Mpc}} \approx \mathbf{0.01047\text{ rad}} \approx 0.599^\circ.
+        \label{eq:theta_star_ispat}
+    \end{equation}
+    \item Akustik potansiyel kuyu faz kayması ($\phi_1 \approx 0.265$) hesaba katıldığında, birinci tepe noktasının multipol konumu:
+    \begin{equation}
+        \ell_1 = \frac{\pi}{\theta_*} (1 - \phi_1) \approx \frac{3.14159}{0.01047} (1 - 0.265) \approx 300 \times 0.735 = \mathbf{220.5},
+        \label{eq:l1_tam_ispat}
+    \end{equation}
+    olarak Planck 2018 ölçümüyle ($\ell_1 = 220.6 \pm 0.5$) uyumlu çıkmaktadır.
+\end{enumerate}
 
 \paragraph{Analitik Akustik Transfer Parametrizasyonu ve Gelecek Çalışmalar:}
 Önemle vurgulamak gerekir ki burada sunulan CMB akustik yapısı, Hu \& White (1997) ve Hu \& Sugiyama (1995, 1996) tarafından geliştirilen analitik plazma akustik transfer yaklaşımına dayanmaktadır. Bu yaklaşım tepe dizilimini ($\ell_1 \approx 220, \ell_2 \approx 540, \ell_3 \approx 810$), baryon yükleme asimetrisini ($R_b$) ve Silk difüzyon sönümlemesini analitik bir durağan dalga modeli içinde başarıyla sergiler. Bu model, tam bir Einstein-Boltzmann pertürbasyon hiyerarşisi çözümü olmayıp kuramsal bir kavram kanıtlama (proof-of-concept) niteliğindedir. Planck ve ACT verileriyle tam bir MCMC olabilirlik analizi gerçekleştirecek, büzülen atom metriğine uyarlanmış ölçek-kovaryant bir Boltzmann çözücüsünün (CAMB/CLASS analogu) kodlanması gelecekteki temel araştırma hedefimizdir.

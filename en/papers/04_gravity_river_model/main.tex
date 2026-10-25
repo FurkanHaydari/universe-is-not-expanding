@@ -42,7 +42,7 @@
     \textbf{Muhammed Furkan Haydari} \\
     \textit{Independent Researcher} \\
     \textit{Istanbul, Turkey} \\
-    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947} \quad$\bullet$\quad \small DOI: \href{https://doi.org/10.5281/zenodo.23633034}{10.5281/zenodo.23633034}
 }
 
 \date{\today}
@@ -107,7 +107,7 @@ In Scale-Time Algebra, a massive body is represented as a Scalor combining an in
 \subsection{Variational Foundation: 3+1 ADM Action and River Velocity in Flat Space}
 \label{sec:adm_eylem_p1}
 
-The radial vacuum flow velocity $v(r) = -\sqrt{2GM/r}$ in the River Model is not an arbitrary phenomenological ansatz; **it is the exact variational Euler--Lagrange solution of the Einstein--Hilbert gravitational action subject to a flat Euclidean spatial slice constraint.**
+The radial vacuum flow velocity $v(r) = -\sqrt{2GM/r}$ in the River Model is not an arbitrary phenomenological ansatz; \textbf{it is the exact variational Euler--Lagrange solution of the Einstein--Hilbert gravitational action subject to a flat Euclidean spatial slice constraint.}
 
 In General Relativity, the spacetime metric is decomposed via the Arnowitt--Deser--Misner (ADM) 3+1 split:
 \begin{equation}
@@ -149,22 +149,24 @@ Imposing the asymptotic boundary condition of quiescence at infinity ($v(\infty)
 A crucial geometric distinction raised in peer review must be formalized: \textit{``If spatial slices in the Painlevé--Gullstrand metric are Euclidean ($\gamma_{ij} = \delta_{ij}$), is spacetime truly flat, or is Einstein's 4D curvature preserved?''}
 
 In pseudo-Riemannian geometry, the intrinsic curvature of a 3-dimensional spatial hypersurface ($^{(3)}R$) must not be conflated with the full 4-dimensional spacetime curvature ($^{(4)}R_{\alpha\beta\gamma\delta}$):
-1. In Painlevé--Gullstrand coordinates, the simultaneity slices of freely falling observers ($t_{\mathrm{PG}} = \text{const}$) are intrinsically flat Euclidean: $\gamma_{ij} = \delta_{ij} \implies {}^{(3)}R \equiv 0$.
-2. However, the 4-dimensional spacetime manifold is **rigorously curved**. This 4D curvature is generated directly by the extrinsic curvature tensor ($K_{ij}$) via the 3+1 ADM Gauss--Codazzi equation:
-\begin{equation}
-    {}^{(4)}R = {}^{(3)}R + K_{ij} K^{ij} - K^2 = K_{ij} K^{ij} - K^2.
-    \label{eq:gauss_codazzi_ispat_en}
-\end{equation}
-3. The extrinsic curvature is the spatial velocity gradient tensor of the radial vacuum river ($K_{ij} = -\frac{1}{2c}(\partial_i v_j + \partial_j v_i)$). For $v(r) = -\sqrt{2GM/r}$, its non-zero components are:
-\begin{equation}
-    K_{rr} = -\frac{1}{c} \frac{dv}{dr} = -\frac{1}{c} \sqrt{\frac{GM}{2r^3}}, \qquad K_{\theta\theta} = \frac{K_{\phi\phi}}{\sin^2\theta} = \frac{1}{c} \sqrt{2GMr}.
-\end{equation}
-Evaluating the coordinate-invariant measure of spacetime curvature, the **Kretschmann Scalar**:
-\begin{equation}
-    \mathcal{K} \equiv R^{\alpha\beta\gamma\delta} R_{\alpha\beta\gamma\delta} = \frac{48 G^2 M^2}{c^4 r^6},
-    \label{eq:kretschmann_ispat_en}
-\end{equation}
-yields identically the exact Schwarzschild value.
+\begin{enumerate}
+    \item In Painlevé--Gullstrand coordinates, the simultaneity slices of freely falling observers ($t_{\mathrm{PG}} = \text{const}$) are intrinsically flat Euclidean: $\gamma_{ij} = \delta_{ij} \implies {}^{(3)}R \equiv 0$.
+    \item However, the 4-dimensional spacetime manifold is \textbf{rigorously curved}. This 4D curvature is generated directly by the extrinsic curvature tensor ($K_{ij}$) via the 3+1 ADM Gauss--Codazzi equation:
+    \begin{equation}
+        {}^{(4)}R = {}^{(3)}R + K_{ij} K^{ij} - K^2 = K_{ij} K^{ij} - K^2.
+        \label{eq:gauss_codazzi_ispat_en}
+    \end{equation}
+    \item The extrinsic curvature is the spatial velocity gradient tensor of the radial vacuum river ($K_{ij} = -\frac{1}{2c}(\partial_i v_j + \partial_j v_i)$). For $v(r) = -\sqrt{2GM/r}$, its non-zero components are:
+    \begin{equation}
+        K_{rr} = -\frac{1}{c} \frac{dv}{dr} = -\frac{1}{c} \sqrt{\frac{GM}{2r^3}}, \qquad K_{\theta\theta} = \frac{K_{\phi\phi}}{\sin^2\theta} = \frac{1}{c} \sqrt{2GMr}.
+    \end{equation}
+    Evaluating the coordinate-invariant measure of spacetime curvature, the \textbf{Kretschmann Scalar}:
+    \begin{equation}
+        \mathcal{K} \equiv R^{\alpha\beta\gamma\delta} R_{\alpha\beta\gamma\delta} = \frac{48 G^2 M^2}{c^4 r^6},
+        \label{eq:kretschmann_ispat_en}
+    \end{equation}
+    yields identically the exact Schwarzschild value.
+\end{enumerate}
 
 This demonstrates that the River Model in Painlevé--Gullstrand coordinates does not conflict with 4-dimensional general relativistic dynamics; rather, it provides an exact hydrodynamic representation where 4D curvature corresponds to the velocity gradient and shear tensor of the vacuum inflow on a Euclidean background.
 
@@ -323,7 +325,7 @@ When the local Newtonian acceleration drops below this threshold ($g \ll a_0$), 
     g_{\mathrm{effective}} = \sqrt{g_{\mathrm{Newton}} \cdot a_0} = \frac{\sqrt{GM a_0}}{r}.
     \label{eq:mond_limit}
 \end{equation}
-Circular orbital equilibrium ($v_{\mathrm{rot}}^2 / r = g_{\mathrm{effective}}$) immediately yields $v_{\mathrm{rot}}^4 = G M a_0$. This explains the flat rotation curves of spiral galaxies and the empirical Tully--Fisher relation without invoking dark matter particles.
+Circular orbital equilibrium ($v_{\mathrm{rot}}^2 / r = g_{\mathrm{effective}}$) immediately yields $v_{\mathrm{rot}}^4 = G M a_0$. This recovers the phenomenological success of Modified Newtonian Dynamics (MOND)~\cite{milgrom1983} and explains the flat rotation curves of spiral galaxies and the empirical Tully--Fisher relation without invoking dark matter particles.
 
 \begin{figure}[h!]
     \centering
@@ -395,7 +397,7 @@ In the gravitational regime, vacuum inflow is far below saturation and spreads f
     \left( \frac{v_{\mathrm{inflow}}(r)}{c} \right)^2 = \frac{2GM}{c^2 r} = \frac{r_s}{r}.
     \label{eq:kutlecekim_master}
 \end{equation}
-This relation is precisely the spherical ($\gamma = 1$) branch of the universal \textbf{Unified Vacuum Flux Master Formula} uniting all fundamental interactions:
+This relation is precisely the spherical ($\gamma = 1$) branch of the universal \textbf{Unified Vacuum Flux Master Formula} uniting all fundamental interactions, as formulated in the comprehensive monograph~\cite{main_paper} and companion preprints on electrodynamics~\cite{paper2}, the strong nuclear force~\cite{paper3}, and the weak interaction~\cite{paper4}:
 \begin{equation}
     \boxed{ \left( \frac{v_{\mathrm{inflow}}(r)}{c} \right)^2 = 2 \, \mathcal{C}_G \, r^{-1}, \quad \text{where } \mathcal{C}_G \equiv \frac{GM}{c^2}. }
 \end{equation}

@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://zenodo.org/"><img src="https://img.shields.io/badge/Zenodo-Open_Access-blue.svg" alt="Zenodo Open Access"></a>
+  <a href="https://doi.org/10.5281/zenodo.23633034"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23633034.svg" alt="DOI: 10.5281/zenodo.23633034"></a>
   <a href="https://orcid.org/0009-0003-2854-3947"><img src="https://img.shields.io/badge/ORCID-0009--0003--2854--3947-green.svg" alt="ORCID"></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python 3.9+"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
@@ -250,6 +250,7 @@ If you use this monograph, research preprints, or the numerical solver package i
   title     = {The Unified Contraction Hypothesis & Scale-Time Calculus: A Conformal Geometric Treatise on Cosmology, Gravitation, and Fundamental Interactions},
   publisher = {Independent Publications in Natural Philosophy and Fundamental Physics},
   year      = {2026},
+  doi       = {10.5281/zenodo.23633034},
   address   = {Istanbul, Turkey},
   url       = {https://github.com/FurkanHaydari/universe-is-not-expanding}
 }

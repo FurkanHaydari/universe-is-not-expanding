@@ -6,7 +6,8 @@ authors:
   - family-names: "Haydari"
     given-names: "Muhammed Furkan"
     orcid: "https://orcid.org/0009-0003-2854-3947"
-version: "1.0.0"
+version: "1.0.1"
+doi: "10.5281/zenodo.23633034"
 date-released: "2026-10-25"
 license: "MIT"
 repository-code: "https://github.com/FurkanHaydari/universe-is-not-expanding"
@@ -18,6 +19,7 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0003-2854-3947"
   title: "The Unified Contraction Hypothesis & Scale-Time Calculus: A Conformal Geometric Treatise on Cosmology, Gravitation, and Fundamental Interactions"
   year: 2026
+  doi: "10.5281/zenodo.23633034"
   publisher:
     name: "Independent Publications in Natural Philosophy and Fundamental Physics"
   url: "https://github.com/FurkanHaydari/universe-is-not-expanding"

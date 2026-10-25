@@ -66,7 +66,7 @@
     \textbf{Muhammed Furkan Haydari} \\
     \textit{Independent Researcher} \\
     \textit{Istanbul, Turkey} \\
-    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947} \quad$\bullet$\quad \small DOI: \href{https://doi.org/10.5281/zenodo.23633034}{10.5281/zenodo.23633034}
 }
 
 \date{\today}
@@ -97,7 +97,7 @@
 \section{Introduction and Motivations for Conformal Frameworks}
 \label{sec:intro_cosmo}
 
-Modern observational cosmology is built upon the standard $\Lambda\mathrm{CDM}$ model, which assumes an expanding Friedmann--Lema\^itre--Robertson--Walker (FLRW) metric. While this model has been phenomenologically successful in parameterizing large-scale structure and early Type Ia supernova observations, it faces notable theoretical questions and observational tensions:
+Modern observational cosmology is built upon the standard $\Lambda\mathrm{CDM}$ model, which assumes an expanding Friedmann--Lema\^itre--Robertson--Walker (FLRW) metric. While this model has been phenomenologically successful in parameterizing large-scale structure and early Type Ia supernova observations~\cite{riess1998,perlmutter1999}, it faces notable theoretical questions and observational tensions:
 \begin{enumerate}
     \item \textbf{The Cosmological Constant Problem:} The observed dark energy density ($\rho_\Lambda \sim 10^{-47}\text{ GeV}^4$) is at least 120 orders of magnitude smaller than naive quantum field theoretic vacuum zero-point cutoff estimates.
     \item \textbf{The Hubble Tension ($H_0$ Tension):} A statistically significant ($5\sigma$) tension persists between early-universe (Planck CMB) inferences ($H_0 \approx 67.4\text{ km/s/Mpc}$) and local distance-ladder measurements from SH0ES Type Ia supernovae and Cepheids ($H_0 \approx 73.0\text{ km/s/Mpc}$).
@@ -146,30 +146,32 @@ Defining the dimensionless atomic length scale standard as $\lambda(t) \equiv \c
     \lambda(t) = e^{-H_0 t} \implies \frac{\dot{\lambda}(t)}{\lambda(t)} = -H_0.
     \label{eq:hubble_baryon_en}
 \end{equation}
-\textbf{Theoretical Result:} Universal atomic scale contraction at rate $H_0$ is a **stable cosmological attractor** of the conformal scalar field in flat Minkowski space.
+\textbf{Theoretical Result:} Universal atomic scale contraction at rate $H_0$ is a \textbf{stable cosmological attractor} of the conformal scalar field in flat Minkowski space.
 
 \subsection{Stress-Energy Conservation and Einstein Frame Equivalence (Weyl Gauge Invariance)}
 \label{sec:weyl_denkligi_en}
 
 A valid theoretical question raised in peer review asks: \textit{``If the scalar field $\chi(t) = \chi_0 e^{H_0 t}$ carries a non-zero pressure ($p_\chi = H_0^2 \chi^2$), how can the spacetime metric ($\eta_{\mu\nu}$) remain flat without backreaction?''}
 
-This is resolved via **Weyl Gauge Invariance** and conformal frame equivalence:
-1. With the conformal coupling parameter $\xi = 1/6$, the Callan--Coleman--Jackiw (CCJ) improved energy-momentum tensor is:
-\begin{equation}
-    \Theta_{\mu\nu} = \partial_\mu\chi\partial_\nu\chi - \frac{1}{2}\eta_{\mu\nu}(\partial\chi)^2 - \eta_{\mu\nu}V(\chi) - \frac{1}{6}\left(\partial_\mu\partial_\nu - \eta_{\mu\nu}\Box\right)\chi^2.
-    \label{eq:ccj_tensor_en}
-\end{equation}
-For a homogeneous field in flat space, the improvement term directly balances the kinematic stress.
-2. Setting $g_{\mu\nu} = \eta_{\mu\nu}$ constitutes a choice of gauge (Jordan frame Weyl gauge fixing).
-3. Transforming to the Einstein frame via:
-\begin{equation}
-    \tilde{g}_{\mu\nu} \equiv \left(\frac{\chi(x)}{\chi_0}\right)^2 g_{\mu\nu} = e^{2H_0 t} \eta_{\mu\nu},
-\end{equation}
-the line element becomes $d\tilde{s}^2 = -c^2 d\tau^2 + a^2(\tau) d\mathbf{x}^2$, matching a spatially flat de Sitter / FLRW spacetime where Einstein's equations:
-\begin{equation}
-    \tilde{G}_{\mu\nu} = 8\pi G \tilde{T}_{\mu\nu},
-\end{equation}
-hold identically. As demonstrated by Dicke (1962), Hoyle--Narlikar (1964), and Wetterich (2013), **an expanding metric in the Einstein frame and contracting matter scales in a static Minkowski Jordan frame are mathematically isomorphic under Weyl transformations.** Spacetime flat background is therefore an exact gauge representation where gravitational degrees of freedom reside in the scalar field.
+This is resolved via \textbf{Weyl Gauge Invariance} and conformal frame equivalence:
+\begin{enumerate}
+    \item With the conformal coupling parameter $\xi = 1/6$, the Callan--Coleman--Jackiw (CCJ) improved energy-momentum tensor is:
+    \begin{equation}
+        \Theta_{\mu\nu} = \partial_\mu\chi\partial_\nu\chi - \frac{1}{2}\eta_{\mu\nu}(\partial\chi)^2 - \eta_{\mu\nu}V(\chi) - \frac{1}{6}\left(\partial_\mu\partial_\nu - \eta_{\mu\nu}\Box\right)\chi^2,
+        \label{eq:ccj_tensor_en}
+    \end{equation}
+    where $\Box \equiv \eta^{\alpha\beta}\partial_\alpha\partial_\beta = \partial^\alpha\partial_\alpha$ denotes the d'Alembertian wave operator. For a homogeneous field in flat space, the improvement term directly balances the kinematic stress.
+    \item Setting $g_{\mu\nu} = \eta_{\mu\nu}$ constitutes a choice of gauge (Jordan frame Weyl gauge fixing).
+    \item Transforming to the Einstein frame via:
+    \begin{equation}
+        \tilde{g}_{\mu\nu} \equiv \left(\frac{\chi(x)}{\chi_0}\right)^2 g_{\mu\nu} = e^{2H_0 t} \eta_{\mu\nu},
+    \end{equation}
+    the line element becomes $d\tilde{s}^2 = -c^2 d\tau^2 + a^2(\tau) d\mathbf{x}^2$, matching a spatially flat de Sitter / FLRW spacetime where Einstein's equations:
+    \begin{equation}
+        \tilde{G}_{\mu\nu} = 8\pi G \tilde{T}_{\mu\nu},
+    \end{equation}
+    hold identically. As demonstrated by Dicke (1962), Hoyle--Narlikar (1964), and Wetterich (2013), \textbf{an expanding metric in the Einstein frame and contracting matter scales in a static Minkowski Jordan frame are mathematically isomorphic under Weyl transformations.} Spacetime flat background is therefore an exact gauge representation where gravitational degrees of freedom reside in the scalar field.
+\end{enumerate}
 
 Within the Scale-Time Calculus, the Scale-Covariant Derivative Operator accounting for time-dependent measurement standards is:
 \begin{equation}
@@ -202,7 +204,7 @@ The photon propagates through the static vacuum without losing energy ($\nu_{\ma
     1 + z \equiv \frac{\nu_{\mathrm{ref}}}{\nu_{\mathrm{em}}} = \frac{\lambda(t_e)}{\lambda(t_0)} = \frac{e^{-H_0 t_e}}{e^{-H_0 t_0}} = e^{H_0 (t_0 - t_e)} = e^{H_0 \Delta t}.
     \label{eq:redshift_analytic}
 \end{equation}
-Thus, redshift is not caused by the stretching of space, but by the **secular contraction of local atomic reference standards** between emission and reception.
+Thus, redshift is not caused by the stretching of space, but by the \textbf{secular contraction of local atomic reference standards} between emission and reception.
 
 \section{Analytical Derivation of Luminosity Distance (\texorpdfstring{$d_L(z)$}{dL(z)}) and Distance Modulus}
 \label{sec:dl_derivation}
@@ -247,7 +249,7 @@ The astronomical distance modulus $\mu(z)$ is:
 \section{Pantheon+ Type Ia Supernova Covariance Analysis}
 \label{sec:pantheon_analysis}
 
-To test the derived analytical $d_L(z)$ relation, we analyze the **Pantheon+** Type Ia supernova compilation (Scolnic et al.~\cite{pantheon_scolnic}, Brout et al.~\cite{pantheon_brout}), comprising $N=26$ binned data points ($z_i, \mu_{\mathrm{obs},i}, \sigma_i$) spanning $z \in [0.0101, 2.1000]$.
+To test the derived analytical $d_L(z)$ relation, we analyze the \textbf{Pantheon+} Type Ia supernova compilation (Scolnic et al.~\cite{pantheon_scolnic}, Brout et al.~\cite{pantheon_brout}), comprising $N=26$ binned data points ($z_i, \mu_{\mathrm{obs},i}, \sigma_i$) spanning $z \in [0.0101, 2.1000]$.
 
 \subsection{Official Pantheon+ Covariance Matrix and Projection}
 Photometric zeropoint calibration, filter bandpass uncertainties, and host-galaxy environment corrections generate substantial off-diagonal covariances across redshift bins. Rather than relying on synthetic approximations, we utilize the official Pantheon+ full statistical and systematic covariance matrix $\mathbf{C}_{\mathrm{full}} = \mathbf{C}_{\mathrm{stat}} + \mathbf{C}_{\mathrm{sys}}$ (Brout et al.~\cite{pantheon_brout}, Scolnic et al.~\cite{pantheon_scolnic}).
@@ -340,7 +342,7 @@ This confirms that the analytical distance relation $d_L(z) = \frac{c}{H_0}(1+z)
 \section{Tolman Surface Brightness and Etherington Reciprocity}
 \label{sec:tolman_etherington}
 
-A canonical test separating cosmological models is the Tolman Surface Brightness test ($SB \equiv F_{\mathrm{obs}} / \Delta \Omega$). In expanding FLRW geometry, surface brightness dims as:
+A canonical test separating cosmological models is the Tolman Surface Brightness test~\cite{tolman1930} ($SB \equiv F_{\mathrm{obs}} / \Delta \Omega$). In expanding FLRW geometry, surface brightness dims as:
 \begin{equation}
     SB(z) = SB_0 \, (1+z)^{-4}.
     \label{eq:tolman_standard}
@@ -348,7 +350,7 @@ A canonical test separating cosmological models is the Tolman Surface Brightness
 Naive static "tired light" models predict $SB \propto (1+z)^{-1}$, which has been excluded at $>5\sigma$ by Lubin and Sandage~\cite{lubin2001} using Hubble Space Telescope data.
 
 Our model satisfies this test identically:
-Because photon geodesics remain null ($ds^2 = 0$) under conformal transformations, **Etherington's Reciprocity Theorem~\cite{etherington1933}** holds rigorously:
+Because photon geodesics remain null ($ds^2 = 0$) under conformal transformations, \textbf{Etherington's Reciprocity Theorem~\cite{etherington1933}} holds rigorously:
 \begin{equation}
     d_L(z) = (1+z)^2 d_A(z) \implies \frac{d_A(z)}{d_L(z)} = (1+z)^{-2}.
     \label{eq:etherington_proof}
