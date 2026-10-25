@@ -1,0 +1,48 @@
+\section{Standard Metric Systems in Contemporary Physics}
+\label{sec:standart_metrik}
+
+Contemporary theoretical physics employs the metric tensor formalism of pseudo-Riemannian geometry ($g_{\mu\nu}$) to describe spacetime geometry and dynamics. The differential line element is expressed generally as:
+\begin{equation}
+    ds^2 = g_{\mu\nu} dx^\mu dx^\nu.
+    \label{eq:genel_cizgi_elemani}
+\end{equation}
+
+Standard physics relies upon three primary metric formulations:
+
+\subsection{Flat Spacetime (The Minkowski Metric)}
+In Special Relativity, inertial reference frames devoid of gravitational curvature are described by the Minkowski metric $\eta_{\mu\nu} = \mathrm{diag}(-1, 1, 1, 1)$:
+\begin{equation}
+    ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2 = -c^2 dt^2 + dr^2 + r^2 d\Omega^2,
+    \label{eq:minkowski_metrik}
+\end{equation}
+where $d\Omega^2 = d\theta^2 + \sin^2\theta d\phi^2$ is the metric on the unit 2-sphere. Here, $c$ is postulated as the invariant propagation velocity of electromagnetic waves in vacuum, and the coordinate grid is assumed strictly rigid and time-independent.
+
+\subsection{Expanding Universe Metric (FLRW)}
+In standard $\Lambda$CDM cosmology, assuming spatial homogeneity and isotropy on large scales leads to the Friedmann--Lema\^itre--Robertson--Walker (FLRW) line element:
+\begin{equation}
+    ds^2 = -c^2 dt^2 + a^2(t) \left[ \frac{dr^2}{1 - kr^2} + r^2 d\Omega^2 \right],
+    \label{eq:flrw_metrik}
+\end{equation}
+where $a(t)$ is the dimensionless cosmic scale factor, and $k \in \{-1, 0, 1\}$ parameterizes spatial curvature. For a spatially flat universe ($k=0$):
+\begin{equation}
+    ds^2 = -c^2 dt^2 + a^2(t) d\mathbf{x}^2.
+    \label{eq:flrw_duz}
+\end{equation}
+In standard interpretation, the proper physical distance between two co-moving galaxies $R(t) = a(t) r$ expands with cosmic time. The observed redshift ($z$) of distant sources is interpreted as the stretching of photon wavelengths by the expanding metric:
+\begin{equation}
+    1 + z = \frac{\lambda_{\mathrm{obs}}}{\lambda_{\mathrm{emit}}} = \frac{a(t_0)}{a(t_e)}.
+    \label{eq:standart_redshift}
+\end{equation}
+
+\subsection{Gravitational Curvature Metrics (Schwarzschild and Painlev\'e--Gullstrand)}
+The spacetime exterior to a static, spherically symmetric mass $M$ is conventionally expressed in Schwarzschild coordinates:
+\begin{equation}
+    ds^2 = -\left(1 - \frac{2GM}{c^2 r}\right) c^2 dt^2 + \left(1 - \frac{2GM}{c^2 r}\right)^{-1} dr^2 + r^2 d\Omega^2.
+    \label{eq:schwarzschild_standart}
+\end{equation}
+Transforming to the proper time of an observer freely falling from rest at infinity ($dt_{\mathrm{ff}} = dt + \frac{\sqrt{2GM/r}}{c(1 - 2GM/c^2 r)} dr$) yields the Painlev\'e--Gullstrand line element~\cite{painleve1921, gullstrand1922}:
+\begin{equation}
+    ds^2 = -c^2 dt_{\mathrm{ff}}^2 + \left( dr + \sqrt{\frac{2GM}{r}} dt_{\mathrm{ff}} \right)^2 + r^2 d\Omega^2.
+    \label{eq:painleve_standart}
+\end{equation}
+This formulation underpins the ``river model'' of space: the background Euclidean spatial coordinate grid remains stationary, while the vacuum field undergoes a radial inflow toward the center of mass at velocity $v_{\mathrm{inflow}}(r) = \sqrt{2GM/r}$, akin to electric current flowing through a stationary copper lattice.

@@ -1,0 +1,243 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{physics}
+\usepackage{tikz}
+\usetikzlibrary{babel,arrows.meta}
+
+\hypersetup{
+    pdftitle={James Webb Uzay Teleskobu z > 10 Erken Olgun Galaksiler Krizine Birleşik Büzülme Hipotezi ile Analitik Çözüm},
+    pdfauthor={Muhammed Furkan Haydari},
+    pdfsubject={Astrofizik, Erken Evren, JWST, JADES-GS-z14-0},
+    pdfkeywords={JWST, Erken Olgun Galaksiler, JADES-GS-z14-0, Büzülen Atom Metriği, Tolman Testi},
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=red!70!black,
+    urlcolor=blue!80!black
+}
+
+% --- Theorem Environments ---
+\newtheorem{theorem}{Teorem}[section]
+\newtheorem{definition}{Tanım}[section]
+\newtheorem{corollary}{Sonuç}[theorem]
+
+\title{\textbf{James Webb Uzay Teleskobu ile Gözlemlenen Yüksek Kırmızıya Kaymalı \\ Olgun Galaksilere Konformal Bir Ölçekleme Yaklaşımı}}
+
+\author{
+    \textbf{Muhammed Furkan Haydari} \\
+    \textit{Bağımsız Araştırmacı} \\
+    \textit{İstanbul, Türkiye} \\
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    James Webb Uzay Teleskobu'nun (JWST) 2022 yılından bu yana $z > 10$ kırmızıya kayma bölgesinde keşfettiği yüksek parlaklığa, kimyasal olgunluğa ve belirgin kütleye sahip galaksiler (örneğin $z = 14.32$'deki JADES-GS-z14-0 ve GN-z11), standart $\Lambda$CDM kozmolojik modelinde önemli bir teorik tartışma (\textit{"The Impossible Early Galaxy Problem"}) başlatmıştır. Standart hiyerarşik yapı oluşumu modellerinde ilk 280--350 milyon yıl içinde $10^9 - 10^{10} M_\odot$ düzeyinde yıldız kütlesinin birikmesi, alışılagelmiş yıldız oluşum verimlilikleri ($\epsilon_{\mathrm{SF}} \sim 0.05 - 0.20$) ve süpernova geri-besleme kısıtlarıyla gerilim oluşturmaktadır.
+
+    Bu çalışmada, söz konusu gözlemsel gerilimin konformal bir ölçekleme çerçevesinde nasıl anlaşılabileceğini inceliyoruz. \textbf{Birleşik Büzülme Hipotezi} çerçevesinde arka plan uzay-zamanı statik olarak ele alınırken; gözlemlenen kozmolojik kırmızıya kayma atomik uzunluk cetvellerinin zaman içindeki konformal evriminden ($r_{\mathrm{atom}}(t) = r_0 (1+z)^{-1}$) kaynaklanır. Bu model altında: (i) Erken evrendeki aşırı zaman sıkışması baskısı hafifler; galaksilerin kimyasal ve dinamik zenginleşmesi için geniş bir fiziksel süreç tanınır; (ii) Geçmişte atomlar bugünkünden daha büyük olduğundan ışıma tesir kesitleri genişler ve standart spektral enerji dağılımı (SED) modellemesi yüksek-$z$ yıldız kütlesini sistematik olarak $(1+z)^2 \approx 235$ kat daha yüksek çıkarsayabilir; (iii) Konformal metrik dönüşümü Etherington ikiliğini ($d_L = (1+z)^2 d_A$) koruduğundan, gözlemlenen yüzey parlaklığı Tolman $(1+z)^{-4}$ sönümleme kuralını tam olarak sağlar. JADES-GS-z14-0 sisteminin ölçek düzeltmeli yıldız kütlesinin $\sim 3 \times 10^6 M_\odot$ seviyesinde normal bir olgun cüce galaksi profili sergilediği gösterilerek, gözlemlere alternatif ve tutarlı bir fiziksel zemin sunulmaktadır.
+\end{abstract}
+
+\vspace{1em}
+\noindent\textbf{Anahtar Kelimeler:} James Webb Uzay Teleskobu, JADES-GS-z14-0, Erken Galaksiler, Birleşik Büzülme Hipotezi, Tolman Yüzey Parlaklığı, Ölçek-Zaman Kalkülüsü.
+
+\vspace{1em}
+\hrule
+\vspace{1.5em}
+
+\section{Giriş ve JWST Gözlemlerinin Getirdiği Teorik Sorular}
+\label{sec:giris}
+
+Standart kozmolojik paradigma ($\Lambda$CDM), evrenin yaklaşık 13.8 milyar yıl önce tekil bir Büyük Patlama ile başladığını; ilk yıldızların (Popülasyon III) $z \sim 20-30$ civarında gaz çökelmesiyle doğduğunu ve galaksilerin karanlık madde halelerinin birleşmesiyle hiyerarşik olarak büyüdüğünü öngörür. Bu kurama göre kozmik şafak evresinde ($z > 10$, $t < 400\text{ Myr}$) henüz büyük yıldız popülasyonları oluşmamış, ağır element (metal) üretimi gerçekleşmemiş ve süper kütleli karadelikler teşekkül etmemiş olmalıdır.
+
+Ancak James Webb Uzay Teleskobu'nun (JWST) faaliyete geçmesiyle birlikte bu tablo tamamen altüst olmuştur. JADES, UNCOVER ve CEERS taramalarında keşfedilen sistemler:
+\begin{enumerate}
+    \item \textbf{Aşırı Kırmızıya Kayma ve Erken Çağ:} JADES-GS-z14-0 ($z = 14.32$, Büyük Patlama'dan yalnızca $\sim 290\text{ Myr}$ sonra)~\cite{carniani2024}, JADES-GS-z14-1 ($z = 13.90$) ve GN-z11 ($z = 10.60$) sistemleri saptanmıştır.
+    \item \textbf{Beklenmeyen Aşırı Parlaklık ve Yıldız Kütlesi:} Bu sistemlerin mutlak morötesi parlaklıkları ($M_{\mathrm{UV}} \approx -20.5\text{ ila } -21.5$) ve standart spektral enerji dağılımı (SED) modellemesiyle çıkarılan yıldız kütleleri $M_* \sim 10^9 - 10^{10} M_\odot$ seviyesindedir~\cite{labbe2023}.
+    \item \textbf{Yüksek Metal Zenginliği ve Toz:} Spektroskopik analizlerde karbon, oksijen ve iyonize gaz emisyon hatları saptanmış; galaksilerin kimyasal olarak çoktan olgunlaştığı ve birden fazla süpernova döngüsünden geçtiği tescillenmiştir.
+\end{enumerate}
+
+Boylan-Kolchin~\cite{boylan2023} tarafından gösterildiği üzere, standart $\Lambda$CDM modelinde bu kütleleri $300\text{ Myr}$ içinde üretebilmek için, galaktik halelerdeki mevcut tüm baryonların \%100'e varan bir verimlilikle ($\epsilon_{\mathrm{SF}} \approx 1$) yıldıza dönüşmüş olması şarttır. Oysa yerel evrende ve bilinen tüm astrofiziksel süreçlerde gazın yıldıza dönüşüm verimliliği süpernova geri-beslemesi sebebiyle yalnızca $\epsilon_{\mathrm{SF}} \sim 0.05 - 0.20$ aralığındadır. Bu durum literatüre \textbf{"İmkansız Erken Galaksiler Kriz" (The Impossible Early Galaxy Crisis)} olarak geçmiştir.
+
+\section{Standart Model Çözüm Çabalarının Çıkmazları}
+\label{sec:standart_cikmaz}
+
+Standart $\Lambda$CDM çerçevesini korumak amacıyla literatürde üç temel palyatif mekanizma öne sürülmüştür:
+\begin{itemize}
+    \item \textbf{Aşırı Üst-Ağır Başlangıç Kütle Fonksiyonu (Top-Heavy IMF):} Galaksilerin hafif yıldızlar içermediği, sadece yüzlerce güneş kütlesinde devasa yıldızlardan oluştuğu varsayılmıştır. Ancak bu durum kimyasal element bolluğu oranlarıyla (özellikle O/Fe ve C/O oranları) çelişmektedir.
+    \item \textbf{Süper-Eddington Karadelik Akresyonu:} Parlaklığın aktif galaktik çekirdeklerden (AGN) geldiği yönündeki iddialara karşın, JADES-GS-z14-0'ın morötesi süreklilik eğrisi ve uzaysal morfolojisi genişlemiş bir yıldız diskine işaret etmektedir.
+    \item \textbf{Kozmik Şişme Pertürbasyonlarının Değiştirilmesi:} İlksel yoğunluk dalgalanmaları spektrumuna ad-hoc tepe noktaları eklenmesi teklif edilmiş; ancak bu hipotez Planck CMB kısıtlamalarıyla uyumsuzluk yaratmıştır.
+\end{itemize}
+
+Bu çıkmazlar, krizin doğrudan \textbf{kullanılan kozmolojik koordinat metriğinden} kaynaklandığını ortaya koymaktadır.
+
+\section{Birleşik Büzülme Hipotezi ile Analitik Çözüm}
+\label{sec:buzulme_cozumu}
+
+Birleşik Büzülme Hipotezi ve Ölçek-Zaman Kalkülüsü~\cite{haydari_main, haydari_scale}, evrenin genişlemediğini; arka plan uzay-zamanının ($\mathcal{E}_\infty$) mutlak statik olduğunu, buna karşılık bağlı maddesel yapıların (atomların) yerel uzunluk ölçeklerinin sürekli büzüldüğünü temellendirir:
+\begin{equation}
+    r_{\mathrm{atom}}(t) = r_0 \, \lambda(t) = r_0 \, e^{-H_0 t}.
+    \label{eq:atom_buzulme}
+\end{equation}
+Bu denklem gereği, geçmişte ($t < 0$) atomların karakteristik boyutları bugünkünden tam olarak kırmızıya kayma faktörü kadar büyüktür:
+\begin{equation}
+    r_{\mathrm{atom}}(z) = r_0 \, (1 + z).
+    \label{eq:gecmis_atom_boyutu}
+\end{equation}
+
+Bu fiziksel gerçeklik, JWST krizini şu dört analitik adımla kökten çözer:
+
+\subsection{1. Kozmik Zaman Sıkışıklığının Ortadan Kalkması}
+Modelimizde evren 13.8 milyar yıl önce sıfır hacimli tekil bir noktadan patlamamıştır. Arka plan uzayı ezelidir ($t \to -\infty$). Dolayısıyla $z = 14$ derinliğindeki bir galaksinin yıldızlarını oluşturması, metallerini sentezlemesi ve gaz dengesini kurması için önünde 300 milyon yıl gibi dar bir sınır yoktur. Galaksi, milyarlarca yıllık dinamik bir evrim sürecinin olgun bir ürünüdür.
+
+\subsection{2. Atomik Büyüklük ve Parlaklık Çarpanı}
+Kuantum elektrodinamiğinde bir atomun foton soğurma ve yayınlama tesir kesiti, karakteristik Bohr yarıçapının karesiyle ölçeklenir:
+\begin{equation}
+    \sigma_{\mathrm{atom}} \propto a_0^2 \propto r_{\mathrm{atom}}^2.
+\end{equation}
+$z$ kırmızıya kaymasındaki bir sistemde atomlar $(1+z)$ kat daha büyük olduğundan:
+\begin{equation}
+    \sigma_{\mathrm{atom}}(z) = \sigma_0 \, (1+z)^2.
+\end{equation}
+Büyük atomlara sahip yıldız atmosferleri, elektron geçişlerinde çok daha geniş bir etkileşim yüzeyine sahiptir. Birim kütle başına düşen optik ışıma gücü geçmişte bugünkünden $(1+z)^2$ kat daha etkindir.
+
+\subsection{3. Spektral Enerji Dağılımı (SED), Balmer Kırılması ve Yıldız Kütlesi Düzeltmesi}
+Standart astrofizikte gözlemlenen $F_{\mathrm{obs}}$ akısından yıldız kütlesi $M_*$ çıkarılırken (ör. Prospector, BEAGLE veya FAST kodlarıyla), yıldızların ve atomların günümüz ölçeklerine ($r_0$) ve günümüz Başlangıç Kütle Fonksiyonuna (IMF) sahip olduğu varsayılır:
+\begin{equation}
+    F_{\mathrm{obs}}(\nu) \propto \frac{M_*^{\Lambda\mathrm{CDM}} \, (L/M)_{\mathrm{SED}}}{4\pi d_L^2(z)}.
+\end{equation}
+Geçmişte atomların yerel ölçeklerinin daha geniş olması ($r_{\mathrm{atom}}(z) \propto (1+z)$), dipol geçiş tesir kesitlerini ve nükleer ışıma yüzeylerini genişletir. Bu durum iki temel spektroskopik etki doğurur:
+\begin{enumerate}
+    \item \textbf{Işıma Tesir Kesiti Ölçeklenmesi:} Birim yıldız kütlesi başına düşen optik emisyon alanı $(1+z)^2$ oranında büyüdüğünden, foton akısı yapay olarak şişkin bir yıldız popülasyonuna atfedilir.
+    \item \textbf{Balmer Kırılması ($4000\text{ \AA}$) ve Yaş Kestirimi:} JWST tayflarında gözlemlenen güçlü dinlenme-çerçevesi optik sürekliliği ve Balmer kırılması, standart modelde 200 milyon yılda oluşamayacak yaşlı yıldız popülasyonlarına (A-tipi yıldızlar) işaret eder. Sınırsız evrim zamanına sahip statik modelimizde Balmer kırılması, milyarlarca yıllık sakin bir yıldız oluşum geçmişinin doğal bir göstergesidir.
+\end{enumerate}
+
+Bu ölçek düzeltmesi hesaba katıldığında, standart modelin atfettiği yıldız kütlesi ($M_*^{\Lambda\mathrm{CDM}}$) ile sistemin gerçek fiziksel kütlesi ($M_*^{\mathrm{gercek}}$) arasındaki analitik bağıntı şu şekilde kurulur:
+\begin{equation}
+    \boxed{ M_*^{\mathrm{gercek}} = \frac{M_*^{\Lambda\mathrm{CDM}}}{(1+z)^2}. }
+    \label{eq:kutle_duzeltme}
+\end{equation}
+
+\subsection{4. Tolman Yüzey Parlaklığı ve Etherington İkiliği}
+Kozmolojide en temel gözlemsel testlerden biri Tolman Yüzey Parlaklığı testidir. Bir gök cisminin yüzey parlaklığı ($SB$), birim katı açı başına düşen akı olarak tanımlanır:
+\begin{equation}
+    SB \equiv \frac{F_{\mathrm{obs}}}{\Delta \Omega} = \frac{L / (4\pi d_L^2)}{A / d_A^2} = \frac{L}{4\pi A} \left( \frac{d_A(z)}{d_L(z)} \right)^2.
+\end{equation}
+Genel diferansiyel geometride foton geodeziklerinin sıfır (null) olması ve konformal metrik dönüşümleri altında Etherington Karşılıklılık Teoremi (Duality Relation) kesin bir korunum sergiler:
+\begin{equation}
+    d_L(z) = (1+z)^2 d_A(z) \implies \frac{d_A(z)}{d_L(z)} = (1+z)^{-2}.
+    \label{eq:etherington_tam}
+\end{equation}
+Bu oran yerine konulduğunda, yüzey parlaklığı sönümlemesi:
+\begin{equation}
+    SB_{\mathrm{obs}} = SB_{\mathrm{intrinsik}} \cdot (1+z)^{-4},
+    \label{eq:tolman_tam}
+\end{equation}
+olarak elde edilir. 
+
+\textbf{Epistemolojik ve Gözlemsel Uyumluluk:} Büzülen atom çerçevesinde de detektörün cetvel ve saatleri büzüldüğünden, gözlemcinin kaydettiği yüzey parlaklığı tamı tamına $(1+z)^{-4}$ olarak ölçülür. Dolayısıyla modelimiz, naif durağan modellerin (ör. yorgun ışık hipotezinin $(1+z)^{-1}$ tahmini) aksine, Tolman~\cite{tolman1930} tarafından formüle edilen ve Lubin ile Sandage~\cite{lubin2001} tarafından yüksek istatistiksel güvenle doğrulanan Tolman yüzey parlaklığı testiyle **eksiksiz bir uyum içerisindedir.**
+
+JWST yüksek-$z$ galaksilerindeki morfolojik sıkışıklık ve "aşırı olgunluk" bilmecesi, Tolman testinin ihlalinden değil; standart $\Lambda$CDM modelinin hiyerarşik birleşmeyi 290 milyon yıllık dar bir pencereye sıkıştırmasından kaynaklanır. Sınırsız evrim zamanına sahip modelimizde bu galaksiler, sakin ve normal bir hızla ($\sim 0.1 M_\odot/\text{yıl}$) oluşmuş dengeli cüce disklerdir.
+
+\section{Sayısal Vaka Analizi: JADES-GS-z14-0}
+\label{sec:vaka_analizi}
+
+Carniani ve ark.~\cite{carniani2024} tarafından JWST NIRSpec ve NIRCam ile gözlemlenen ve evrenin bilinen en uzak galaksisi olan \textbf{JADES-GS-z14-0}'ın gözlem parametreleri Tablo~\ref{tab:jades_kiyas}'de özetlenmiştir.
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Fiziksel Parametre}                           & \textbf{Standart $\Lambda$CDM Yorumu}                  & \textbf{Birleşik Büzülme Hipotezi}                     \\ \midrule
+        Kırmızıya Kayma ($z$)                                 & $z = 14.32$                                            & $z = 14.32$ (Cetvel büzülmesi)                         \\
+        Kozmik Çağ ($t_{\mathrm{kozmik}}$)                    & $290\text{ Myr}$ (Patlama sonrası)                     & Sınırsız / Ezelden beri statik                         \\
+        Görünür UV Parlaklığı ($M_{\mathrm{UV}}$)             & $-20.80\text{ mag}$                                    & $-20.80\text{ mag}$                                    \\
+        Çıkarsanan Yıldız Kütlesi ($M_*$)                     & $\mathbf{5.0 \times 10^8 - 1.0 \times 10^9\, M_\odot}$ & $\mathbf{2.1 \times 10^6 - 4.2 \times 10^6\, M_\odot}$ \\
+        Gereken Yıldız Oluşum Hızı (SFR)                      & $\sim 20\, M_\odot/\text{yıl}$ (Aşırı yüksek)          & $\sim 0.1\, M_\odot/\text{yıl}$ (Normal cüce disk)     \\
+        Baryon Dönüşüm Verimliliği ($\epsilon_{\mathrm{SF}}$) & $\mathbf{\sim 0.8 - 1.2}$ (\textit{Fiziksel Kriz!})    & $\mathbf{\sim 0.05 - 0.10}$ (\textit{Tam Uyum})        \\
+        Morfolojik Yarıçap ($r_{\mathrm{eff}}$)               & $260\text{ pc}$ (Aşırı sıkışık)                        & Normal olgun çekirdek                                  \\ \bottomrule
+    \end{tabular}
+    \caption{JADES-GS-z14-0 Galaksisinin $\Lambda$CDM ve Birleşik Büzülme Hipotezi parametre karşılaştırması.}
+    \label{tab:jades_kiyas}
+\end{table}
+
+Denklem~(\ref{eq:kutle_duzeltme}) kullanılarak kütle dönüşümü uygulandığında:
+\begin{equation}
+    (1 + z)^2 = (1 + 14.32)^2 = (15.32)^2 \approx \mathbf{234.7}.
+\end{equation}
+Standart modelin aşırı parlaklık yüzünden $M_* \sim 7 \times 10^8 M_\odot$ olarak hesapladığı yıldız kütlesi, geçmişte atomların büyük olması hesaba katıldığında:
+\begin{equation}
+    M_*^{\mathrm{gercek}} = \frac{7.0 \times 10^8 M_\odot}{234.7} \approx \mathbf{2.98 \times 10^6 \, M_\odot}
+\end{equation}
+seviyesine geriler!
+
+Bu değer, Samanyolu'nun uydusu olan Fornax veya Heykeltıraş cüce galaksilerinin kütlesine denktir. Bir cüce galaksinin kimyasal olarak olgunlaşması, $2.98 \times 10^6 M_\odot$ yıldız barındırması ve oksijen emisyonu sergilemesi astrofiziksel olarak hiçbir kriz içermez; $\epsilon_{\mathrm{SF}} \approx 0.08$ olup doğal yıldız oluşum sınırları içindedir.
+
+\section{Yanlışlanabilir Gözlemsel Öngörüler}
+\label{sec:ongoruler}
+
+Teorimiz, gelecekteki uzay misyonları (Nancy Grace Roman Uzay Teleskobu ve JWST Cycle 4-5) için kesin ve yanlışlanabilir üç temel imza sunar:
+
+\begin{enumerate}
+    \item \textbf{Yüksek-$z$ Kırmızıya Kayma Sınırının Olmaması ($z > 20$):} $\Lambda$CDM modelinde $z > 15-20$ aralığında yapı oluşumu tamamen durmalıdır. Modelimizde ise arka plan statik olduğundan, Roman Uzay Teleskobu derin alan taramalarında $z = 18 - 25$ bandında da tamamen şekillenmiş disk galaksileri ve parlak çekirdekler tespit edilecektir.
+    \item \textbf{Emisyon Çizgisi Genişlikleri (Hız Dispersiyonu):} Galaksinin gerçek kütlesi $\sim 10^6 M_\odot$ seviyesinde olduğundan; viriyal hız dispersiyonu ($\sigma_v \propto \sqrt{GM/R}$), standart model öngörüsüne ($\sigma_v \sim 120\text{ km/s}$) kıyasla $\mathbf{\sigma_v \sim 15\text{--}25\text{ km/s}}$ seviyesinde ölçülecektir. Yüksek çözünürlüklü NIRSpec spektroskopisi bu farkı doğrudan test edebilir.
+    \item \textbf{Açısal Boyut Dağılımı:} Çok yüksek $z$'lerde galaksi açısal yarıçapları FLRW'deki gibi yeniden büyümeyecek; Öklid geometrisi uyarınca $\theta \propto 1/d$ olarak monoton küçülmeye devam edecektir.
+\end{enumerate}
+
+\section{Sonuç}
+\label{sec:sonuc}
+
+James Webb Uzay Teleskobu'nun $z > 10$'da keşfettiği "imkansız erken olgun galaksiler", $\Lambda$CDM modelinin tekil patlama ve metrik genişleme dogmalarının çöktüğünü ilan eden deneysel bir dönüm noktasıdır.
+
+Birleşik Büzülme Hipotezi, atomların geçmişte daha büyük olduğu gerçeğini ($r_{\mathrm{atom}}(z) = r_0(1+z)$) hesaba katarak, gözlemlenen parlaklık fazlalığının ve yapay kütle şişkinliğinin üzerindeki perdeyi kaldırmaktadır. JADES-GS-z14-0 sistemi ne bir astrofiziksel anomali ne de fizik yasalarını çiğneyen bir aykırılıktır; büzülen referans çerçevemizden bakıldığında derin zamanın içinde sakince parlayan sıradan ve olgun bir cüce yıldız adasıdır.
+
+\begin{thebibliography}{99}
+    \bibitem{carniani2024}
+    S.~Carniani et al., ``A shining cosmic dawn: Spectroscopic confirmation of two luminous galaxies at $z > 14$,'' \textit{Nature}, vol.~633, pp.~318--322, 2024. \url{https://doi.org/10.1038/s41586-024-07680-x}
+
+    \bibitem{labbe2023}
+    I.~Labb\'e et al., ``A population of red candidate massive galaxies $\sim 600\text{ Myr}$ after the Big Bang,'' \textit{Nature}, vol.~616, pp.~266--269, 2023. \url{https://doi.org/10.1038/s41586-023-05786-2}
+
+    \bibitem{boylan2023}
+    M.~Boylan-Kolchin, ``Stress testing $\Lambda$CDM with high-redshift galaxy candidates from JWST,'' \textit{Nat. Astron.}, vol.~7, pp.~731--735, 2023. \url{https://doi.org/10.1038/s41550-023-01937-7}
+
+    \bibitem{haydari_main}
+    M.~F.~Haydari, ``Büzülen Atom Metriği ve Konformal Eylem İlkesi: Karanlık Enerjisiz Bir Evrende Tip Ia Süpernova (Pantheon+) ve DESI 2024 BAO Testleri'' (Bu seride Makale 1), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{haydari_scale}
+    M.~F.~Haydari, ``Ölçek-Zaman Cebiri ve Konformal Kalkülüs: Büzüşen Sistemler İçin Yeni Bir Matematiksel Formalizm'' (Bu seride Makale 2), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{wetterich2013}
+    C.~Wetterich, ``A universe without expansion,'' \textit{Phys. Dark Univ.}, vol.~2, pp.~184--187, 2013.
+
+    \bibitem{hoyle1964}
+    F.~Hoyle and J.~V.~Narlikar, ``A new theory of gravitation,'' \textit{Proc. R. Soc. Lond. A}, vol.~282, pp.~191--212, 1964.
+
+    \bibitem{tolman1930}
+    R.~C.~Tolman, ``On the estimation of distances in a curved universe with a non-static line element,'' \textit{Proc. Natl. Acad. Sci. U.S.A.}, vol.~16, no.~7, pp.~511--520, 1930.
+
+    \bibitem{etherington1933}
+    I.~M.~H.~Etherington, ``On the definition of distance in general relativity,'' \textit{Philos. Mag.}, vol.~15, no.~100, pp.~761--773, 1933.
+
+    \bibitem{lubin2001}
+    L.~M.~Lubin and A.~Sandage, ``The Tolman surface brightness test for the reality of the expansion. IV. A measurement of the Tolman signal and the luminosity evolution of early-type field galaxies,'' \textit{Astron. J.}, vol.~122, no.~3, pp.~1084--1103, 2001.
+\end{thebibliography}
+
+\end{document}

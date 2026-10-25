@@ -1,0 +1,369 @@
+\section{Ölçek-Zaman Kalkülüsü ve Yeni Hız Teoremi}
+
+\label{sec:olcek_kalkulusu_ana}
+
+Geleneksel fizikte (Newtonian mekanik ve Genel Görelilik), uzay koordinatları $\mathbf{x}$ ve zaman $t$ önsel (a priori), tanımlanmamış mutlak koordinat ızgaraları olarak kabul edilir. Ancak bağlı sistemlerin kendi içine sürekli büzüştüğü statik bir evrende, hem hız teoremlerini hem de uzay ve zamanın kendisini tanımlamak için yeni bir kalkülüs gereklidir. Bu amaçla \textbf{Ölçek-Zaman Cebiri (Scale-Time Algebra)} ve yeni bir cebirsel birim olan $\kappa$ (Kappa Birimi - Büzülme Jeneratörü) tanımlıyoruz.
+
+\subsection{Cebirsel Yapı: \texorpdfstring{$\kappa$}{kappa} Birimi ve Skalor Uzayı}
+$\kappa$, reel sayılar cismi dışındaki yeni bir cebirsel birimdir ve nilpotent ilişkiyi sağlar:
+\begin{equation}
+    \kappa \neq 0, \quad \kappa^2 = 0 \quad (\text{nilpotent}).
+    \label{eq:kappa_main}
+\end{equation}
+Karmaşık analizdeki $i$ birimi ($i^2 = -1$) reel büyüklüklere faz ve rotasyon boyutu kazandırırken, $\kappa$ birimi nesnenin statik arka plan konumunu koruyarak içsel konformal ölçek daralmasını kodlayan \textbf{büzülme operatörüdür}.
+
+Statik arka plandaki konumu $\mathbf{X}_0$ ile içsel atomik ölçek faktörü $\lambda(t)$'yi tek bir hiper-varlıkta birleştiren nesneye \textbf{Skalor (Scalor)} adı verilir:
+\begin{equation}
+    \mathbb{S}(t) \equiv \mathbf{X}_0 + \kappa \cdot \lambda(t).
+    \label{eq:skalor_main}
+\end{equation}
+
+\subsection{Nilpotent Cebir (\texorpdfstring{$\kappa^2 = 0$}{kappa\texttwosuperior{} = 0}) ve Madde-Antimadde Yok Oluşu (Annihilation)}
+\label{sec:nilpotent_main}
+Klasik matematikte fonksiyonlar her girdiyi tek bir çıktıya eşler; fakat $f(x) = x^2$ için $(\pm 2)^2 = 4$ örneğinde olduğu gibi birden fazla girdinin karesi aynı sonuca ulaşabilir. Standart reel sayılarda karesi sıfır olan tek eleman sıfırın kendisiyken ($x^2 = 0 \iff x = 0$), Clifford dual sayıları ve Grassmann cebiri ailesine ait olan $\kappa$ nilpotent biriminde sıfırdan farklı sonsuz sayıda elemanın karesi özdeş olarak sıfırdır:
+\begin{equation}
+    z = b\kappa \implies z^2 = b^2 \kappa^2 \equiv 0 \quad (\forall b \in \mathbb{R}, \; b \neq 0).
+    \label{eq:nilpotent_kare}
+\end{equation}
+
+Bu cebirsel özellik, doğadaki en radikal süreç olan \textbf{Madde-Antimadde Yok Oluşunun (Annihilation)} matematiksel ifadesidir. Madde ve antimadde durağan vakumda zıt kiralitede (sağ ve sol yönlü) dönen iki girdaptır ($\pm \boldsymbol{\omega}_0 \kappa$). Bir araya geldiklerinde süperpozisyonlarının çarpımı nilpotent bir çöküş üretir:
+\begin{equation}
+    \mathbb{S}_{\mathrm{etkilesim}} \propto (\kappa) \cdot (\kappa) = \kappa^2 \equiv 0.
+\end{equation}
+Girdaplar birbirini söndürür, kütle ortadan kalkar ve rotasyon enerjisi statik vakuma serbest elektromanyetik dalgalar ($\gamma$ fotonları) olarak boşalır. Büyük Patlama yaşanmadığı ve evrensel büzülme ($\dot{\lambda} < 0$) zaman okunu ($dt = -d\ln\lambda/H_0$) tek yönlü belirlediği için kiral simetri dinamik olarak kırılmış; sağ kiral girdaplar büzülerek kararlı atomları oluştururken, sol kiral antimadde girdapları kararsız kalarak elenmiştir~\cite{haydari_calculus}.
+
+\subsubsection{Geometrik Donma (Geometric Freeze-Out): Maddenin Küçülerek Yok Oluştan Kaçışı}
+\label{sec:geometrik_donma_main}
+Madde ve antimaddenin birbirini neden \%100 yok edip geriye sadece saf ışık bırakmadığı, büzülmenin hedef tesir kesitini üstel olarak daraltmasıyla açıklanır:
+İki girdabın statik vakumda çarpışarak yok olma hızı $\Gamma_{\mathrm{ann}}(t) = n(t) \sigma_{\mathrm{ann}}(t) v_c$'dir. Etkileşim kesiti girdap yarıçapının karesiyle orantılıdır:
+\begin{equation}
+    \sigma_{\mathrm{ann}}(t) = \pi r_{\mathrm{vorteks}}^2(t) = \sigma_0 \lambda^2(t) = \sigma_0 e^{-2 H_0 t}.
+    \label{eq:tesir_kesiti_main}
+\end{equation}
+Erken evrede atomik ölçek büyükken ($\lambda \gg 1$) tesir kesiti devasaydı; madde ve antimadde yoğun biçimde çarpışarak bugün 2.73 K olarak kaydettiğimiz arka plan ışımasını (CMB) üretti.
+
+Ancak atomlar kendi içlerine üstel olarak büzüldükçe ($\dot{\lambda} < 0$), parçacıkların birbirini hedef alma alanı ($\sigma \propto \lambda^2$) büzülme hızından katbekat hızlı çöker. Çarpışma frekansı büzülme hızının altına indiği kritik eşikte:
+\begin{equation}
+    \Gamma_{\mathrm{ann}}(t) < H_0,
+    \label{eq:donma_kriteri_main}
+\end{equation}
+\textbf{Geometrik Donma (Geometric Freeze-Out)} gerçekleşir! Statik koordinatlarda duran madde parçacıkları o kadar minyatürleşmiştir ki, uçsuz bucaksız statik boşlukta kalan bir antimadde girdabıyla kesişme olasılıkları sıfıra iner. Madde, küçülerek antimaddenin hedef tahtasından kaçmış; kiral simetri kırınımıyla kararlı madde evreni kilitlenmiştir!
+
+\subsection{Zaman, Konum ve Boş Uzayın Ontolojik Türetilişi}
+\label{sec:zaman_konum_turetilis_main}
+
+Klasik fizikte (Newton) ve Genel Görelilikte (Einstein), uzay $\mathbf{x}$ ve zaman $t$ önsel (a priori) kabul edilen verili koordinat ızgaralarıdır. Oysa Wheeler--DeWitt denklemindeki ``Zaman Problemi'' ve tekillik krizleri, uzay ve zamanın temel değil; türetilmiş ikincil büyüklükler olduğunu kanıtlar.
+
+Ölçek-Zaman Cebirinde evrenin tek bir temel değişmezi vardır: \textbf{Ölçeksiz, eylemsiz, statik Öklid sürekliliği $\mathcal{E}_\infty$}. Fiziksel bir gözlemci veya bağlı madde ise bu süreklilik üzerinde $\mathbb{S} = \mathbf{X}_0 + \kappa \lambda(t)$ biçiminde tanımlı dinamik bir Skalordur. Buradan zaman, konum ve boş uzay algısı şu aksiyom ve teoremlerle tam analitik kesinlikte türetilir:
+
+\begin{axiom}[Statik Öklid Sürekliliği ve Boş Uzayın Doğası]
+    \label{ax:statik_sureklilik_main}
+    Evrensel arka plan mutlak olarak statik, metriksiz ve pürüzsüz bir sürekliliktir ($\mathbf{X}_0 \in \mathcal{E}_\infty$, $\dot{\mathbf{X}}_0 = 0$). Boş uzayın kendi başına ne bir ``metresi'' (cetveli) ne de bir ``saati'' vardır; uzay maddesel bir sıvı (eter) veya dinamik olarak bükülen bir kumaş değildir. Boşluğun fiziksel dünyaya temas eden yegane özellikleri vakumun dielektrik geçirgenliği ($\varepsilon_0$), manyetik geçirgenliği ($\mu_0$) ve Planck gerilim tavanıdır ($F_{\mathrm{Planck}} = c^4/G$).
+\end{axiom}
+
+\begin{theorem}[Zamanın Türetilişi: Zaman = Büzülmenin İçsel Günlüğü]
+    \label{thm:zaman_turetilis}
+    Fiziksel zaman $t$, maddenin içsel ölçeği $\lambda$'nın logaritmik daralma oranının integrali olarak türetilir:
+    \begin{equation}
+        dt \equiv -\frac{1}{H_0} \frac{d\lambda}{\lambda} = -\frac{1}{H_0} d(\ln \lambda) \implies \lambda(t) = \lambda_0 e^{-H_0 t}.
+        \label{eq:zaman_turetilis_main}
+    \end{equation}
+    Zamanın Oku (Arrow of Time), maddenin vakum gradyanı boyunca büzülmesinin kesin tek yönlülüğünden ($\dot{\lambda} < 0$) kaynaklanır; madde kendiliğinden anti-büzüşemez ($dt > 0$). Büzülmeyen sistemlerde $d\lambda = 0$ olup \textbf{zaman durur / yoktur}.
+\end{theorem}
+
+\begin{proof}
+    Fiziksel bir gözlemci ``zamanın mutlak akışını'' doğrudan ölçemez; yalnızca bağlı durumların (atomlar, saatler, periyodik yörüngeler) içsel kuantum frekansını sayar: $\omega(\lambda) = \frac{\hbar}{m(\lambda) \lambda^2}$. Büzülen her sistemde atomik frekans $\omega(t) = \omega_0 e^{H_0 t}$ şeklinde hızlanır. Gözlemcinin kaydettiği toplam periyot sayısı $\Phi = \int \omega(t) dt$ ile ölçek daralması $d\lambda/\lambda$ arasında birebir eşleme kurulduğunda, $dt \propto -d\ln\lambda$ bağıntısı elde edilir. Evrensel vakum akış sabiti $H_0^{-1}$ normalize edildiğinde zaman büzülmenin integrali olarak kesinleşir.
+\end{proof}
+
+\begin{corollary}[Evrenin $t = 0$ Anı: Büzülmenin Başlangıcı ve Zamansız Faz Eşiği]
+    \label{cor:t_sifir_faz_esigi_main}
+    Standart kozmolojide $t = 0$, evrenin sıfır hacimden ve sonsuz tekillikten patladığı kabul edilen metafizik bir sınırdır. Ölçek-Zaman Kalkülüsünde ise $t = 0$: \textbf{maddenin kendi içine büzülmeye başladığı kritik faz geçişi eşiğidir!}
+
+    Denklem (\ref{eq:zaman_turetilis_main}) gereği, büzülmenin olmadığı bir rejimde ölçek sabittir ($d\lambda = 0$); dolayısıyla fiziksel zaman akışı özdeş olarak sıfırdır ($dt = 0$). Büzülme başlamadan önceki dönemde ($t \le 0$), madde ve antimadde durağan vakum dokusunda zamansız bir kuantum denge ve salınım fazındadır; makroskopik zaman oku henüz oluşmamıştır.
+
+    $t = 0$'da büzülme dinamik bir faz geçişiyle tetiklendiğinde ($\dot{\lambda} < 0$):
+    \begin{enumerate}
+        \item Fiziksel zamanın oku işlemeye başlar ($dt > 0$).
+        \item Geometrik Donma (\S\ref{sec:geometrik_donma_main}) derhal devreye girerek tesir kesitlerini küçültür ($\sigma_{\mathrm{ann}} \propto \lambda^2$) ve maddeyi toptan yok oluştan kurtarır.
+        \item Maddenin vakum debisi kütleçekimi başlatır ve Jeans kolektif eşiğini aşan adacıklar yıldız ve galaksi havzalarını çöktürür.
+    \end{enumerate}
+    Böylece $t = 0$, zamanın bir büzülme motoru gibi çalışmaya başladığı \textbf{Kozmolojik Faz Başlangıcıdır}.
+\end{corollary}
+
+\begin{theorem}[Konum, Uzaklık ve Boşluğun Türetilişi: Uzaklık = Büzülen Cetvel Sayımı]
+    \label{thm:konum_uzaklik_turetilis_main}
+    Fiziksel mesafe $\mathbf{R}_{\mathrm{obs}}$, statik arka plan noktası $\mathbf{X}_0$'ın küçülen atomik cetvele $\lambda(t)$ bölünmesiyle türeyen boyutsuz bir orandır:
+    \begin{equation}
+        \mathbf{R}_{\mathrm{obs}}(t) \equiv \frac{\mathbf{X}_0}{\lambda(t)} = \frac{\mathbf{X}_0}{\lambda_0} e^{H_0 t}.
+        \label{eq:konum_turetilis_main}
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    Gözlemci uzayı soyut metrelerle değil, kendi atomik yarıçapı $r_{\mathrm{atom}}(t) = r_0 \lambda(t)$ cinsinden sayısallaştırır. Statik Öklid uzayında sabit duran iki nokta ($\mathbf{X}_1, \mathbf{X}_2$) arasına sığan ``atomik cetvel sayısı'':
+    \begin{equation}
+        N(t) \equiv \frac{|\mathbf{X}_2 - \mathbf{X}_1|}{r_{\mathrm{atom}}(t)} = \frac{|\mathbf{X}_0|}{r_0 \lambda(t)} = \frac{|\mathbf{X}_0|}{r_0 \lambda_0} e^{H_0 t} = N_0 e^{H_0 t}.
+        \label{eq:cetvel_sayimi_ispat}
+    \end{equation}
+    Arka plandaki mutlak koordinat uzaklığı $|\mathbf{X}_0|$ değişmediği halde ($\dot{\mathbf{X}}_0 = 0$), atomlar kendi içlerine büzüldükçe ($r_{\mathrm{atom}} \to 0$) aynı mesafeye sığan atom sayısı üstel olarak artar. Kendi küçüldüğünün farkında olmayan yerel gözlemci, bu sayım artışını nesnenin kendisinden uzaklaşması ($\mathbf{R}_{\mathrm{obs}}$ büyümesi) ve aradaki boşluğun açılması ($v = H_0 d$) olarak kaydeder.
+\end{proof}
+
+\begin{quote}
+    \small
+    \textbf{Epistemolojik Sentez: Newton ve Leibniz--Mach Tartışmasının Çözümü:} \\
+    Klasik fizikte Newton uzayı mutlak bir kap sayarken, Leibniz ve Mach uzayın yalnızca cisimler arasındaki ilişkiden ibaret olduğunu savunmuştur. Ölçek-Zaman Kalkülüsü bu asırlık çatışmayı tek bir denklemde uzlaştırır:
+    \begin{itemize}
+        \item \textbf{Arka Plan (Newtonian Hakikat):} Uzayın kendisi ($\mathcal{E}_\infty$) mutlak, durağan, eğrilmeyen ve genişlemeyen bir Öklid zeminidir.
+        \item \textbf{Mesafe ve Boşluk (Machian Hakikat):} Algılanan ve ölçülen tüm mesafeler, büzüşen atomik ilişkilerin boyutsuz sayım oranıdır ($N = |\mathbf{X}_0|/\lambda$).
+        \item \textbf{Madde-Boşluk Bütünlüğü:} Madde boş uzaya dışarıdan fırlatılmış yabancı bir nesne değildir. Skalor tanımında ($\mathbb{S} = \mathbf{X}_0 + \kappa \lambda$) görüldüğü üzere reel kısım ($\mathbf{X}_0$) durağan boşluğu, nilpotent kısım ($\kappa \lambda$) ise o noktada büzüşen vakum girdabını temsil eder. Madde, boş uzayın kendi dokusunun yerel bir büzülme düğümüdür!
+    \end{itemize}
+\end{quote}
+
+\begin{quote}
+    \small
+    \textbf{Kavramsal Zaman Tüneli: Zamanı Geriye Sardığımızda Boşluğun Doğuşu} \\
+    Teorinin sunduğu kozmolojik tabloyu berraklaştırmak için evren filmini bugünden geriye doğru saralım:
+    \begin{enumerate}
+        \item \textbf{Bugün ($t = \text{bugün}$):} Atomlar $r_{\mathrm{atom}} \sim 10^{-10}\text{ m}$'ye kadar büzüşmüş minik noktalardır. Madde galaksiler, yıldızlar ve gezegenler olarak minyatürleşip yerel çekim adacıklarına çökmüştür. Evrenin hacimce $\%99.999999...$'u ``boş uzay'' olarak görünür.
+        \item \textbf{Geriye Sarıyoruz ($z \sim 1100$, CMB Dönemi):} Atomlar bugünkünden $1100$ kat daha büyüktü. Maddenin atomik boyutu o kadar büyüktü ki, evrende henüz bağımsız galaksiler veya yıldızlar ayrışmamıştı; tüm uzay dokusu birbiriyle temas eden, birbirinin içine geçmiş homojen, kesintisiz ve sıcak bir plazma çorbasıydı! (Kozmik Mikrodalga Arka Plan Işıması'ndaki akustik duran dalgaların evrenin her noktasında aynı çıkmasının fiziksel nedeni budur; o dönemde boşluk diye bir şey yoktu, her yer kesintisiz bir plazmaydı).
+        \item \textbf{Daha da Geriye Sarıyoruz ($t \to 0$ Eşiği):} Girdaplar devasaydı; tesir kesitleri ($\sigma_{\mathrm{ann}} \propto \lambda^2$) o kadar büyüktü ki, bugün ``boş uzay'' dediğimiz uçsuz bucaksız koordinatların her bir noktası bu ilksel kuantum akışkan ve radyasyon deniziyle doluydu!
+    \end{enumerate}
+    Bu durum en temel kozmolojik gerçeği açığa çıkarır: Evren boşluk içinde genişleyen bir madde değildir; \textbf{$t=0$'da uzayın her noktasını dolduran o ilksel maddenin kendi içine büzüşüp küçülerek geride bıraktığı pürüzsüz Öklid zeminidir!}
+\end{quote}
+
+\subsection{Planck Ölçeğinin Ontolojisi: Planck Uzunluğu (\texorpdfstring{$\ell_P$}{l_P}), Planck Zamanı (\texorpdfstring{$t_P$}{t_P}) ve Uzayın Kesiksizliği}
+\label{sec:planck_ontolojisi_main}
+
+Standart fizikte Planck uzunluğu ($\ell_P \equiv \sqrt{\hbar G/c^3} \approx 1.6 \times 10^{-35}\text{ m}$) ve Planck zamanı ($t_P \equiv \ell_P/c \approx 5.4 \times 10^{-44}\text{ s}$), genellikle uzay ve zamanın kesikliğe uğradığı ``pikseller'' veya ``uzay-zaman köpüğü'' olarak speküle edilir. Ölçek-Zaman Kalkülüsünde bu kavramlar radikal ve berrak bir ontolojik temele kavuşur:
+
+\begin{theorem}[Planck Uzunluğu: Maddenin Doyum Eşiği]
+    \label{thm:planck_uzunlugu_doyum_main}
+    Arka plan vakumu $\mathcal{E}_\infty$ mutlak, pürüzsüz ve süreklidir; uzayın kendisi parçalanamaz veya piksellenemez. Planck uzunluğu $\ell_P$, bir maddenin (vakum girdabının) Compton dalga boyu ($\lambda_C = \hbar/mc$) ile Schwarzschild vakum olay ufkunun ($r_s = 2Gm/c^2$) kesiştiği \textbf{Topolojik Doyum Sınırıdır (Topological Saturation Threshold)}:
+    \begin{equation}
+        \lambda_C \sim r_s \implies \frac{\hbar}{mc} \sim \frac{Gm}{c^2} \implies r_{\mathrm{min}} \sim \sqrt{\frac{\hbar G}{c^3}} \equiv \ell_P.
+        \label{eq:planck_uzunluk_turetilis_main}
+    \end{equation}
+    Vakumun taşıyabileceği maksimum gerilim kuvveti tavanı $F_{\mathrm{Planck}} = c^4/G \approx 1.21 \times 10^{44}\text{ N}$ olduğundan, hiçbir maddesel bağlı sistem $\ell_P$ yarıçapından daha küçük bir boyuta sıkıştırılamaz. Bu eşikte 3D küresel vakum akışı doyar ($\gamma=1$) ve sistem 1D akı tüpüne çöker ($\gamma=-1$, bkz. Bölüm~\ref{sec:nukleer_kuvvetler}).
+\end{theorem}
+
+\begin{theorem}[Planck Zamanı: Maksimum Saat Frekansı Kesimi]
+    \label{thm:planck_zamani_frekans_main}
+    Zaman, atomun büzülme günlüğü ($dt \equiv -\frac{1}{H_0} d\ln\lambda$) olduğundan; $t_P = \ell_P/c$, doğada fiziksel olarak inşa edilebilecek \textbf{en küçük ve en hızlı kuantum osilatörünün (en doymuş girdabın) tek bir tam faz devrinin süresidir}:
+    \begin{equation}
+        t_P = \frac{\ell_P}{c} = \sqrt{\frac{\hbar G}{c^5}} \implies \omega_{\mathrm{max}} = \frac{1}{t_P} \approx 1.85 \times 10^{43}\text{ s}^{-1}.
+        \label{eq:planck_zamani_turetilis_main}
+    \end{equation}
+    $t_P$'den daha kısa bir zaman aralığı fiziksel olarak anlamsızdır; çünkü evrende bu frekansın üzerinde faz salınımı yapabilecek daha küçük bir maddesel saat mekanizması bulunamaz.
+\end{theorem}
+
+\begin{corollary}[Dirac'ın Büyük Sayılar Problemi ve Büzülme Derecesi]
+    \label{cor:dirac_buyuk_sayilar_main}
+    Bugün hidrojen atomunun Bohr yarıçapının Planck uzunluğuna oranı olan $a_0 / \ell_P \sim 10^{25}$ devasa sayısı, $\ell_P$ statik vakum doyum sınırı iken atomların büzülmesinden kaynaklanır ($r_{\mathrm{atom}}(t) = r_0 e^{-H_0 t}$). Dolayısıyla $10^{25}$ oranı, \textbf{evrensel büzülme motorunun ($e^{-H_0 t}$) bugüne dek katettiği logaritmik faz mesafesidir}.
+\end{corollary}
+
+\begin{corollary}[Maddenin Planck Doyumuna Ulaşma Zamanı: $\sim 785$ Milyar Yıl]
+    \label{cor:planck_boyuna_inme_zamani_monograph}
+    Atomların yarıçapı $r_{\mathrm{atom}}(t) = a_0 e^{-H_0 \Delta t}$ bağıntısıyla büzülürken, vakumun mutlak mekanik doyum tavanı olan Planck uzunluğuna ($r_{\mathrm{atom}}(\Delta t) = \ell_P$) ulaşması için gereken süre analitik olarak:
+    \begin{equation}
+        \Delta t_{\mathrm{Planck}} = \frac{1}{H_0} \ln\left( \frac{a_0}{\ell_P} \right) = t_H \ln\left( \frac{a_0}{\ell_P} \right),
+        \label{eq:planck_zamani_hesap_monograph}
+    \end{equation}
+    denklemiyle tam olarak hesaplanır. Hubble süresi $t_H \equiv 1/H_0 \approx 13.90\text{ milyar yıl}$, hidrojen Bohr yarıçapı $a_0 \approx 5.29 \times 10^{-11}\text{ m}$ ve Planck uzunluğu $\ell_P \approx 1.62 \times 10^{-35}\text{ m}$ değerleri yerine konulduğunda:
+    \begin{equation}
+        \frac{a_0}{\ell_P} \approx 3.27 \times 10^{24} \implies \ln\left( \frac{a_0}{\ell_P} \right) \approx 56.45,
+    \end{equation}
+    elde edilir. Buradan atomik kürenin Planck sınırına toslayacağı gelecek süre:
+    \begin{equation}
+        \Delta t_{\mathrm{Planck}} \approx 56.45 \times 13.90\text{ milyar yıl} \approx \mathbf{785\text{ Milyar Yıl}},
+        \label{eq:785_milyar_yil_monograph}
+    \end{equation}
+    olarak kesinleşir (çekirdek/proton yarıçapı $r_p \approx 0.84\text{ fm}$ için bu süre $\Delta t \approx 45.4 \, t_H \approx \mathbf{631\text{ Milyar Yıl}}$'dır). Bu analitik sonuç; evrenin bugünkü kozmolojik yaşının ($\sim 13.8$ milyar yıl) yaklaşık $57$ katı kadar devasa bir süre boyunca 3D atomik fiziğin kesintisiz süreceğini; bu sürenin sonunda ise maddenin yok olmayıp vakum gerilim tavanında ($c^4/G$) boyutsal bir faz geçişine (1D doyum tüpü veya içsel faz havzası) kilitleneceğini gösterir.
+\end{corollary}
+
+\begin{theorem}[Boyutsuz Oranların Değişmezliği İlkesi ve Eötvös / MICROSCOPE Testleri]
+    \label{thm:boyutsuz_oranlar}
+    Fizikte doğrudan ``çıplak ve mutlak kütle'' ölçülemez; her laboratuvar ölçümü bir test kütlesinin referans bir kütleye (örneğin Sezyum atomuna veya platin prototipe) oranıdır: $\mathcal{R}_m \equiv m_{\mathrm{test}} / m_{\mathrm{ref}}$.
+
+    Bağlı tüm maddesel yapılar evrensel büzülme gereği aynı konformal katsayıyla kütle kazandığından ($m(t) = m_0 e^{H_0 t}$), herhangi iki kütlenin boyutsuz oranı:
+    \begin{equation}
+        \frac{m_{\mathrm{test}}(t)}{m_{\mathrm{ref}}(t)} = \frac{m_{1,0} e^{H_0 t}}{m_{2,0} e^{H_0 t}} = \frac{m_{1,0}}{m_{2,0}} = \text{Sabit} \implies \frac{d}{dt}\left( \frac{m_{\mathrm{test}}}{m_{\mathrm{ref}}} \right) \equiv 0.
+        \label{eq:boyutsuz_kutle_korunumu}
+    \end{equation}
+    Benzer biçimde İnce Yapı Sabiti $\alpha = e^2 / (4\pi\varepsilon_0 \hbar c)$ ve proton-elektron kütle oranı $\mu = m_p / m_e$ zamandan kesin olarak bağımsızdır ($\dot{\alpha}/\alpha = 0, \dot{\mu}/\mu = 0$).
+
+    Bu nedenle, $10^{-15}$ hassasiyetle çalışan Eötvös burulma terazileri ve MICROSCOPE uydu deneyleri diferansiyel ivmeyi $\eta = 2|a_1 - a_2|/(a_1 + a_2) < 10^{-15}$ seviyesinde sıfır ölçer; kütledeki asırlık $+H_0$ artışı yerel Zayıf Eşdeğerlik İlkesini (WEP) zerre kadar ihlal etmez ve yerel laboratuvarda tekil bir kayma olarak algılanamaz!
+\end{theorem}
+
+\begin{remark}[L'H\^opital Kuralı Sezgisi, Sonsuz Arka Plan ve Planck Doyum Eşiği]
+    \label{rem:lhopital_ve_planck_monograph}
+    Bu teorem, doğa felsefesinde sezgisel olarak şu soruya yanıt verir: \textit{``Madde sürekli kendi içine büzüşüyorsa, biz bu küçülmeyi neden doğrudan algılamıyoruz ve evren neden bize sonsuz ve genişliyor gibi görünüyor?''}
+
+    Analiz kalkülüsünde $0/0$ belirsizliklerinin L'H\^opital kuralı uyarınca sonlu bir orana kilitlenmesi gibi ($\lim_{x \to 0} \frac{a \cdot x}{b \cdot x} = \frac{a}{b}$); gözlemcinin kendi boyutu $L(t) = L_0 \lambda(t)$ ile kullandığı ölçüm cetveli $r_{\mathrm{cetvel}}(t) = 1\text{ m} \cdot \lambda(t)$ aynı büzülme fonksiyonunu paylaştığından, yerel ölçüm oranı:
+    \begin{equation}
+        \lim_{\lambda(t) \to 0} \frac{L(t)}{r_{\mathrm{cetvel}}(t)} = \lim_{\lambda \to 0} \frac{L_0 \lambda(t)}{1\text{ m} \cdot \lambda(t)} = L_0 = \text{Sabit},
+        \label{eq:lhopital_oran_monograph}
+    \end{equation}
+    özdeşliğiyle mutlak bir ölçek dengesi sergiler. Gözlemci de cetvel de mutlak Öklid zemininde küçülürken, birbirlerine göreceli oranları değişmez.
+
+    Öte yandan astrofizikte sıklıkla telaffuz edilen ``$\sim 93$ milyar ışık yılı'' büyüklüğündeki gözlemlenebilir evren kabuğu, uzayın fiziksel bir sınırı veya evrenin gerçek hacmi değildir. ``Işık yılı'' yerel atomik saatlerimizin ($d\tau$) büzülme temposuna kilitli bağıl bir cetveldir ($1\text{ Işık Yılı} \equiv c \times 1\text{ yerel atomik yıl}$). Ancak arka plan uzayı ($\mathcal{E}_\infty$) ezelden beri mutlak statik ve sonsuz olduğundan ($X = \text{sabit}$), iki uzak gök cismi arasındaki fiziksel Öklid mesafesi büzülen yerel cetvelle tarandığında:
+    \begin{equation}
+        d_{\mathrm{obs}}(t) = \frac{X}{\lambda(t)} \xrightarrow{\lambda(t) \to 0} \infty,
+        \label{eq:sonsuz_arka_plan_iraksama_monograph}
+    \end{equation}
+    sonucunu verir; yani evren genişlemez, küçülen cetvel durağan sonsuzluğu genişleme yanılsaması olarak kaydeder. 93 milyar ışık yılı, büzülen koordinat penceremizden geriye doğru entegre ettiğimiz bağıl optik ufuk menzilimizdir; bu ufkun ötesinde uzay kesintiye uğramaz, arka plan Öklid sürekliliği her yönde mutlak olarak sonsuzdur.
+
+    Peki büzülme sonsuza kadar kontrolsüzce sürebilir mi? Hayır; tam bu noktada \textbf{Planck Uzunluğu ($\ell_P$)} devreye girer. Standart fizikte uzayın piksellenmesi sanılan Planck uzunluğu, uzayın değil; vakumun taşıyabileceği maksimum gerilim kuvveti tavanının ($F_{\mathrm{Planck}} = c^4/G \approx 1.21 \times 10^{44}\text{ N}$) belirlediği \textbf{maddesel doyum eşiğidir}. 3-boyutlu küresel vakum akışı ($\gamma = 1$) $\ell_P$ yarıçapına ulaştığında akı doyar ve geometri zorunlu olarak 1-boyutlu girdap tüpüne ($\gamma = -1$, kuark hapsi) çöker. Dolayısıyla Planck ölçeği, büzülen maddenin 3D uzaysal küreselliğini kaybedip içsel bir faz havzasına kilitlendiği nihai topolojik sınırdır.
+\end{remark}
+
+\subsection{Ölçek-Kovaryant Türev ve Hubble Yasasının İspatı}
+Büzülen koordinat sistemlerinde standart Newton türevi yerine \textbf{Ölçek-Kovaryant Türev} tanımlanır:
+\begin{equation}
+    \mathbb{D}_t \equiv \frac{d}{dt} + \kappa H_0.
+    \label{eq:olcek_turev_main}
+\end{equation}
+Bu türev, fiziksel uzaklığa uygulandığında kalkülüsün klasik çarpım kuralı $[(u \cdot v)' = u'v + uv']$ işletilir:
+\begin{equation}
+    \mathbf{v}_{\mathrm{goz}} = \frac{d}{dt}\left( \frac{\mathbf{x}(t)}{\lambda(t)} \right) = \frac{1}{\lambda(t)} \frac{d\mathbf{x}}{dt} - \frac{\mathbf{x}(t)}{\lambda^2(t)} \dot{\lambda}(t) = \frac{\mathbf{v}_{\mathrm{trans}}}{\lambda(t)} + H_0 \mathbf{R}(t).
+    \label{eq:hubble_turev_ispat}
+\end{equation}
+Statik arka planda duran iki galaksi için ($\mathbf{v}_{\mathrm{trans}} = 0$) doğrudan:
+\begin{equation}
+    \mathbf{v}_{\mathrm{goz}} = H_0 \mathbf{R},
+    \label{eq:hubble_dogrudan}
+\end{equation}
+elde edilir. Bu ispat, Hubble yasasının küçülen cetvellerin türev kuralından doğan bir \textbf{matematiksel özdeşlik} olduğunu kesinleştirir.
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        \textbf{Hız Tanımı}             & \textbf{Sembol}               & \textbf{Formülasyon}                                                            & \textbf{Fiziksel Karşılığı}                  \\ \midrule
+        \textbf{Statik Koordinat Hızı}  & $\mathbf{v}_{\mathrm{trans}}$ & $d\mathbf{X}_0/dt$                                                              & Değişmez vakumdaki ötelenme                  \\
+        \textbf{İçsel Kuantum Faz Hızı} & $v_c$                         & $1/\sqrt{\varepsilon_0\mu_0} = c$                                               & Vakumun elastik iletim ve kuantum tavan hızı \\
+        \textbf{Görünür (Ölçeksel) Hız} & $\mathbf{v}_{\mathrm{goz}}$   & $\mathbb{D}_t \mathbf{R} = \frac{v_{\mathrm{trans}}}{\lambda} + H_0 \mathbf{R}$ & Büzülen cetvelle kaydedilen bağıl hız        \\ \bottomrule
+    \end{tabular}
+    \caption{Ölçek-Zaman Kalkülüsünde üç temel hız hiyerarşisi.}
+    \label{tab:hiz_hiyerarsisi_main}
+\end{table}
+
+\subsection{Ölçek-Kovaryant Eylem İlkesi ve Skalor Euler--Lagrange Mekaniği}
+\label{sec:olcek_lagrange_ana}
+
+Ölçek-Zaman Kalkülüsünün diferansiyel geometri ve teorik fizikteki en kritik rüşt ispatı; büzülme dinamiğinin, dalga denklemlerinin ve korunum yasalarının ad-hoc kabullerden değil, **genelleştirilmiş bir En Küçük Eylem İlkesinden (Hamilton Prensibi: $\delta \mathcal{S} = 0$) varyasyonel olarak türetilmesidir.**
+
+\subsubsection{1. Nilpotent Süper-Manifold Koordinatları ve Berezin İntegrali}
+$\kappa$ nilpotent büzülme jeneratörünü ($\kappa^2 = 0$) formal diferansiyel geometriye bağlamak için, 4-boyutlu statik Öklid uzay-zamanını $\kappa$ dual/Grassmann ekseniyle genişleten 5-boyutlu bir **Dual Süper-Manifold** $\mathcal{M}^{(4|1)}$ tanımlıyoruz:
+\begin{equation}
+    Z^A \equiv \left( x^\mu, \theta \right), \quad \theta \equiv \kappa, \quad \kappa^2 = 0, \quad \mu \in \{0, 1, 2, 3\}.
+    \label{eq:super_koordinat}
+\end{equation}
+Bu manifold üzerinde yaşayan dinamik Skalor süper-alanı:
+\begin{equation}
+    \mathbb{S}\left(x^\mu, \kappa\right) = \mathbf{X}_0^\mu(x) + \kappa \cdot \lambda(x),
+    \label{eq:skalor_super_alan}
+\end{equation}
+formundadır. Berezin integral aksiyomları uyarınca nilpotent eksendeki integrasyon projektif izdüşümü sağlar:
+\begin{equation}
+    \int d\kappa \, 1 = 0, \qquad \int d\kappa \, \kappa = 1.
+    \label{eq:berezin_kurallari}
+\end{equation}
+Böylece Dual Süper-Manifold üzerindeki toplam Eylem Fonksiyoneli ($\mathcal{S}$):
+\begin{equation}
+    \mathcal{S}[\mathbb{S}] = \int d^4x \int d\kappa \, \mathcal{L}\left(\mathbb{S}, \mathbb{D}_\mu \mathbb{S}\right),
+    \label{eq:skalor_eylem_fonksiyoneli}
+\end{equation}
+olarak kesin matematiksel formüle kavuşur.
+
+\subsubsection{2. Ölçek-Kovaryant Euler--Lagrange Denkleminin Varyasyonel İspatı}
+\begin{theorem}[Ölçek-Kovaryant Euler--Lagrange Denklemi]
+    \label{thm:euler_lagrange_ispat}
+    Eylemin dinamik Skalor pertürbasyonlarına ($\mathbb{S} \to \mathbb{S} + \delta \mathbb{S}$) göre durağan olması şartı ($\delta \mathcal{S} = 0$), aşağıdaki hareket denklemini dikte eder:
+    \begin{equation}
+        \mathbb{D}_\mu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \right) - \frac{\partial \mathcal{L}}{\partial \mathbb{S}} = 0.
+        \label{eq:euler_lagrange_tam_denklem}
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    Eylem fonksiyonelinin (\ref{eq:skalor_eylem_fonksiyoneli}) birinci varyasyonunu alalım:
+    \begin{equation}
+        \delta \mathcal{S} = \int d^4x d\kappa \left[ \frac{\partial \mathcal{L}}{\partial \mathbb{S}} \delta \mathbb{S} + \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \delta (\mathbb{D}_\mu \mathbb{S}) \right].
+    \end{equation}
+    Ölçek-Kovaryant Türevin varyasyonel operatörle komütasyon özelliği $[\delta, \mathbb{D}_\mu] = 0$ gereği:
+    \begin{equation}
+        \delta(\mathbb{D}_\mu \mathbb{S}) = \mathbb{D}_\mu (\delta \mathbb{S}).
+    \end{equation}
+    İkinci terime Ölçek-Kovaryant kısmi integrasyon uygulandığında:
+    \begin{equation}
+        \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \mathbb{D}_\mu (\delta \mathbb{S}) = \mathbb{D}_\mu \left[ \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \delta \mathbb{S} \right] - \left[ \mathbb{D}_\mu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \right) \right] \delta \mathbb{S}.
+    \end{equation}
+    İlk terim Gauss diverjans teoremi uyarınca sonsuzdaki uzay-zaman sınırında sıfırlanan bir yüzey integrali üretir ($\delta \mathbb{S}\big|_{\partial \mathcal{M}} = 0$). Geriye kalan integrant:
+    \begin{equation}
+        \delta \mathcal{S} = \int d^4x d\kappa \left[ \frac{\partial \mathcal{L}}{\partial \mathbb{S}} - \mathbb{D}_\mu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \right) \right] \delta \mathbb{S} = 0.
+    \end{equation}
+    $\delta \mathbb{S}$ keyfi bir sürekli varyasyon olduğundan, parantez içi özdeş olarak sıfıra eşit olmak zorundadır. Bu da Teorem~\ref{thm:euler_lagrange_ispat}'ı tamamlar.
+\end{proof}
+
+\subsubsection{3. Kozmolojik Büzülmenin Dinamik Alan Denklemi: Konformal Skalar-Tensör Formülasyonu}
+\label{sec:konformal_skalar_tensor}
+Atomların büzülme hızını ($\dot{\lambda}/\lambda = -H_0$) standart konformal alan teorisiyle uzlaştırmak için, yerel kütle ölçeğini belirleyen skalar alan $\chi(x)$ cinsinden eylemi inşa edelim ($m_i(\chi) = y_i \chi$ ve $r_{\mathrm{atom}} \propto \chi^{-1}$):
+\begin{equation}
+    S[\chi, g_{\mu\nu}] = \int d^4x \sqrt{-g} \left[ \frac{1}{2} \chi^2 R - \frac{1}{2} g^{\mu\nu} \partial_\mu \chi \partial_\nu \chi - V(\chi) + \mathcal{L}_{\mathrm{madde}}(g_{\mu\nu}, \psi, \chi) \right].
+    \label{eq:wetterich_skalar_eylem}
+\end{equation}
+Bu eylemin $\chi$ skalar alanına göre varyasyonu ($\delta S / \delta \chi = 0$):
+\begin{equation}
+    \Box \chi - \chi R + \frac{dV}{d\chi} = -\frac{\partial \mathcal{L}_{\mathrm{madde}}}{\partial \chi} = \frac{1}{\chi} T^\mu_{\mu(\mathrm{madde})},
+    \label{eq:chi_alan_denklemi}
+\end{equation}
+Klein--Gordon tipi hareket denklemini verir.
+
+Birleşik Büzülme Hipotezinin temel aksiyomu uyarınca uzay-zaman metriği düz Minkowski zeminidir ($g_{\mu\nu} = \eta_{\mu\nu} = \text{diag}(-c^2, 1, 1, 1)$, dolayısıyla Ricci skaları $R \equiv 0$, $\sqrt{-g}=1$). Homojen alanda ($\nabla \chi = 0$) d'Alembertian $\Box \chi = -\frac{1}{c^2}\ddot{\chi}$ olur. Doğal birimlerde ($c=1$) kozmolojik ölçekte vakum potansiyeli:
+\begin{equation}
+    V(\chi) = -\frac{1}{2} H_0^2 \chi^2,
+    \label{eq:vakum_baryon_potansiyel}
+\end{equation}
+olarak seçildiğinde, serbest alan denklemi ($\ddot{\chi} - \frac{dV}{d\chi} = 0$):
+\begin{equation}
+    \ddot{\chi}(t) - H_0^2 \chi(t) = 0 \implies \chi(t) = c_1 e^{H_0 t} + c_2 e^{-H_0 t},
+    \label{eq:chi_ustel_cozum}
+\end{equation}
+halini alır. $t > 0$ için büyüyen kararlı kozmolojik atraktör çözümü $\chi(t) = \chi_0 e^{H_0 t}$ olur. Atomik uzunluk cetveli $\lambda(t) \equiv \chi_0 / \chi(t)$ olduğundan:
+\begin{equation}
+    \lambda(t) = e^{-H_0 t} \implies \frac{\dot{\lambda}(t)}{\lambda(t)} = -H_0.
+    \label{eq:hubble_baryon_turetilis}
+\end{equation}
+\textbf{Analitik Sonuç:} Evrensel büzülme temposu ($H_0$), **statik düz uzayda konformal skalar alan eyleminin kararlı kozmolojik atraktörüdür.**
+
+\begin{remark}[Mikroskobik Dinamik ve Açık Araştırma Ufku]
+    \label{rem:mikroskobik_dinamik}
+    Bu formülasyonda $H_0$, konformal skalar alanın düz Minkowski zeminindeki kozmolojik çekici çözümü olarak makroskobik ölçekte türetilmiştir. $\chi$ skalar alanının elektrozayıf Higgs sektörü, vakum yoğunlaşması ve Planck ölçeğindeki sıfır-noktası kuantum dalgalanmalarıyla mikroskobik düzeydeki tam kuplaj dinamiği, kuantum kütleçekimsel modellemenin gelecekteki açık bir araştırma konusu olarak konumlandırılmıştır.
+\end{remark}
+
+\subsection{Ölçek-Kovaryant Noether Teoremi ve Enerji Korunumu}
+\label{sec:noether_enerji_main}
+
+Standart fizikte Noether Teoremi, zaman öteleme simetrisini enerji korunumuna bağlar ($\partial_\mu T^{\mu\nu} = 0$). Büzüşen bir sistemde ölçek faktörü $\lambda(t) = e^{-H_0 t}$ zaman bağımlı olduğundan, büzüşen Skalor eyleminde zaman ve ölçek birlikte dönüştüğünde ($\delta x^\mu = \epsilon^\mu$, $\delta\lambda = -\epsilon^\mu \kappa_\mu H_0 \lambda$) sistem genelleştirilmiş bir \textbf{Ölçek-Zaman Simetrisine} kavuşur~\cite{haydari_calculus}.
+
+Bu simetri altında kovaryant enerji-momentum tensörü Ölçek-Kovaryant Türev ile tam bir korunum sergiler:
+\begin{equation}
+    \mathbb{D}_\mu T^{\mu\nu} = 0 \implies \partial_\mu T^{\mu 0} + \nabla \cdot \mathbf{T}^0 = - H_0 \left( T^{00} + \sum_{i=1}^3 T^{ii} \right).
+    \label{eq:kovaryant_korunum_main}
+\end{equation}
+Fiziksel olarak bu bağıntı, büzülen atomların konformal kütle artışı ile ($\dot{E}_{\mathrm{madde}} = + H_0 E_{\mathrm{madde}}$) çevreleyen durağan vakum dokusundan çekilen akının debisinin ($\dot{E}_{\mathrm{vakum}} = - H_0 E_{\mathrm{madde}}$) tamı tamına birbirini dengelediğini gösterir:
+\begin{equation}
+    \frac{d}{dt} \left( E_{\mathrm{madde}} + E_{\mathrm{vakum}} \right) = 0.
+    \label{eq:toplam_enerji_korunumu}
+\end{equation}
+Böylece enerji yok olmaz; durağan vakum potansiyeli ile yerel atomik faz arasında sürekli ve kararlı bir rezonans transferiyle mutlak olarak korunur.
+
+\begin{quote}
+    \small
+    \textbf{Kavramsal ve Sezgisel Özet (Ölçek Kalkülüsü ve Yeni Hız Teoremi):} \\
+    1. $i$ sayısı bir oku $90^\circ$ döndürür, $\kappa$ sayısı ise cetveli kendi içine doğru büzer. $\mathbb{S} = \mathbf{X}_0 + \kappa \lambda$ sayısı cismin nerede durduğunu ve cetvelinin ne kadar küçüldüğünü birleştirir. \\
+    2. Zaman ve konum evrende hazır verilmemiştir; madde kendi içine küçüldükçe zaman tıkır tıkır işlemeye başlar. Uzaklık ise statik dünyayı küçülen gözlerle izlediğimiz için cetvelimize göre açılır. \\
+    3. Hubble yasası ($v = H_0 d$), türev çarpım kuralının küçülen bir cetvele doğrudan uygulanmasıdır. \\
+    4. Madde küçülürken kütlesi artar; ancak bu enerji yoktan var olmaz, çevreleyen vakumun içeri akışından beslenir. Madde + Vakum toplam enerjisi ($\mathbb{D}_\mu T^{\mu\nu}=0$) mutlak olarak korunur.
+\end{quote}
+

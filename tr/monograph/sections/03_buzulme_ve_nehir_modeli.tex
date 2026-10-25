@@ -1,0 +1,300 @@
+\section{Birleşik Büzülme Hipotezi: Büzülme Hızı (\texorpdfstring{$v_c$}{vc}) ve Metriklerin Yeniden İnşası}
+\label{sec:buzulme_metrikleri}
+
+Mevcut fizikteki bu metrik yapıları tersine çevirerek uzay dokusunun genişlemediği, aksine maddenin büzüldüğü gerçeğinden yola çıkıyoruz.
+
+\subsection{Işık Hızı Yerine ``Büzülme Hızı'' (\texorpdfstring{$v_c$}{vc}) Sabiti}
+Standart fizikte $c$ sabiti ışığın boşluktaki hızı olarak postüle edilir. Biz ise şu temel aksiyomu ortaya koyuyoruz:
+
+\begin{quote}
+    \textbf{Aksiyom 1 (Vakum Faz Yayılımı ve Maddenin İçsel Kuantum Faz Hızı):}
+    Statik arka plan uzayı ve vakum dokusu mutlak olarak durağandır ($\mathbf{v}_{\mathrm{uzay}} = 0$). Foton, durağan vakum dokusunun komşu hücreleri arasındaki serbest enine elastik gerilim dalgasıdır ($v_{\mathrm{trans}} = 0$). Bu faz dalgası statik Öklid uzayı boyunca vakumun karakteristik iletim hızı $v_{\mathrm{faz}} = 1/\sqrt{\varepsilon_0\mu_0}$ ile koordinat kat ederek yayılır.
+
+    Madde ise vakumun kendi kapalı topolojik girdap düğümü (Skalor Düğümü) olduğundan, atomik ölçekteki karakteristik kuantum faz salınımı ve rölativistik sınır hızı ($v_c$) vakum ortamının bu karakteristik faz iletim hızıyla özdeşleşir:
+    \begin{equation}
+        v_c \equiv \frac{1}{\sqrt{\varepsilon_0\mu_0}} = c \approx 2.99792 \times 10^8 \text{ m/s}.
+        \label{eq:buzulme_hizi_tanim}
+    \end{equation}
+    Burada iki temel hız rejiminin birbirinden kesin olarak ayırt edilmesi zorunludur:
+    \begin{enumerate}
+        \item \textbf{İçsel Kuantum Faz Hızı ($v_c = c$):} Vakumun elastik faz iletim hızı ve atomik girdabın içsel rölativistik dönüş tavanıdır ($c \approx 3 \times 10^8\text{ m/s}$).
+        \item \textbf{Kozmolojik Ölçek Daralma Hızı ($|\dot{r}_{\mathrm{atom}}| = H_0 r_{\mathrm{atom}}$):} Atomun fiziksel yarıçapının evrensel asırlık küçülme temposudur ($|\dot{r}_{\mathrm{atom}}| \approx (2.3 \times 10^{-18}\text{ s}^{-1}) \times (10^{-10}\text{ m}) \approx 2.3 \times 10^{-28}\text{ m/s}$). Bu hız $c$'den 36 mertebe ($10^{36}$) daha küçüktür; atomlar bu sayede anında sıfıra çökmeyip milyarlarca yıl boyunca kararlılıklarını muhafaza ederler.
+    \end{enumerate}
+    Büzüşen atomik cetvel ve saatlerimizle ölçtüğümüzde, vakum dokusunda ilerleyen bu serbest faz dalgasının yayılma hızını kendi içsel kuantum faz tavan hızımıza bağıl olarak tam $c$ olarak kaydederiz ($v_{\mathrm{faz}} = v_c = c$). Kozmolojik kırmızıya kayma, durağan vakumda sabit dalga boyuna sahip bu salınımı algılayan atomik cetvellerimizin asırlık büzüşmesinden ($r_{\mathrm{atom}}(t) \to 0$) kaynaklanır.
+\end{quote}
+
+Böylece temel uzay-zaman çizgisel elemanımız değişmez arka plan koordinatlarında ($\mathbf{x}, t$) daima düz kalır:
+\begin{equation}
+    d\Sigma^2 = -v_c^2 dt^2 + d\mathbf{x}^2.
+    \label{eq:statik_arkaplan_metrigi}
+\end{equation}
+
+\subsection{Kozmolojik Metrik: Genişleyen Uzay Yerine Büzülen Atom Metriği}
+Uzay koordinatları $\mathbf{x}$ geni\c{s}lemez ($d\mathbf{x} = \text{sabit}$). Ancak bir gözlemcinin kullandığı tüm ölçüm standartları (atomik cetveller $r_{\mathrm{atom}}$) zamanla büzülür. Boyutsuz atomik ölçek fonksiyonunu tanımlayalım:
+\begin{equation}
+    \lambda(t) \equiv \frac{r_{\mathrm{atom}}(t)}{r_{\mathrm{atom}}(t_0)} = \frac{1}{a(t)}, \quad \lambda(t_0) = 1.
+    \label{eq:olcek_fonksiyonu}
+\end{equation}
+Büzülme hızı logaritmik türev ile verilir:
+\begin{equation}
+    \frac{\dot{\lambda}(t)}{\lambda(t)} = -H_0.
+    \label{eq:buzulme_hubble}
+\end{equation}
+
+Büzülen bir atomik cetvelle ölçülen diferansiyel uzunluk $d\mathbf{x}_{\mathrm{goz}}$ ile arka plan koordinatı $d\mathbf{x}$ arasındaki bağıntı:
+\begin{equation}
+    d\mathbf{x}_{\mathrm{goz}} = \frac{d\mathbf{x}}{\lambda(t)} \implies d\mathbf{x} = \lambda(t) d\mathbf{x}_{\mathrm{goz}}.
+    \label{eq:cetvel_donusumu}
+\end{equation}
+Bu bağıntıyı statik arka plan metriğine~\eqref{eq:statik_arkaplan_metrigi} yerleştirdiğimizde:
+\begin{equation}
+    d\Sigma^2 = -v_c^2 dt^2 + \lambda^2(t) d\mathbf{x}_{\mathrm{goz}}^2.
+    \label{eq:buzulen_cetvel_metrigi}
+\end{equation}
+Kendi cetvelinin büzüldüğünün farkında olmayan ve cetvelini ``sabit'' kabul eden yerel bir gözlemcinin algıladığı etkin metrik $ds_{\mathrm{etkin}}^2 = \lambda^{-2}(t) d\Sigma^2$ konformal yeniden ölçeklemesiyle elde edilir:
+\begin{equation}
+    ds_{\mathrm{etkin}}^2 = -\frac{v_c^2}{\lambda^2(t)} dt^2 + d\mathbf{x}_{\mathrm{goz}}^2 = -v_c^2 d\tau^2 + a^2(\tau) d\mathbf{x}_{\mathrm{statik}}^2,
+    \label{eq:etkin_flrw}
+\end{equation}
+burada $d\tau = \lambda^{-1}(t) dt = a(t) dt$ konformal kozmolojik zamandır.
+
+\textbf{Matematiksel Sonuç:} Standart $\Lambda$CDM modelindeki FLRW metriği, statik bir Minkowski uzayında büzülen atomik cetvellerle yapılan gözlemin birebir konformal izdüşümüdür. Kırmızıya kayma ($z$), geçmişte ($t_e$) daha büyük olan atomların daha düşük frekansta foton salmasının doğrudan bir sonucudur:
+\begin{equation}
+    1 + z = \frac{\nu_{\mathrm{referans}}}{\nu_{\mathrm{gelen}}} = \frac{m(t_0)}{m(t_e)} = \frac{r_{\mathrm{atom}}(t_e)}{r_{\mathrm{atom}}(t_0)} = \frac{\lambda(t_e)}{\lambda(t_0)}.
+    \label{eq:bizim_redshift}
+\end{equation}
+
+\begin{quote}
+    \small
+    \textbf{Kavramsal Netlik (Boş Uzay vs. Ölçülen Mesafe):} \\
+    Burada altı çizilmesi gereken en temel epistemolojik ayrım şudur: Uzayın kendisi mutlak olarak durağan, metriksiz ve pürüzsüz bir Öklid sürekliliğidir ($\mathcal{E}_\infty$). Kendi başına metre veya saat barındırmaz. Algıladığımız tüm ``boşluk'' ve ``mesafeler'', büzüşen atomik cetvellerimizin o sabit aralığa sığma sayısını ($N = |\mathbf{X}_0|/r_{\mathrm{atom}}$) ifade eder. Atomlar küçüldükçe araya daha çok atom sığar ve gözlemci uzayın genişlediği yanılsamasına kapılır (Bölüm~\ref{sec:zaman_konum_turetilis_main}, Teorem~\ref{thm:konum_uzaklik_turetilis_main}).
+\end{quote}
+
+\subsection{Kütleçekimsel Vakum-Akış Metriği ve Süreklilik Denklemi}
+Madde kütlesi $M$, trilyonlarca büzülen atomun oluşturduğu yerel bir yoğunluk merkezidir. Atomların sürekli kendi içlerine büzülmesi, çevreleyen statik vakum alanından merkeze doğru radyal bir akış debisi (inflow velocity) doğurur.
+
+\subsubsection{Varyasyonel Temel: 3+1 ADM Eylemi ve Düz Uzayda Nehir Hızının Türetilişi}
+\label{sec:adm_eylem_turetilis}
+Nehir Modelindeki vakum akış hızı $v(r) = -\sqrt{2GM/r}$ keyfi bir benzetim veya sezgisel bir hipotez değildir; **düz uzay kısıtı altındaki Einstein-Hilbert gravitasyon eyleminin doğrudan varyasyonel extremumudur (Euler--Lagrange çözümüdür).**
+
+Genel Görelilikte uzay-zaman metriği Arnowitt--Deser--Misner (ADM) 3+1 biçiminde ayrıştırılır:
+\begin{equation}
+    ds^2 = -\left(N^2 - \beta_i \beta^i\right) v_c^2 dt^2 + 2 \beta_i v_c dt dx^i + \gamma_{ij} dx^i dx^j,
+    \label{eq:adm_metrik_ayrisim}
+\end{equation}
+burada $N$ lapse fonksiyonu, $\boldsymbol{\beta}$ shift vektörü ve $\gamma_{ij}$ 3-boyutlu uzaysal metriktir.
+
+Birleşik Büzülme Hipotezinin temel aksiyomu uyarınca arka plan uzayı Öklid sürekliliğidir ve eğrilmez; dolayısıyla uzaysal metrik ve lapse fonksiyonu şu kesin kısıtları sağlar:
+\begin{equation}
+    \gamma_{ij} = \delta_{ij} \quad (\text{Düz Öklid Uzayı}, \; R^{(3)} = 0), \qquad N = 1 \quad (\text{Düzgün Zaman Adımı}).
+    \label{eq:duz_uzay_kisit}
+\end{equation}
+Bu geometrik kısıtlar altında yerçekimi alanının tek bağımsız dinamik serbestlik derecesi, vakum akış hızıyla orantılı olan shift vektörüdür:
+\begin{equation}
+    \boldsymbol{\beta}(\mathbf{r}) \equiv -\frac{\mathbf{v}_{\mathrm{vakum}}(\mathbf{r})}{v_c}.
+    \label{eq:shift_vektor_tanim}
+\end{equation}
+Bu kesit üzerinde dışsal eğrilik tensörü ($K_{ij}$) shift gradyanları ile tanımlanır:
+\begin{equation}
+    K_{ij} \equiv \frac{1}{2N} \left( \nabla_i \beta_j + \nabla_j \beta_i \right) = -\frac{1}{2 v_c} \left( \partial_i v_j + \partial_j v_i \right), \qquad K \equiv K^i_i = -\frac{1}{v_c} \nabla \cdot \mathbf{v}.
+    \label{eq:dissal_egrilik_shift}
+\end{equation}
+
+Einstein--Hilbert yerçekimi eylemi $S_{\mathrm{EH}} = \frac{v_c^3}{16\pi G} \int d^4x \sqrt{-g} R$, ADM ayrışımında ve düz uzay ($\gamma_{ij} = \delta_{ij}, R^{(3)} = 0$) kısıtı altında indirgendiğinde:
+\begin{equation}
+    S_{\mathrm{grav}}[\mathbf{v}] = \frac{v_c^3}{16\pi G} \int dt d^3x \left( K_{ij} K^{ij} - K^2 \right) + S_{\mathrm{madde}}[\mathbf{v}],
+    \label{eq:adm_grav_eylem}
+\end{equation}
+haline gelir. Küresel simetrik ve durağan bir radyal akışta ($\mathbf{v} = v(r) \hat{\mathbf{r}}$), dışsal eğrilik bileşenleri:
+\begin{equation}
+    K_{rr} = -\frac{1}{v_c} \frac{dv}{dr}, \qquad K_{\theta\theta} = K_{\phi\phi} = -\frac{1}{v_c} \frac{v(r)}{r},
+\end{equation}
+olup eylem yoğunluğunun kinetik terimi:
+\begin{equation}
+    K_{ij} K^{ij} - K^2 = -\frac{2}{v_c^2} \left( \frac{v}{r} \frac{dv}{dr} + \frac{v^2}{r^2} \right) = -\frac{1}{v_c^2 r^2} \frac{d}{dr}\left( r v^2 \right).
+    \label{eq:kinetik_egrilik_ozdeslik}
+\end{equation}
+formuna sadeleşir. Noktasal bir durağan $M$ kütlesi için eylemin varyasyonu ($\delta S / \delta v(r) = 0$) hesaplandığında:
+\begin{equation}
+    \frac{\delta S_{\mathrm{grav}}}{\delta v(r)} = 0 \implies \nabla \cdot \left( v \frac{dv}{dr} \hat{\mathbf{r}} \right) = -4\pi G M \delta^3(\mathbf{r}).
+    \label{eq:varyasyon_akis_sonuc}
+\end{equation}
+Bu diferansiyel denklemin integrali alındığında doğrudan:
+\begin{equation}
+    v(r) \frac{dv(r)}{dr} = -\frac{GM}{r^2} \implies \frac{1}{2} \frac{d}{dr}\left( v^2(r) \right) = -\frac{GM}{r^2}.
+\end{equation}
+Sonsuzlukta durgunluk sınır şartı ($v(\infty) = 0$) uygulandığında, radyal akış hız fonksiyonu analitik kesinlikle çıkar:
+\begin{equation}
+    \mathbf{v}_{\mathrm{vakum}}(r) = -\sqrt{\frac{2GM}{r}} \hat{\mathbf{r}}.
+    \label{eq:vakum_cekis_hizi}
+\end{equation}
+\textbf{Varyasyonel Sonuç:} Painlevé--Gullstrand vakum akış hızı, **düz Öklid uzayında yaşayan bir shift vektör alanının Einstein eylemini minimize eden tekil analitik extremumudur.**
+
+\subsubsection{Vakum Nereye Gider? Nilpotent Yutak ve Boşluk Diverjansının Geometrik Anlamı}
+Klasik akışkan dinamiğinde içe doğru sürekli akan bir akışkan merkezde birikmek veya sonsuz yoğunluk tekilliği ($\rho \to \infty$) üretmek zorundadır. Burada iki ayrı rejim kesin olarak ayırt edilmelidir:
+\begin{enumerate}
+    \item \textbf{Boş Uzay Rejimi ($r > 0, \rho_M = 0$):} Painlevé--Gullstrand hız alanının düz Öklid sürekliliğindeki diverjansı:
+    \begin{equation}
+        \nabla \cdot \mathbf{v}_{\mathrm{vakum}} = \frac{1}{r^2} \frac{\partial}{\partial r}\left( r^2 \left(-\sqrt{\frac{2GM}{r}}\right) \right) = -\frac{3}{2} \sqrt{\frac{2GM}{r^3}} = - v_c K,
+        \label{eq:extrinsic_curvature_trace}
+    \end{equation}
+    değerini verir. Bu diverjans, boşlukta fiziksel bir akışkan maddesinin aniden yok olması anlamına gelmez; 3+1 ADM geometrisinde sabit zaman yapraklarının dışsal eğriliğinin izine ($K \equiv K^i_i = -\frac{1}{v_c}\nabla\cdot\mathbf{v}$, Denklem~\ref{eq:dissal_egrilik_shift}) karşılık gelir. Düz uzay koordinat ızgarasının kütleçekim merkezine doğru konformal olarak sıkışma temposunu niceler.
+    \item \textbf{Maddesel Çekirdek ve Nilpotent Yutak ($r \to 0, \rho_M \neq 0$):} Akışın fiziksel olarak maddeyle etkileştiği çekirdek havzasında ise süreklilik denklemi, nilpotent büzülme jeneratörü $\kappa$ ($\kappa^2 = 0$) üzerinden tanımlı bir nilpotent yutak (\textit{nilpotent sink}) ile dengelenir:
+    \begin{equation}
+        \nabla \cdot \mathbf{v}_{\mathrm{fiziksel}} = -4\pi G \rho_M \kappa = \mathcal{S}_{\mathrm{sink}}.
+        \label{eq:sureklilik_main}
+    \end{equation}
+    Merkeze ulaşan 3-boyutlu uzaysal vakum akısı, uzay koordinatları içinde yığılmaz. $\kappa^2 = 0$ cebirsel kuralı uyarınca uzaysal hacim boyutunu kaybederek doğrudan maddenin içsel kuantum faz frekansına ($\omega = M c^2 / \hbar$) ve içsel ölçek büzülme hızına ($\dot{\lambda} = -H_0 \lambda$) dönüştürülür. Böylece Einstein Genel Göreliliğindeki karadelik tekillikleri ($r=0$) ortadan kalkar; merkez, uzaysal akışın içsel kuantum saat frekansına dönüştüğü dinamik bir faz sınırıdır.
+\end{enumerate}
+
+Arka plan vakumu $\mathcal{E}_\infty$, sonsuz ve ölçeksiz bir sürekliliktir. Homojen bir evrende her atomun oluşturduğu radyal debi, çevreleyen tüm atomların simetrik akısıyla global olarak dengelenir ($\sum \mathbf{v}_{\mathrm{inflow}} = 0$); dolayısıyla vakumun basıncı ve elastik gerilimi evrensel ölçekte tükenmeden mutlak olarak korunur.
+
+Bu vakum akışının içinde bulunan bir test parçacığının veya dalganın hissettiği metrik doğrudan çizgisel kayma ile yazılır:
+\begin{equation}
+    ds^2 = -v_c^2 dt^2 + \left( dr - v_{\mathrm{vakum}}(r) dt \right)^2 + r^2 d\Omega^2.
+    \label{eq:bizim_vakum_metrigi}
+\end{equation}
+Parantezi açtığımızda:
+\begin{equation}
+    ds^2 = -\left(1 - \frac{v_{\mathrm{vakum}}^2(r)}{v_c^2}\right) v_c^2 dt^2 - 2 v_{\mathrm{vakum}}(r) dt dr + dr^2 + r^2 d\Omega^2.
+    \label{eq:vakum_metrik_acik}
+\end{equation}
+Bu denklemde $v_{\mathrm{vakum}}(r) = -\sqrt{2GM/r}$ yerleştirildiğinde:
+\begin{equation}
+    ds^2 = -\left(1 - \frac{2GM}{v_c^2 r}\right) v_c^2 dt^2 + 2\sqrt{\frac{2GM}{r}} dt dr + dr^2 + r^2 d\Omega^2.
+    \label{eq:bizim_yercekimi_tam}
+\end{equation}
+
+\paragraph{3D Düz Dilimler ve 4D Riemann Eğriliği (Gauss--Codazzi Özdeşliği):}
+Painlevé--Gullstrand koordinatlarında uzaysal dilimlerin Öklid metriğine sahip olması ($\gamma_{ij} = \delta_{ij}$, $^{(3)}R \equiv 0$), uzay-zamanın düz olduğu anlamına gelmez. 4-boyutlu eğrilik, 3+1 ADM Gauss--Codazzi bağıntısı ($^{(4)}R = K_{ij}K^{ij} - K^2$) gereği doğrudan dışsal eğrilik tensörü ($K_{ij} = -\frac{1}{2c}(\partial_i v_j + \partial_j v_i)$) tarafından üretilir. Bu tensörün ürettiği Kretschmann eğrilik skaları $\mathcal{K} \equiv R^{\alpha\beta\gamma\delta} R_{\alpha\beta\gamma\delta} = \frac{48 G^2 M^2}{c^4 r^6}$ tam olarak Schwarzschild eğriliğini verir. Dolayısıyla Nehir Modeli, 4-boyutlu uzay-zaman eğriliğinin durağan bir Öklid arka planındaki akışkan hız gradyanı ve kayma tensörü cinsinden analitik bir tasviridir.
+
+\subsection{Vakum Akışında İvmelenme Mekanizması: Neden Sabit Hızla Değil de \texorpdfstring{$g$}{g} ile Düşeriz?}
+\label{sec:ivmelenme_ispat}
+
+Nehir Modeline yöneltilebilecek en haklı ve temel fizik sorusu şudur:
+\textit{``Eğer kütleçekim maddenin vakumu içine çekmesinden ibaretse, Dünya'ya doğru düşen bir cisim neden nehirde sabit hızla sürüklenmeyip sürekli ivmelenir ($a = g \approx 9.8\text{ m/s}^2$)? Sabit bir akıntı ivme üretemez; ivmelenmenin matematiksel ve fiziksel kökeni nedir?''}
+
+Bu soru, akışkanlar mekaniğindeki yerel ivme ile konvektif ivme arasındaki ayrım ve küresel daralma geometrisiyle eksiksiz çözülür:
+
+\subsubsection{1. Akış Hızı Neden Sabit Değildir? (Küresel Boğaz Daralması)}
+Dünya'nın $r$ yarıçapındaki eşmerkezli küresel kabuk alanı $A(r) = 4\pi r^2$'dir. Sonsuzlukta durgun olan bir vakum akışkanının merkeze doğru enerji korunumu ($\frac{1}{2} v^2 - \frac{GM}{r} = 0$) veya sıkıştırılamaz Euler sürekliliği altında daralan küresel kabuktan geçiş hızı:
+\begin{equation}
+    v_{\mathrm{inflow}}(r) = -\sqrt{\frac{2GM}{r}} \hat{\mathbf{r}}.
+    \label{eq:akis_hizi_tekrar}
+\end{equation}
+Geniş bir ovadan dar bir kanyona giren nehrin hızlanması gibi; uzayda $r$ azaldıkça ($r \to 0$), vakum akış hızı $r^{-1/2}$ ile orantılı olarak \textbf{sürekli artar}.
+\begin{itemize}
+    \item Ay yörüngesinde ($r \approx 384\,400\text{ km}$): Vakum akış hızı yalnızca $v \approx 1.44\text{ km/s}$'dir.
+    \item Dünya yüzeyinde ($r = R_\oplus \approx 6371\text{ km}$): Vakum akış hızı tamı tamına:
+          \begin{equation}
+              |v_{\mathrm{inflow}}(R_\oplus)| = \sqrt{\frac{2GM_\oplus}{R_\oplus}} \approx 11.186\text{ km/s}
+              \label{eq:kurtulma_hizi_ispat}
+          \end{equation}
+          değerine ulaşır. Bu değer, Dünya'nın rölativistik \textbf{kurtulma hızına (escape velocity)} özdeştir.
+\end{itemize}
+
+\subsubsection{2. Euler Konvektif İvmesi ve \texorpdfstring{$g = GM/r^2$}{g = GM/r\texttwosuperior{}} İspatı}
+Akışkanlar mekaniğinde akıntıya bırakılan bir test parçacığının maruz kaldığı toplam ivme maddesel türev (Euler konvektif ivmesi) ile hesaplanır:
+\begin{equation}
+    \mathbf{a} = \frac{D\mathbf{v}}{Dt} = \underbrace{\frac{\partial \mathbf{v}}{\partial t}}_{\text{Yerel İvme (Zamanla Değişim)}} + \underbrace{(\mathbf{v} \cdot \nabla)\mathbf{v}}_{\text{Konvektif İvme (Konumla Değişim)}}.
+    \label{eq:maddesel_turev}
+\end{equation}
+Dünya'nın kütlesi zamandan bağımsız durağan olduğundan akış alanı kararlıdır ($\frac{\partial \mathbf{v}}{\partial t} = 0$). Fakat serbest bırakılan bir taş aşağı doğru düştükçe, nehrin daha yavaş aktığı bir irtifadan nehrin daha hızlı aktığı bir irtifaya girer. Parçacığın hissettiği radyal ivme:
+\begin{equation}
+    a_r(r) = v(r) \frac{dv(r)}{dr}.
+    \label{eq:konvektif_ivme_tanim}
+\end{equation}
+Hız fonksiyonunun radyal türevini adım adım alalım:
+\begin{align}
+    v(r)          & = -\sqrt{2GM} \, r^{-1/2}, \label{eq:adim1}                                                               \\
+    \frac{dv}{dr} & = -\sqrt{2GM} \left( -\frac{1}{2} r^{-3/2} \right) = \frac{1}{2} \sqrt{2GM} \, r^{-3/2}. \label{eq:adim2}
+\end{align}
+Şimdi bu iki ifadeyi Denklem~\eqref{eq:konvektif_ivme_tanim}'de çarpalım:
+\begin{align}
+    a_r(r) & = \left( -\sqrt{2GM} \, r^{-1/2} \right) \cdot \left( \frac{1}{2} \sqrt{2GM} \, r^{-3/2} \right) \nonumber \\
+           & = -\frac{1}{2} (2GM) \, r^{-1/2 - 3/2} \nonumber                                                           \\
+           & = -GM \, r^{-2} = \mathbf{-\frac{GM}{r^2}}.
+    \label{eq:g_ispat_sonuc}
+\end{align}
+Dünya yüzeyinde ($r = R_\oplus$):
+\begin{equation}
+    a_r(R_\oplus) = -\frac{GM_\oplus}{R_\oplus^2} = -g \approx -9.807\text{ m/s}^2.
+\end{equation}
+\textbf{Matematiksel ve Fiziksel Sonuç:} Kütleçekimsel ivme ($g$), \textbf{merkeze doğru daralan küresel uzayda hızlanan bir vakum akışkanının konvektif hız gradyanıdır ($v \frac{dv}{dr}$)}.
+
+\subsubsection{3. Yeryüzünde Duran Bir Gözlemci Neden Ağırlık ($W = mg$) Hisseder?}
+Serbest düşüşteki bir asansörde bulunan bir gözlemci sıfır yerçekimi (ağırlıksızlık) yaşar; çünkü vakum nehriyle birlikte aynı konvektif ivmeyle sürüklenmektedir ($a_{\mathrm{net}} = 0$).
+
+Yeryüzünde duran bir gözlemcinin nehir boyunca serbestçe sürüklenmesi zemin tarafından engellenir. Bu esnada durağan vakum dokusu, uzaydan gelip Dünya'nın merkezine doğru gözlemcinin vücudundaki her bir atomun içinden tam \textbf{$11.2\text{ km/s}$ hızla akıp gitmektedir!}
+
+Zeminin gözlemciyi sabit tutmak için uyguladığı yukarı yönlü normal tepki kuvveti:
+\begin{equation}
+    N = m \cdot \left( v \left|\frac{dv}{dr}\right| \right) = m \cdot \frac{GM}{r^2} = mg.
+\end{equation}
+Böylece tartıya çıktığınızda okunan $70\text{ kg}$ ağırlık; **ayaklarınızın altından Dünya'nın merkezine doğru $11.2\text{ km/s}$ hızla hücum eden vakum akışının hız gradyanına karşı durma direncinizdir!**
+
+\subsubsection{4. Gezegensel Yörünge Kararlılığı: Esir Sürtünmesi Neden Yoktur? ($\eta = 0$)}
+Güneş çevresinde dönen gezegenlerin akan vakum nehrinde sürtünme (aether drag) yaşayarak Güneş'e düşmemesi iki temel ilkeye dayanır:
+\begin{enumerate}
+    \item \textbf{Sıfır Viskoziteli İdeal Süper-Akışkan ($\eta = 0$):} Vakum dokusunda moleküler serbest yol veya iç sürtünme viskozitesi ($\eta$) bulunmaz. Akış tamamen dağılmasızdır (dissipationless).
+    \item \textbf{Painlev\'e--Gullstrand Metriğinin Hamiltonyen Korunumu:} Denklem~\eqref{eq:bizim_yercekimi_tam}'deki çizgisel eleman, Schwarzschild metriğinin bir koordinat transformasyonu olduğundan; gezegenlerin serbest düşüş jeodezikleri Schwarzschild yörüngeleriyle \textbf{matematiksel olarak özdeştir}. Açısal momentum ($L = r^2 \dot{\phi} = \text{sabit}$) kesin biçimde korunur; teğetsel sürtünme terimi ($\mathbf{F}_{\mathrm{drag}} = 0$) özdeş olarak sıfırdır.
+\end{enumerate}
+
+\subsubsection{5. Işığın Kütleçekimsel Sapması: Einstein'ın ``2 Katı'' Çarpanı (\texorpdfstring{$\Delta\theta = 4GM/c^2 b$}{4GM/c2b})}
+Standart fizikte ışığın kütleçekimsel sapması, Newtonian çekimin öngördüğü değerin ($\Delta\theta_{\mathrm{Newton}} = \frac{2GM}{c^2 b}$) tam 2 katıdır. Nehir modelimizde $ds^2 = 0$ ışık çizgisi için koordinat entegrasyonu yapıldığında bu 2 katlık çarpan iki ayrı fiziksel etkinin toplamından türer:
+\begin{enumerate}
+    \item \textbf{Radyal Akış Sürüklenmesi (1. Kat):} Fotonun vakum nehrinin radyal akış hızına ($v(r) = \sqrt{2GM/r}$) maruz kalmasından kaynaklanan çizgisel sürüklenme ($\Delta\theta_1 = \frac{2GM}{c^2 b}$).
+    \item \textbf{Kırılma İndisi Gradyanı ve Fermat İlkesi (2. Kat):} Merkeze doğru hızlanan akış, arka plan vakumunda etkin bir optik kırılma indisi gradyanı oluşturur:
+          \begin{equation}
+              n(r) = \frac{c}{c - |v(r)|} \approx 1 + \sqrt{\frac{2GM}{c^2 r}} + \frac{GM}{c^2 r}.
+          \end{equation}
+          Huygens--Fermat dalga cephesi prensibi uyarınca, dalga cephesinin kütleye yakın olan iç kenarı daha yavaş ilerlerken dış kenarı daha hızlı ilerler. Bu optik kırılma gradyanı tamı tamına ikinci bir $\Delta\theta_2 = \frac{2GM}{c^2 b}$ sapması üretir.
+\end{enumerate}
+İki katkı toplandığında toplam sapma açısı:
+\begin{equation}
+    \Delta\theta_{\mathrm{toplam}} = \Delta\theta_1 + \Delta\theta_2 = \frac{4GM}{c^2 b}
+    \label{eq:sapma_tam_ispat}
+\end{equation}
+olarak uzay bükülmeksizin, Einstein'ın Genel Görelilik sonucu ile analitik bir uyum içinde elde edilir.
+
+\subsection{Olay Ufku ve Işığın Karadelikten Kaçamayışının Mekanizması}
+Standart fizikte karadelik olay ufku, uzayın geometrik eğriliğinin sonsuza ıraksadığı bir tekillik bölgesi olarak yorumlanır. Hipotezimizde ise bu durum son derece yalın bir akışkan dinamiğine indirgenir:
+
+Radyal olarak dışarı doğru kaçmaya çalışan bir ışık dalgasının net koordinat hızı:
+\begin{equation}
+    \frac{dr}{dt} = v_c + v_{\mathrm{vakum}}(r) = v_c - \sqrt{\frac{2GM}{r}}.
+    \label{eq:isik_kacis_hizi}
+\end{equation}
+Üç rejim ortaya çıkar:
+\begin{enumerate}
+    \item \textbf{Zayıf Alan ($r > r_s$):} $|v_{\mathrm{vakum}}(r)| < v_c \implies \frac{dr}{dt} > 0$. Işık dışarı doğru ilerler; ancak vakum akışına karşı hareket ettiği için yerçekimsel kırmızıya kaymaya uğrar.
+    \item \textbf{Olay Ufku ($r = r_s$):} $|v_{\mathrm{vakum}}(r_s)| = v_c$. Bu kritik yarıçap doğrudan bulunur:
+          \begin{equation}
+              \sqrt{\frac{2GM}{r_s}} = v_c \implies r_s = \frac{2GM}{v_c^2}.
+              \label{eq:olay_ufku_turetme}
+          \end{equation}
+          Ufukta net hız $\frac{dr}{dt} = v_c - v_c = 0$ olur! Işık yerel büzülme hızında dışa yönelse de, vakumun içeri büzülme hızı buna eşit olduğu için olay ufkunda asılı kalır.
+    \item \textbf{Karadelik İçi ($r < r_s$):} $|v_{\mathrm{vakum}}(r)| > v_c \implies \frac{dr}{dt} < 0$. Vakumun atomik büzülme emiş hızı, doğadaki azami bağıl hız olan $v_c$'yi aşmıştır. Bu nedenle ışık dahil hiçbir fiziksel uyarılma dışarı kaçamaz, merkeze doğru sürüklenir.
+\end{enumerate}
+
+\subsection{Standart Fizik ile Birleşik Büzülme Hipotezinin Metrik Karşılaştırması}
+
+Aşağıdaki Tablo~\ref{tab:metrik_karsilastirma}, geleneksel fizik paradigmaları ile önerilen model arasındaki kavramsal ve matematiksel dönüşümü özetlemektedir:
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Fiziksel Boyut}        & \textbf{Standart Fizik (GR \& $\Lambda$CDM)}                  & \textbf{Birleşik Büzülme Hipotezi}                                    \\ \midrule
+        \textbf{Arka Plan}             & Dinamik, eğrilen ve genleşen uzay-zaman                       & Değişmez, statik Minkowski uzayı                                      \\
+        \textbf{Temel Sabit $c$}       & Işığın boşluktaki yayılma hızı                                & Maddenin radyal büzülme hızı ($v_c$)                                  \\
+        \textbf{Kozmolojik Metrik}     & $ds^2 = -c^2 dt^2 + a^2(t) d\mathbf{x}^2$                     & $d\Sigma^2 = -v_c^2 dt^2 + \lambda^2(t) d\mathbf{x}_{\mathrm{goz}}^2$ \\
+        \textbf{Kırmızıya Kayma ($z$)} & Foton dalga boyunun uzaması                                   & Geçmişteki atomların daha büyük olması                                \\
+        \textbf{Kütleçekim}            & Kütlenin uzay-zamanı bükmesi ($G_{\mu\nu} = 8\pi T_{\mu\nu}$) & Atomların küçülerek vakumu emmesi ($v_{\mathrm{vakum}}$)              \\
+        \textbf{Olay Ufku}             & Uzay-zaman metriğinin koordinat tekilliği                     & Vakum büzülme hızının $v_c$'ye eşitlenmesi                            \\ \bottomrule
+    \end{tabular}
+    \caption{Standart fizik formülasyonu ile Birleşik Büzülme Hipotezi metriklerinin karşılaştırması.}
+    \label{tab:metrik_karsilastirma}
+\end{table}
+

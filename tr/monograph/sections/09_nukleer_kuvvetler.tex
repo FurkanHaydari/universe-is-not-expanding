@@ -1,0 +1,164 @@
+\section{Nükleer Kuvvetlerin Vakum Doyumu ile Geometrik Birleşimi}
+\label{sec:nukleer_kuvvetler}
+
+Geleneksel fizikte kütleçekim, elektromanyetizma, güçlü nükleer kuvvet ve zayıf nükleer kuvvet dört ayrı ve uzlaştırılamaz etkileşim olarak kabul edilir. Birleşik Büzülme Hipotezinde ise tüm bu kuvvetler, \textbf{farklı mesafe ve ölçeklerdeki vakum akış geometrisinin} doğal tezahürleridir.
+
+\subsection{Güçlü Nükleer Kuvvet ve Kuark Hapsi (Vakum Doyum Limiti)}
+Makroskopik mesafelerde kütleçekimsel vakum akışı küresel olarak yayılır: $v(r) = -\sqrt{2GM/r}$ ve $g(r) \propto 1/r^2$. Bu rejimde vakum dokusu serbesttir ve akış doyuma ulaşmamıştır.
+
+Ancak femtometre ölçeklerine ($r \sim 10^{-15}\text{ m}$) inildiğinde, kuarkların aşırı yüksek büzülme yoğunluğu nedeniyle çekilen vakum akışı \textbf{vakumun maksimum taşıma kapasitesine (Planckian doyum sınırına)} ulaşır. Vakum akısı daha fazla küresel olarak yayılamaz ($1/r^2$ seyrelemez); akış iki kuark arasında 1-boyutlu silindirik bir girdap tüpüne (\textit{flux tube} / vakum sicimi) sıkışır.
+
+\begin{enumerate}
+    \item \textbf{Kuark Hapsi (Quark Confinement):}
+          Vakum tüpünün kesiti doyuma ulaştığından, tüpün birim uzunluk başına enerjisi sabittir: $\sigma \approx 1\text{ GeV/fm} \approx 1.6 \times 10^5\text{ N}$ (sicim gerilimi). İki kuark arasındaki toplam potansiyel:
+          \begin{equation}
+              V_{\mathrm{guclu}}(r) = -\frac{4}{3}\frac{\alpha_s \hbar c}{r} + \sigma r.
+              \label{eq:guclu_potansiyel}
+          \end{equation}
+          Kuarkları birbirinden ayırmaya çalıştığınızda aradaki mesafe $r$ arttıkça potansiyel enerji $\sigma r$ lineer olarak sonsuza gider. Gerilim o kadar yükselir ki vakum dokusu yırtılır ve boşluktan yeni bir kuark-antikuark çifti ($q\bar{q}$) doğar; bu nedenle evrende asla serbest tek bir kuark gözlemlenemez!
+
+    \item \textbf{Asimptotik Serbestlik (Asymptotic Freedom):}
+          Kuarklar birbirine çok yaklaştığında ($r \to 0$), büzülme havzaları üst üste biner. Aradaki vakum doyum tüpü gevşer ve lineer terim sıfırlanır ($\sigma r \to 0$). Kuarklar çekirdek içinde neredeyse tamamen serbest parçacıklar gibi davranır.
+
+    \item \textbf{Topolojik Renk Yükü ve $120^\circ$ Kiral Faz Dengesi ($SU(3)$ Çözümü):}
+          Standart Modeldeki üç soyut renk yükü ($SU(3)$ singleti / ``renksiz hadron'' şartı), Ölçek-Zaman Kalkülüsünde üç kuark girdabının ($\mathbb{S}_k = \mathbf{X}_k + \kappa \lambda e^{i \phi_k}, \kappa^2 = 0$) dış uzaya net bir dönel faz burulması sızdırmadan en kararlı kapalı havzayı oluşturabilmesi için gereken \textbf{$120^\circ$ ($2\pi/3$) simetrik kiral faz dengesidir}:
+          \begin{equation}
+              \sum_{k=1}^3 e^{i \phi_k} = 1 + e^{i 2\pi/3} + e^{i 4\pi/3} = 1 + \left( -\frac{1}{2} + i\frac{\sqrt{3}}{2} \right) + \left( -\frac{1}{2} - i\frac{\sqrt{3}}{2} \right) \equiv 0.
+              \label{eq:renk_faz_toplami_main}
+          \end{equation}
+          Tıpkı üç fazlı dengeli bir alternatif akım devresinde nötr hattaki toplam akımın sıfırlanması gibi, $120^\circ$ faz farkıyla dönen üç girdap hadronun dış sınırında birbirinin teğetsel girdap sürüklenmesini tam olarak iptal eder. Dış uzaya net bir burgu sızmaz; hadron dışarıdan bakıldığında bütünüyle nötr ve ``renksiz'' görünür. Mezonlarda ($q\bar{q}$) ise bu denge zıt kiralite ve nilpotent süperpozisyonla ($\kappa^2 = 0$) sağlanır.
+\end{enumerate}
+
+\subsection{Zayıf Nükleer Kuvvet: Girdap Sızıntısı ve Kiral Faz Kırınımı}
+Zayıf nükleer etkileşim (örneğin nötronun beta bozunumuyla proton, elektron ve antinötrinoya dönüşmesi: $n \to p + e^- + \bar{\nu}_e$), büzüşen nükleon girdabındaki \textbf{kiral faz sızıntısıdır}.
+
+Büzülme süreci sırasında kuark girdabının içsel fazı, statik vakumun aşırı yüksek doyum basıncı altında küçük bir faz kaymasına (\textit{chirality shear}) uğrar. Bu sızıntı, vakum üzerinde yerel bir faz dalgalanması olarak $W^\pm$ veya $Z^0$ kütleli vektör bozonları şeklinde paketlenir. $W$ bozonunun $80\text{ GeV}$'lik devasa kütlesi, doymuş nükleer vakum duvarını yırtabilmek için gereken minimum faz gerilim eşiğidir. Zayıf etkileşimin son derece kısa menzilli ($r_W \approx \hbar / (M_W c) \sim 10^{-18}\text{ m}$) olması, bu sert doyum bariyerinden kaynaklanan geometrik bir bastırmadır (Fermi sabiti $G_F \sim 1/M_W^2$).
+
+\begin{enumerate}
+    \item \textbf{Serbest Nötron Bozunumu ($N=1$):} Yalıtılmış serbest bir nötronda dış vakum kalkanı bulunmadığından, Ölçek-Kovaryant Türev $\mathbb{D}_t = \frac{\partial}{\partial t} + \kappa H_0$ altındaki içsel kiral faz burulması WKB tünellemesiyle doyum bariyerini aşar ($\tau_n \approx 879\text{ s} \approx 14.6\text{ dakika}$).
+    \item \textbf{Çekirdek İçi Kararlılık (Kolektif Faz Kilitlemesi):} Nötron bir atom çekirdeğine girdiğinde komşu nükleonların akı tüpleri ortak bir kalkan örer ($\mathbb{S}_{\mathrm{cekirdek}} = \sum \mathbb{S}_i$). Çekirdeğin nükleer bağlanma enerjisi ($\Delta B \sim 8\text{ MeV/nükleon}$), beta bozunumunun $Q \approx 0.782\text{ MeV}$ marjını 10 kat aştığından nilpotent projeksiyon operatörü $\hat{\mathcal{P}}_\kappa$ sızıntı kanalını spektral olarak kilitler. Serbestken 15 dakikada bozunan nötron, çekirdek içinde evrenin ömründen daha uzun süre ($> 10^{30}\text{ yıl}$) mutlak bir kararlılık kazanır.
+\end{enumerate}
+
+\begin{quote}
+    \small
+    \textbf{Kavramsal ve Fiziksel Özet (Kuvvetlerin Efektif Geometrik Rejimleri):} \\
+    1. \textbf{Kütleçekim ($\gamma = 1$ Rejimi):} Asimptotik makroskopik mesafelerde küresel seyrelti altındaki serbest vakum akış potansiyelidir ($v^2 \propto 1/r$, $\Phi \propto 1/r$). \\
+    2. \textbf{Güçlü Etkileşim ($\gamma = -1$ Rejimi):} Femtometre ölçeğinde vakum taşıma kapasitesinin doyum sınırına ulaşmasıyla oluşan 1-boyutlu silindirik akı tüpü gerilimidir ($V(r) \propto \sigma r$). Kuark hapsi ve asimptotik serbestlik, bu doyum geometrisinin topolojik sonucudur. \\
+    3. \textbf{Zayıf Etkileşim (Kiral Tünelleme Rejimi):} Doymuş nükleer vakum sınırından kaynaklanan kiral faz kayması ve WKB faz sızıntısıdır; $W^\pm$ ve $Z^0$ bozonlarının etkin kütleleri bu doyum bariyerinin aşılması için gereken minimum faz gerilimidir.
+\end{quote}
+
+\subsection{Nötrino Salınımları ve PMNS Matrisinin Kiral Faz Rezonansı}
+\label{sec:notrino_pmns_main}
+
+Standart parçacık fiziğinde kuark sektöründeki Cabibbo--Kobayashi--Maskawa (CKM) karışım açıları son derece küçükken ($\theta_{12}^{\mathrm{CKM}} = \theta_C \approx 13^\circ$, $\theta_{23}^{\mathrm{CKM}} \approx 2.4^\circ$, $\theta_{13}^{\mathrm{CKM}} \approx 0.2^\circ$); lepton sektöründeki Pontecorvo--Maki--Nakagawa--Sakata (PMNS) nötrino karışım açılarının devasa ve maksimal olması ($\theta_{12} \approx 33.4^\circ$, $\theta_{23} \approx 45^\circ$, $\theta_{13} \approx 8.6^\circ$) temel bir simetri bilmecesidir.
+
+Birleşik Büzülme Hipotezinde bu hiyerarşi, \textbf{hapis geometrisi ile serbest faz yayılımı arasındaki topolojik zıtlıktan} türer:
+\begin{enumerate}
+    \item \textbf{Kuark Sektörü (CKM / Küçük Karışım):} Kuarklar femtometre ölçeğinde 1-boyutlu doymuş silindirik akı tüpüne ($\gamma = -1$) hapsolmuştur. Bu katı doyum geometrisi, kuark girdaplarının faz kaçıklığını dar bir açısal aralığa sıkıştırır; Cabibbo açısı nükleon büzülme sınırında küçük bir teğetsel kayma olarak belirir ($\theta_C \approx 13^\circ$).
+    \item \textbf{Nötrino Sektörü (PMNS / Büyük ve Maksimal Karışım):} Nötrinolar doymuş bir akı tüpüne hapsolmayan, durağan vakum dokusunda serbestçe yayılan kütlesiz veya ultra-hafif saf kiral faz girdaplarıdır. Hadronik bir sınır kısıtlaması bulunmadığından, üç lezzet modu ($\nu_e, \nu_\mu, \nu_\tau$) statik vakumun global kiral gerilimiyle makroskopik mesafeler boyunca serbest faz rezonansına girer. Lezzet durumları ile vakum kütle öz-durumları arasındaki dönüşüm:
+          \begin{equation}
+              |\nu_\alpha\rangle = \sum_{i=1}^3 U_{\alpha i}^{\mathrm{PMNS}} |\nu_i\rangle
+              \label{eq:pmns_donusum}
+          \end{equation}
+          şeklindedir. İki nötrino modu arasındaki salınım olasılığı:
+          \begin{equation}
+              P(\nu_\alpha \to \nu_\beta) = \sin^2(2\theta) \sin^2\left( \frac{\Delta m^2 c^3 L}{4 \hbar E} \right)
+              \label{eq:notrino_salinim}
+          \end{equation}
+          olup, vakumun kiral gerilimi altında atmosferik nötrinolar için rezonans maksimal sınıra ($\theta_{23} \approx 45^\circ$), güneş nötrinoları için ise geniş açıya ($\theta_{12} \approx 33.4^\circ$) oturur.
+\end{enumerate}
+Böylece kuarklardaki küçük karışım ile nötrinolardaki maksimal karışım, 1D hadronik hapis ile serbest vakum yayılımı arasındaki doğrudan geometrik fark olarak çözülür.
+
+\subsection{Kuvvet Hiyerarşisi ve Yoğunluk Kaynaklı Boyutsal Geçiş: Atom Sayısı, Planck Doyumu ve Geometrik Boyut (\texorpdfstring{$\gamma$}{gamma})}
+\label{sec:boyutsal_gecis_main}
+
+Standart fizikte kütleçekim ile mikroskobik kuvvetler arasındaki $\sim 10^{36}$--$10^{40}$ katlık devasa şiddet uçurumu ``Hiyerarşi Problemi'' (Hierarchy Problem) olarak adlandırılır. Birleşik Büzülme modelinde bu oran, **ortamdaki madde-enerji yoğunluğunun vakumun Planck doyum eşiğine ($c^4/G$) oranına bağlı olarak gelişen boyutsal bir faz geçişidir (Density-Driven Dimensional Crossover)**:
+\begin{equation}
+    \left( \frac{v(r)}{c} \right)^2 = 2 \, \mathcal{C}_0 \left( \frac{r}{\ell_0} \right)^{-\gamma}.
+    \label{eq:master_formula_main}
+\end{equation}
+Burada $\mathcal{C}_0$ boyutsuz temel kuplaj katsayısı, $\ell_0$ karakteristik geçiş ölçeğidir (örneğin kütleçekimde Schwarzschild yarıçapı $r_s$, hadronik sektörde femtometre $\ell_{\mathrm{QCD}}$); bu sayede $\gamma$ boyutsal indisi sürekli değişse dahi formül her rejimde boyutsal olarak mutlak tutarlılığını muhafaza eder.
+
+Burada kritik soru şudur: \textit{``Kuvvetlerin şiddetini belirleyen şey atom sayısı mıdır, yoksa geometrik boyut ($\gamma$) mudur?''}
+
+Bu iki kavram bir neden-sonuç zinciridir:
+\begin{enumerate}
+    \item \textbf{Güneş Örneği (Büyük $N$, Düşük Yoğunluk $\implies \gamma = 1$):} Güneş'te $N \sim 10^{57}$ atom bulunur. Devasa atom sayısı büyük bir kütleçekim debisi ($M = \sum m_i$) üretse de, bu atomlar yüz binlerce kilometrelik astronomik bir hacme yayılmıştır. Birim hacme düşen vakum akısı, vakumun Planckian doyum eşiğinin trilyonlarca kat altında kalır. Akış $4\pi r^2$ küresel kabuğu üzerinden serbestçe seyrelebildiği için geometri 3-boyutludur ($\gamma = 1$). Kütleçekimin aşırı zayıf görünmesi, debinin 3D uzayda küresel olarak seyrelmesinden kaynaklanır.
+    \item \textbf{Proton Örneği (Küçük $N=3$, Ultra-Yüksek Yoğunluk $\implies \gamma = -1$):} Bir protonun içinde yalnızca 3 kuark bulunur. Atom sayısı bakımından Güneş'ten $10^{57}$ kat daha küçüktür; ancak bu 3 kuark $r \sim 10^{-15}\text{ m}$ (femtometre) gibi akıl almaz küçüklükte bir çekirdeğe hapsolmuştur. Bu ölçekte büzülme akı yoğunluğu vakum dokusunun maksimum taşıma kapasitesini ($\Phi_{\max} = c^4/G$) aşar! Vakum daha fazla küresel olarak seyrelemez ($1/r^2$ tükenir); dinamik sistem en düşük direnç yolu olarak **1-boyutlu silindirik bir girdap tüpüne ($\gamma = -1$)** çöker. Tüpün kesiti sabitlendiğinden mesafe arttıkça gerilim düşmez ($\sigma \approx 16\text{ ton}$) ve kuark hapsi doğar.
+    \item \textbf{Zayıf Kuvvet (Doyum Bariyeri Tünellemesi $\implies \gamma \to \text{üstel}$):} Bu doymuş nükleer girdaptan dışarı tünelleyen kiral faz sızıntısı ($W^\pm, Z^0$), doyum duvarının kalınlığı sebebiyle üstel olarak sönümlenir ($\mathcal{C}_W \propto e^{-r/r_W}$).
+\end{enumerate}
+**Yerel yoğunluk Planck doyumunu aştığında akış 3D serbest küresellikten ($\gamma=1$) 1D sicim tüpüne ($\gamma=-1$) boyut değiştirmektedir.**
+
+\subsubsection{Boyutsal İndeks $\gamma$'nın Sürekli Doyum Faz Geçişi Denklemi}
+\label{sec:surekli_gamma}
+Modelimizde $\gamma$ parametresi, akışkan dinamiğindeki doyum faz geçişini yöneten sürekli bir enerji yoğunluğu fonksiyonudur:
+\begin{equation}
+    \gamma(\rho) = \tanh\left( \ln\left[ \frac{\rho_{\mathrm{sat}}}{\rho(r)} \right] \right)
+    \label{eq:gamma_surekli_gecis}
+\end{equation}
+burada $\rho_{\mathrm{sat}} \approx 10^{18}\text{ kg/m}^3$ hadronik nükleer doyum yoğunluğudur.
+\begin{itemize}
+    \item \textbf{Düşük Yoğunluk Rejimi ($\rho \ll \rho_{\mathrm{sat}}$):} Makroskopik kütleçekim ve atomik elektron bulutunda $\frac{\rho_{\mathrm{sat}}}{\rho} \gg 1$ olduğundan $\ln(\rho_{\mathrm{sat}}/\rho) \to +\infty$ ve $\tanh \to +1$'dir. Böylece $\gamma \equiv +1$ (3D serbest küresel akı) kesin olarak elde edilir.
+    \item \textbf{Aşırı Yoğunluk Rejimi ($\rho \gg \rho_{\mathrm{sat}}$):} Kuark ölçeğinde ($r \le 10^{-15}\text{ m}$) yerel yoğunluk Planck doyumunu aştığından $\frac{\rho_{\mathrm{sat}}}{\rho} \ll 1$, $\ln(\rho_{\mathrm{sat}}/\rho) \to -\infty$ ve $\tanh \to -1$'dir. Böylece $\gamma \equiv -1$ (1D sıkışmış akı tüpü / kuark hapsi) pürüzsüz biçimde ortaya çıkar.
+\end{itemize}
+
+\subsubsection{Hiyerarşi Açmazının Çözümü: $G$'nin Cebirsel Sadeleşmesi ve Cornell Gerilimi}
+\label{sec:hiyerarsi_monograph}
+Vakum doyum gerilimi $F_{\mathrm{Planck}} = c^4/G \approx 1.21 \times 10^{44}\text{ N}$ seviyesindeyken, hadronik akı tüpünün geriliminin neden $\sigma \approx 1.6 \times 10^5\text{ N}$ ($\approx 1\text{ GeV/fm}$) olduğu sorusu; parçacığın kütlesi $m_q$ ile Planck ölçeği arasındaki boyutsuz kuantum kütleçekim kuplajı ($\alpha_G \equiv G m_q^2 / \hbar c$) üzerinden analitik olarak çözülür:
+\begin{equation}
+    \sigma = \alpha_G \cdot F_{\mathrm{Planck}} = \left( \frac{G m_q^2}{\hbar c} \right) \left( \frac{c^4}{G} \right) = \frac{m_q^2 c^3}{\hbar}.
+    \label{eq:sigma_monograph_ispat}
+\end{equation}
+Burada $G$ sabiti pay ve paydadan tamamen yok olur! $m_q \approx 440\text{ MeV}$ kurucu kuark kütlesi için $\sigma \approx 1.57 \times 10^5\text{ N} \approx 0.98\text{ GeV/fm}$ değeri elde edilir; bu da 39 mertebelik hiyerarşiyi ad-hoc varsayımsız kapatır.
+
+\subsection{Epistemolojik Zemin: Dört Temel Postulatın Tek Parametrede Eritilmesi}
+\label{sec:postulatlarin_eritilmesi_sentez}
+
+Standart fizik paradigmalarında (Genel Görelilik ve Standart Model) birleşik alan teorilerinin bir asırdır başarısızlığa uğramasının temel epistemolojik nedeni, dört kuvveti birleştirmeye çalışırken, bu kuvvetlerin tanımlandığı \textbf{zaman ($t$), konum ($\mathbf{x}$), kütle ($m$) ve ışık hızı ($c$)} parametrelerini birbirinden bağımsız ve bağlantısız birer aksiyom olarak muhafaza etmeleridir.
+
+Doğadaki dört temel etkileşimi tek bir dinamik denklemde eritebilmek için, bu dört temel büyüklüğün kendilerinin de bağımsız postulatlar olmaktan çıkarılıp, tek bir ortak parametrenin—maddenin vakumdaki ölçek daralma dinamiğinin ($\lambda(t)$ ve $\kappa$)—farklı geometrik ve kinematik izdüşümleri olarak anlaşılması şarttır. Çabamızın ulaştığı bu ontolojik indirgeme Tablo~\ref{tab:ontolojik_indirgeme_sentez}'de özetlenmiştir.
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Klasik/Standart Postulat} & \textbf{Ölçek-Zaman Kalkülüsündeki Karşılığı}                                                                                     & \textbf{Fiziksel Mekanizma}                              \\ \midrule
+        \textbf{Işık Hızı ($c$)}          & $v_c = 1/\sqrt{\varepsilon_0\mu_0} = c$                                                                                           & Vakumun elastik faz iletim ve içsel kuantum tavan hızı   \\
+        \textbf{Zaman ($t$)}              & $dt \equiv -\frac{1}{H_0} \frac{d\lambda}{\lambda} = -\frac{1}{H_0} d(\ln\lambda)$                                                & Atomların büzülürken tuttuğu kuantum faz günlüğü         \\
+        \textbf{Konum / Uzaklık ($R$)}    & $\mathbf{R}(t) \equiv \frac{\mathbf{X}_0}{\lambda(t)} = \mathbf{X}_0 e^{H_0 t}$                                                   & Statik uzayın büzülen yerel cetvele oranı                \\
+        \textbf{Kütle ($M$)}              & $M \equiv \frac{1}{4\pi G} \oint_{\partial \Omega} |(\mathbf{v}_{\mathrm{inflow}}\cdot\nabla)\mathbf{v}_{\mathrm{inflow}}| \, dA$ & Vakum akışının ivme alanının (hız gradyanının) net akısı \\ \bottomrule
+    \end{tabular}
+    \caption{Dört temel klasik postulatın tek bir ölçek daralma mekanizmasında ($\lambda(t)$) eritilmesi.}
+    \label{tab:ontolojik_indirgeme_sentez}
+\end{table}
+
+Bu dört temel kavram tek bir mekanizmada çözüldüğünde; Kütleçekim, Elektromanyetizma, Güçlü Kuvvet ve Zayıf Kuvvet'in akış dinamikleri, aynı vakum sürekliliğindeki ($\mathbf{v}_{\mathrm{inflow}}$) farklı yoğunluk ve doyum rejimlerinin geometrik formları olarak sınıflandırılabilir.
+
+\subsection{Geometrik Sentez: Dört Etkileşimin Birleşik Akı Dinamiği}
+\label{sec:ana_dinamik_denklem_main}
+
+Ölçek-Zaman Kalkülüsünün gözlemci koordinatındaki kinematik ivme bağıntısı ile Bütünleşik Vakum Akı Ana Formülü (\ref{eq:master_formula_main}) birleştirildiğinde, doğadaki tüm mikroskobik ve makroskobik dinamikleri tek bir çatıda toplayan \textbf{Bütünleşik Ana Dinamik Denklem} elde edilir:
+\begin{equation}
+    \boxed{ m \frac{d^2\mathbf{R}}{dt^2} = - m c^2 \nabla \left[ \mathcal{C}_0 \left(\frac{R}{\ell_0}\right)^{-\gamma} \right] + 2 m H_0 \mathbf{v}_{\mathrm{yerel}} + m H_0^2 \mathbf{R} }
+    \label{eq:master_dynamic_equation}
+\end{equation}
+
+Bu tek diferansiyel denklem evrenin tüm rejimlerini eksiksiz açıklar:
+\begin{enumerate}
+    \item \textbf{Birinci Terim (Dört Temel Kuvvetin Vakum Potansiyeli):} $- m c^2 \nabla [\mathcal{C}_0 (R/\ell_0)^{-\gamma}]$ terimi, ortamın kütle-enerji yoğunluğuna göre şekillenir:
+          \begin{itemize}
+              \item $\gamma = 1 \implies$ Kütleçekim ($\mathcal{C}_0 = GM/(c^2 \ell_0)$) ve Elektromanyetizma ($\mathcal{C}_0 = \alpha \hbar / (m_e c \ell_0)$).
+              \item $\gamma = -1 \implies$ Güçlü Nükleer Kuvvet / Kuark Hapsi ($\mathcal{C}_0 = \sigma \ell_0 / (2m_q c^2)$).
+              \item $\gamma \to \text{üstel} \implies$ Zayıf Nükleer Kuvvet / Beta Bozunumu ($\mathcal{C}_0 \propto e^{-R/r_W}$).
+          \end{itemize}
+    \item \textbf{İkinci Terim (Ölçek Faz Sönümlemesi):} $2 m H_0 \mathbf{v}_{\mathrm{yerel}}$, büzülen referans sistemindeki hareketin hissettiği kozmik Coriolis direncidir.
+    \item \textbf{Üçüncü Terim (Kozmik Kaçıklık / Karanlık Enerji Yanılsaması):} $m H_0^2 \mathbf{R}$, standart kozmolojinin harici Karanlık Enerji ($\Lambda \approx 3 H_0^2$) ile açıkladığı kozmik ivmeli genleşme yanılsamasının, büzülen koordinat kalkülüsündeki doğal matematiksel karşılığıdır.
+\end{enumerate}
+
+Böylece teori iki kademeli olarak kesin analitik çözüme kavuşturulmuştur:
+\begin{itemize}
+    \item \textbf{Akı ve Hız Düzeyinde Ana Formül:} $\left(\frac{v(r)}{c}\right)^2 = 2 \, \mathcal{C}_0 \left(\frac{r}{\ell_0}\right)^{-\gamma}$ (Statik Vakum Akışı).
+    \item \textbf{Kuvvet ve Yörünge Düzeyinde Ana Denklem:} $m \frac{d^2\mathbf{R}}{dt^2} = - m c^2 \nabla \left[ \mathcal{C}_0 \left(\frac{R}{\ell_0}\right)^{-\gamma} \right] + 2 m H_0 \mathbf{v} + m H_0^2 \mathbf{R}$ (Ölçek-Kovaryant Dinamik Hareket).
+\end{itemize}
+

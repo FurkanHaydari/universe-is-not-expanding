@@ -1,0 +1,627 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{physics}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+
+\hypersetup{
+    pdftitle={Scale-Time Algebra and Conformal Calculus: A New Mathematical Formalism for Contracting Systems},
+    pdfauthor={Muhammed Furkan Haydari},
+    pdfsubject={Mathematical Physics, Differential Geometry, Nilpotent Algebra, Scalor Space},
+    pdfkeywords={Scale-Time Algebra, Scalor, Nilpotent Contraction Generator, Hubble Identity},
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=red!70!black,
+    urlcolor=blue!80!black
+}
+
+% --- Theorem Environments ---
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}{Remark}[section]
+
+\title{\textbf{Scale-Time Algebra and Conformal Calculus: \\ A New Mathematical Formalism for Contracting Systems}}
+
+\author{
+    \textbf{Muhammed Furkan Haydari} \\
+    \textit{Independent Researcher} \\
+    \textit{Istanbul, Turkey} \\
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Classical differential geometry and coordinate formalisms are constructed upon the premise that reference grids and measurement standards are rigid (time-invariant) manifolds. In this work, we formulate \textbf{Scale-Time Algebra} and its associated differential calculus to describe physical systems in which the background spacetime remains strictly static and Euclidean, while local atomic rulers and bound states undergo global conformal contraction.
+
+    At the foundation of this formalism lies a novel nilpotent algebraic generator, \textbf{$\kappa$ ($\kappa \neq 0, \kappa^2 = 0$)}, structurally congruent with Clifford dual numbers and Grassmann exterior algebras. We define the \textbf{Scalor} space, which unifies static spatial coordinates with local conformal scale factors into a single hyper-complex element. By constructing the Scale-Lorentz group $\mathcal{SL}(3,1)$ representations, we derive the \textbf{Scale-Covariant Derivative ($\mathbb{D}_t$)} as the natural generalization of standard differential operators. As a direct analytic consequence of this calculus, the apparent cosmological Hubble relation ($v = H_0 d$) emerges directly from the Leibniz product rule applied to a contracting coordinate standard, demonstrating how scale evolution mimics kinematic recession without requiring metric expansion of space.
+\end{abstract}
+
+\vspace{1em}
+\noindent\textbf{Keywords:} Scale-Time Algebra, Scalor, Contraction Generator, Scale-Covariant Derivative, Hubble Identity, Nilpotent Algebra, Clifford Algebra.
+
+\vspace{1em}
+\hrule
+\vspace{0.8em}
+\tableofcontents
+\vspace{0.8em}
+\hrule
+\vspace{1.5em}
+
+\section{Introduction and Mathematical Motivation}
+\label{sec:giris}
+
+Standard differential geometry and metric calculus are founded upon the implicit assumption that coordinate meshes and measuring rods are time-independent (rigid). The real line $\mathbb{R}$ establishes distance between two points as $d(x_1, x_2) = |x_1 - x_2|$, while the complex field $\mathbb{C} = \{x + i y \mid i^2 = -1\}$ parameterizes two-dimensional orthogonal rotations and oscillatory wave dynamics.
+
+However, as emphasized by Christof Wetterich~\cite{wetterich2013} and Fred Hoyle~\cite{hoyle1964}, an exact \textbf{conformal equivalence} exists between an expanding FLRW metric ($g_{\mu\nu} = a^2(\eta) \eta_{\mu\nu}$) and a static Minkowski background where local atomic length standards undergo continuous contraction ($\lambda(t) \equiv a^{-1}(t)$). Whereas standard cosmology attributes this degree of freedom to metric tensor expansion, here we encode scale evolution directly as a nilpotent component of the underlying algebraic structure.
+
+\subsection{Conformal Geometric Reduction of Fundamental Quantities}
+\label{sec:geometrik_indirgeme}
+
+To formulate the interaction between spacetime geometry and dynamical fields within a single unified framework, time ($t$), position ($\mathbf{x}$), mass ($M$), and the speed of light ($c$) are represented differentially on a quiescent background in terms of the contraction dynamics ($\lambda(t)$ and nilpotent generator $\kappa$):
+\begin{enumerate}
+    \item \textbf{Speed of Light ($c$):} Governs the transverse phase propagation velocity within the stationary vacuum continuum and the local quantum phase horizon ceiling ($v_c = 1/\sqrt{\varepsilon_0\mu_0} = c$).
+    \item \textbf{Time ($t$):} Represents the differential logarithmic rhythm recorded by atomic quantum phase oscillations along the scale contraction trajectory ($dt \equiv -\frac{1}{H_0} d\ln\lambda$).
+    \item \textbf{Position / Coordinate Distance ($R$):} The dimensionless ratio between the invariant coordinate distance in the static Euclidean continuum and the local contracting ruler ($R(t) = \mathbf{X}_0 / \lambda(t)$).
+    \item \textbf{Mass ($M$):} The net Gauss flux of the convective vacuum acceleration field across a closed surface within the Painlevé--Gullstrand geometry ($M \equiv \frac{1}{4\pi G} \oint_{\partial \Omega} |(\mathbf{v}_{\mathrm{inflow}} \cdot \nabla) \mathbf{v}_{\mathrm{inflow}}| \, dA$).
+\end{enumerate}
+With these geometric identifications, the dynamics of contracting systems can be analyzed within a scale-covariant differential calculus.
+
+\section{Fundamental Algebraic Structure: $\kappa$ Contraction Generator and Scalors}
+\label{sec:cebir}
+
+\begin{definition}[$\kappa$ Contraction Unit and Nilpotent Dual Algebra]
+    \label{def:kappa_nilpotent_sc}
+    Let $\kappa$ denote an algebraic unit outside the real field $\mathbb{R}$, satisfying the nilpotent relation:
+    \begin{equation}
+        \kappa \neq 0, \quad \kappa^2 = 0.
+        \label{eq:kappa_tanim}
+    \end{equation}
+    Historically formulated by William Kingdon Clifford (1873) as the ring of dual numbers ($\mathbb{D} = \{a + b\kappa \mid a, b \in \mathbb{R}, \kappa^2 = 0\}$) and developed by Eduard Study (1903) for kinematic geometry, this structure is physically extended in Scale-Time Calculus to model a 5-dimensional conformal super-manifold $\mathcal{M}^{(4|1)}$, attaching an internal scale contraction fiber to 4-dimensional static spacetime. $\kappa$ acts as the generator of internal conformal scale contraction, preserving the static spatial coordinate while encoding the radial contraction gradient.
+\end{definition}
+
+Just as the imaginary unit $i$ endows real quantities with rotational and phase dimensions:
+$$z = x + i y \in \mathbb{C}, \quad e^{i\theta} = \cos\theta + i \sin\theta,$$
+the unit $\kappa$ equips a quantity with an intrinsic scale dimension.
+
+\begin{definition}[Scalor]
+    \label{def:skalor_sc}
+    A \textbf{Scalor} is a hyper-complex element combining an invariant spatial position vector $\mathbf{x} \in \mathbb{R}^3$ with a time-dependent atomic scale factor $\lambda(t) \in \mathbb{R}^+$ via the unit $\kappa$:
+    \begin{equation}
+        \mathbb{S}(t) \equiv \mathbf{x} + \kappa \cdot \lambda(t),
+        \label{eq:skalor_tanim}
+    \end{equation}
+    where $\mathbf{x}$ denotes the coordinate position in the invariant static background, and $\lambda(t) = e^{-H_0 t}$ represents the internal atomic length standard.
+\end{definition}
+
+\subsection{Operations in Scalor Algebra}
+For two Scalors $\mathbb{S}_1 = \mathbf{x}_1 + \kappa \lambda_1$ and $\mathbb{S}_2 = \mathbf{x}_2 + \kappa \lambda_2$:
+\begin{enumerate}
+    \item \textbf{Addition:}
+          \begin{equation}
+              \mathbb{S}_1 + \mathbb{S}_2 = (\mathbf{x}_1 + \mathbf{x}_2) + \kappa (\lambda_1 + \lambda_2).
+          \end{equation}
+    \item \textbf{Scale-Modulated Product:}
+          Due to nilpotency $\kappa^2 = 0$:
+          \begin{equation}
+              \mathbb{S}_1 \odot \mathbb{S}_2 = (\mathbf{x}_1 \cdot \mathbf{x}_2) + \kappa (\lambda_1 \mathbf{x}_2 + \lambda_2 \mathbf{x}_1).
+          \end{equation}
+    \item \textbf{Conformal Exponential Expansion:}
+          \begin{equation}
+              e^{\kappa \theta} = 1 + \kappa \theta.
+              \label{eq:kappa_ustel}
+          \end{equation}
+\end{enumerate}
+
+\subsection{Nilpotent Algebra ($\kappa^2 = 0$), Dual Numbers, and Annihilation}
+\label{sec:nilpotent_annihilation}
+
+In standard real analysis, the mapping $f(x) = x^2$ is two-to-one; for instance $(\pm 2)^2 = 4$, and the only real number whose square vanishes is zero ($x^2 = 0 \iff x = 0$).
+
+In contrast, within Clifford dual numbers (introduced by W.~K.~Clifford in 1873) and Hermann Grassmann's exterior algebra, non-zero hyper-complex units exist whose square is identically zero. The unit $\kappa$ belongs strictly to this family:
+\begin{equation}
+    \kappa \neq 0, \quad \text{yet} \quad \kappa^2 = 0.
+\end{equation}
+For a general Scalor $z = a + b\kappa$ with $a, b \in \mathbb{R}$:
+\begin{equation}
+    z^2 = (a + b\kappa)^2 = a^2 + 2ab\kappa + b^2 \kappa^2 = a^2 + 2ab\kappa.
+\end{equation}
+For pure nilpotent states ($a = 0$):
+\begin{equation}
+    z = b\kappa \implies z^2 = b^2 \kappa^2 \equiv 0 \quad (\forall b \in \mathbb{R}, \; b \neq 0).
+\end{equation}
+This establishes the existence of infinitely many non-zero elements whose square vanishes identically.
+
+\subsubsection{Physical Manifestation: Nilpotent Ideals and Chiral Representation}
+In quantum field theory, fermionic fields are parameterized via nilpotent Grassmann variables ($\theta_i \theta_j = -\theta_j \theta_i \implies \theta^2 = 0$), providing the algebraic foundation for the Pauli Exclusion Principle and Berezin integration~\cite{berezin1966}.
+
+In the Scale-Time formalism, representing chiral vacuum excitations via the nilpotent generator yields:
+\begin{equation}
+    \boldsymbol{\omega}_+ = +\boldsymbol{\omega}_0 \kappa, \quad \boldsymbol{\omega}_- = -\boldsymbol{\omega}_0 \kappa.
+\end{equation}
+The superposition of these opposing chiral states produces a nilpotent contact interaction:
+\begin{equation}
+    \mathbb{S}_{\mathrm{interaction}} \propto (\kappa) \cdot (\kappa) = \kappa^2 \equiv 0.
+\end{equation}
+Algebraically, $\kappa^2 = 0$ guarantees that second-order differential forms in Scalor space are automatically closed, and chiral projection operators $\mathcal{P}_\pm \equiv \frac{1}{2}(1 \pm \kappa)$ form a nilpotent ideal. This ensures scale conservation without requiring expanding spatial manifolds.
+
+\subsection{Group-Theoretic Structure: The Scale-Lorentz Group $\mathcal{SL}(3,1)$}
+In standard relativistic physics, spacetime symmetries are governed by the Poincaré group $\mathcal{P} = SO(3,1) \ltimes \mathbb{R}^{3,1}$, which presupposes rigid measurement standards. In Scale-Time Algebra, this structure is extended by the nilpotent generator $\kappa$ into the \textbf{Scale-Lorentz Group} $\mathcal{SL}(3,1) \equiv SO(3,1) \ltimes \mathbb{R}^+_\kappa$.
+
+The commutation relations between Dirac matrices $\gamma^\mu$ and $\kappa$ in the Clifford algebra read:
+\begin{equation}
+    \{\gamma^\mu, \gamma^\nu\} = 2\eta^{\mu\nu}, \quad [\kappa, \gamma^\mu] = -\kappa \gamma^\mu, \quad \kappa^2 = 0.
+    \label{eq:clifford_scale}
+\end{equation}
+This algebra ensures that quantum spinors preserve their phase angles under contraction while their radial norms scale with $\lambda(t)$. The Scale-Covariant Derivative $\mathbb{D}_\mu \equiv \partial_\mu + \kappa A_\mu^{\mathrm{scale}}$ acts as a gauge-covariant derivative for scale transformations, where $A_0^{\mathrm{scale}} = H_0/c$ is the universal scale gauge potential.
+
+\section{Ontological Derivation of Time and Position from Scalor Algebra}
+\label{sec:zaman_konum_turetilis}
+
+In Newtonian physics and General Relativity, space $\mathbf{x}$ and time $t$ are posited as primitive coordinate backgrounds. Motivated by the "Problem of Time" in canonical quantum gravity (the absence of time in the Wheeler--DeWitt equation) and singularity paradoxes, space and time should be viewed as derived, secondary quantities.
+
+In Scale-Time Algebra, the universe possesses a single invariant: \textbf{The scaleless, frictionless, static continuum $\mathcal{E}_\infty$}. A physical observer or bound matter state is a Scalor defined on this continuum by $\mathbb{S} = \mathbf{X}_0 + \kappa \lambda$. From this foundation, time and position are derived rigorously:
+
+\begin{axiom}[Static Continuum and Nilpotent Existence]
+    \label{ax:statik_sureklilik_sc}
+    The universal background is an absolute, static, and metric-free Euclidean continuum ($\mathbf{X}_0 \in \mathcal{E}_\infty$, $\dot{\mathbf{X}}_0 = 0$). Matter exists as a bound state on this continuum carrying a nilpotent contraction charge $\kappa^2 = 0$.
+\end{axiom}
+
+\begin{theorem}[Derivation of Time: Time as the Contraction Phase Log]
+    \label{thm:zaman_turetilis}
+    Physical time $t$ is derived as the integral of the logarithmic contraction rate of the internal nilpotent scale $\lambda$:
+    \begin{equation}
+        dt \equiv -\frac{1}{H_0} \frac{d\lambda}{\lambda} = -\frac{1}{H_0} d(\ln \lambda) \implies t(\lambda) = -\frac{1}{H_0} \ln\left(\frac{\lambda}{\lambda_0}\right).
+        \label{eq:zaman_turetilis}
+    \end{equation}
+    This directly determines the scale evolution of matter:
+    \begin{equation}
+        \lambda(t) = \lambda_0 e^{-H_0 t}.
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    A physical observer cannot measure the "flow of time" directly; an observer only registers the internal quantum frequency of bound systems (atoms, clocks, orbital periods): $\omega(\lambda) = \frac{\hbar}{m(\lambda) \lambda^2}$. In any contracting system, the atomic frequency accelerates as $\omega(t) = \omega_0 e^{H_0 t}$. Establishing a bijection between the cumulative phase count $\Phi = \int \omega(t) dt$ and scale contraction $d\lambda/\lambda$, we find $dt \propto -d\lambda/\lambda$. Normalizing by the universal vacuum flow constant $H_0^{-1}$ yields Theorem~\ref{thm:zaman_turetilis}.
+\end{proof}
+
+\begin{corollary}[Geometric Origin of the Arrow of Time]
+    \label{cor:zaman_oku_sc}
+    The arrow of time originates from the strict monotonicity of atomic scale contraction ($\dot{\lambda} < 0$). The monotonic evolution $\lambda(t) = \lambda_0 e^{-H_0 t}$ establishes a smooth, non-singular affine parameterization ($t \in \mathbb{R}$) on the manifold. In a rigid reference frame where contraction is absent ($\dot{\lambda} = 0$), the differential scale variation vanishes ($dt = 0$), and local clocks experience no frequency drift.
+\end{corollary}
+
+\begin{theorem}[Derivation of Position and Distance: Distance as Scale Ratio]
+    \label{thm:konum_turetilis}
+    Observed physical position and distance $\mathbf{R}_{\mathrm{obs}}$ correspond to the algebraic projection of the static background point $\mathbf{X}_0$ onto the observer's contracted ruler scale $\lambda(t)$:
+    \begin{equation}
+        \mathbf{R}_{\mathrm{obs}}(t) \equiv \frac{\mathbf{X}_0}{\lambda(t)} = \frac{\mathbf{X}_0}{\lambda_0} e^{H_0 t}.
+        \label{eq:konum_turetilis}
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    An observer measures space not via abstract meters, but in units of their own atomic radius $r_{\mathrm{atom}}(t) = r_0 \lambda(t)$. The number of atomic ruler units fitting between two stationary points $(\mathbf{X}_1, \mathbf{X}_2)$ in the static background is:
+    \begin{equation}
+        N(t) \equiv \frac{|\mathbf{X}_2 - \mathbf{X}_1|}{r_{\mathrm{atom}}(t)} = \frac{|\mathbf{X}_0|}{r_0 \lambda(t)} = \frac{|\mathbf{X}_0|}{r_0 \lambda_0} e^{H_0 t} = N_0 e^{H_0 t}.
+        \label{eq:cetvel_sayimi_ispat_sc}
+    \end{equation}
+    Although the absolute background distance $|\mathbf{X}_0|$ remains invariant ($\dot{\mathbf{X}}_0 = 0$), as the atomic rulers contract ($r_{\mathrm{atom}} \to 0$), the count of atomic units spanning the interval grows exponentially. An observer unaware of their own shrinking interprets this increasing ruler count as an apparent spatial recession ($\mathbf{R}_{\mathrm{obs}}$ growing) and recession velocity ($v = H_0 d$).
+\end{proof}
+
+\begin{quote}
+    \small
+    \textbf{Epistemological Synthesis: Resolution of the Newton vs. Leibniz--Mach Debate:} \\
+    While Newton regarded space as an absolute container, Leibniz and Mach argued that space is merely the relational configuration among bodies. Scale-Time Calculus unifies this historical debate:
+    \begin{itemize}
+        \item \textbf{Background (Newtonian Absolute):} Space itself ($\mathcal{E}_\infty$) is an absolute, quiescent, uncurved, and non-expanding Euclidean continuum.
+        \item \textbf{Distance and Separation (Machian Relational):} All perceived and measured distances are relational projections of a contracting atomic network ($R \sim 1/\lambda$).
+    \end{itemize}
+    This ontological duality clarifies two limiting regimes: In a local laboratory, matter contraction cannot be detected by internal comparisons (since both the sample and the ruler contract concurrently):
+    \begin{equation}
+        \lim_{\lambda(t) \to 0} \frac{L(t)}{r_{\mathrm{ruler}}(t)} = \lim_{\lambda \to 0} \frac{L_0 \lambda(t)}{1\text{ m} \cdot \lambda(t)} = L_0 = \text{Constant},
+        \label{eq:lhopital_oran_sc}
+    \end{equation}
+    preserving exact internal scale invariance.
+
+    Conversely, the conventional observable universe horizon ($\sim 93$ billion light-years) is not a physical boundary of space nor the total cosmic volume. The "light-year" is a relative ruler locked to the contraction cadence of local atomic clocks ($1\text{ ly} \equiv c \times 1\text{ local atomic year}$). Because the background continuum ($\mathcal{E}_\infty$) is strictly static and infinite ($X = \text{const}$), measuring an invariant Euclidean separation with shrinking atomic rulers yields:
+    \begin{equation}
+        d_{\mathrm{obs}}(t) = \frac{X}{\lambda(t)} \xrightarrow{\lambda(t) \to 0} \infty.
+        \label{eq:sonsuz_arka_plan_iraksama_sc}
+    \end{equation}
+    The universe does not expand; rather, shrinking rulers register the quiescent infinity as an apparent expansion. The 93-billion-light-year boundary is merely the optical horizon integrated backward over our contracted coordinate window; beyond it, absolute static Euclidean space extends indefinitely.
+\end{quote}
+
+\begin{theorem}[Planck Length and Planck Time: The Vacuum Saturation Threshold]
+    \label{thm:planck_ontolojisi}
+    In conventional physics, the Planck length ($\ell_P \equiv \sqrt{\hbar G/c^3} \approx 1.6 \times 10^{-35}\text{ m}$) and Planck time ($t_P \equiv \ell_P/c \approx 5.4 \times 10^{-44}\text{ s}$) are often viewed as discreteness thresholds or spacetime foam. In Scale-Time Calculus, these quantities are re-identified ontologically:
+    \begin{enumerate}
+        \item \textbf{Planck Length ($\ell_P$):} The background vacuum $\mathcal{E}_\infty$ is strictly continuous and smooth; space has no discrete pixels. Rather, $\ell_P$ is the \textbf{Topological Saturation Threshold} where the Compton wavelength ($\lambda_C = \hbar/mc$) of a matter vortex intersects its vacuum flow event horizon ($r_s = 2Gm/c^2$):
+              \begin{equation}
+                  \lambda_C \sim r_s \implies \frac{\hbar}{mc} \sim \frac{Gm}{c^2} \implies r_{\mathrm{min}} \sim \sqrt{\frac{\hbar G}{c^3}} \equiv \ell_P.
+                  \label{eq:planck_uzunluk_sc}
+              \end{equation}
+              Because the maximum tension force the vacuum can sustain is bounded by $F_{\mathrm{Planck}} = c^4/G \approx 1.21 \times 10^{44}\text{ N}$, no physical system can be compressed below the radius $\ell_P$.
+        \item \textbf{Planck Time ($t_P$):} By the contraction log ($dt \equiv -\frac{1}{H_0} d\ln\lambda$), $t_P = \ell_P/c$ represents the \textbf{period of a single complete phase revolution of the most saturated physical quantum oscillator possible}:
+              \begin{equation}
+                  t_P = \frac{\ell_P}{c} = \sqrt{\frac{\hbar G}{c^5}} \implies \omega_{\mathrm{max}} = \frac{1}{t_P} \approx 1.85 \times 10^{43}\text{ s}^{-1}.
+                  \label{eq:planck_zaman_sc}
+              \end{equation}
+              Intervals shorter than $t_P$ are physically meaningless because no physical clock mechanism in nature can oscillate at a higher frequency.
+    \end{enumerate}
+\end{theorem}
+
+\begin{corollary}[Dirac Large Numbers and the Scale Contraction Factor]
+    \label{cor:dirac_buyuk_sayilar_sc}
+    The large ratio between the Bohr radius and the Planck length ($a_0 / \ell_P \sim 10^{25}$) represents the \textbf{cumulative logarithmic phase distance traversed by the universal contraction engine ($e^{-H_0 t}$) relative to the vacuum saturation ceiling $\ell_P$}.
+\end{corollary}
+
+\begin{corollary}[Timescale to Planck Saturation: $\sim 785$ Billion Years]
+    \label{cor:planck_boyuna_inme_zamani_sc}
+    As atomic radii contract according to $r_{\mathrm{atom}}(t) = a_0 e^{-H_0 \Delta t}$, the time required to reach the mechanical saturation limit $\ell_P$ is:
+    \begin{equation}
+        \Delta t_{\mathrm{Planck}} = \frac{1}{H_0} \ln\left( \frac{a_0}{\ell_P} \right) = t_H \ln\left( \frac{a_0}{\ell_P} \right).
+        \label{eq:planck_zamani_hesap_sc}
+    \end{equation}
+    Taking $t_H \equiv 1/H_0 \approx 13.90\text{ Gyr}$, $a_0 \approx 5.29 \times 10^{-11}\text{ m}$, and $\ell_P \approx 1.62 \times 10^{-35}\text{ m}$:
+    \begin{equation}
+        \frac{a_0}{\ell_P} \approx 3.27 \times 10^{24} \implies \ln\left( \frac{a_0}{\ell_P} \right) \approx 56.45,
+    \end{equation}
+    yielding a future duration of:
+    \begin{equation}
+        \Delta t_{\mathrm{Planck}} \approx 56.45 \times 13.90\text{ Gyr} \approx \mathbf{785\text{ Billion Years}},
+        \label{eq:785_milyar_yil_sc}
+    \end{equation}
+    (for a proton radius $r_p \approx 0.84\text{ fm}$, $\Delta t \approx 45.4 \, t_H \approx \mathbf{631\text{ Billion Years}}$). This confirms that 3D atomic physics will operate uninterrupted for roughly $57$ times the current age of the universe, after which matter transitions into a saturated 1D flux regime at the tension limit ($c^4/G$).
+\end{corollary}
+
+\begin{theorem}[Derivation of Mass: Mass as Vacuum Absorption Throughput]
+    \label{thm:kutle_turetilis}
+    Mass $M$ is defined as the \textbf{vacuum flux rate} drawn inward per unit time from the surrounding static vacuum continuum by contracting matter:
+    \begin{equation}
+        M \equiv \frac{1}{4\pi G} \oint_{\partial \Omega} v_{\mathrm{inflow}}^2 \, d\mathbf{A},
+        \label{eq:kutle_tanim}
+    \end{equation}
+    where $v_{\mathrm{inflow}}(r) = -\sqrt{2GM/r}$ is the radial velocity field. Mass-energy equivalence ($E = mc^2$) reflects the total kinetic energy of this inward vacuum flow collapsing at the characteristic radial contraction speed $v_c = c$.
+\end{theorem}
+
+\begin{corollary}[Invariance of Dimensionless Ratios and Laboratory Null Tests]
+    \label{cor:boyutsuz_oranlar_sc}
+    Any laboratory measurement of two masses yields the dimensionless ratio $\mathcal{R}_m \equiv m_1 / m_2$. Because all bound matter states scale synchronously according to $m(t) = m_0 e^{H_0 t}$:
+    \begin{equation}
+        \frac{m_1(t)}{m_2(t)} = \frac{m_{1,0} e^{H_0 t}}{m_{2,0} e^{H_0 t}} = \frac{m_{1,0}}{m_{2,0}} = \text{const} \implies \frac{d}{dt}\left(\frac{m_1}{m_2}\right) \equiv 0.
+        \label{eq:boyutsuz_oran_sc}
+    \end{equation}
+    Likewise, $\dot{\alpha}/\alpha = 0$ and $\dot{\mu}/\mu = 0$ (where $\mu = m_p/m_e$). Because local dimensionless ratios remain invariant, Eötvös torsion balances and the MICROSCOPE satellite experiment observe differential acceleration consistent with zero to within $\eta < 10^{-15}$.
+\end{corollary}
+
+\section{Scale-Covariant Calculus}
+\label{sec:kalkulus}
+
+In classical mechanics, particle velocity $\mathbf{v} = \frac{d\mathbf{x}}{dt}$ is defined via the standard Newtonian derivative. When the observer's measurement units contract with time, this definition must be extended.
+
+\begin{definition}[Scale-Covariant Derivative]
+    \label{def:olcek_kovaryant_turev_sc}
+    The \textbf{Scale-Covariant Derivative Operator} $\mathbb{D}_t$, unifying the static coordinate derivative with internal scale contraction, is defined by:
+    \begin{equation}
+        \mathbb{D}_t \equiv \frac{d}{dt} - \kappa \left( \frac{\dot{\lambda}(t)}{\lambda(t)} \right) = \frac{d}{dt} + \kappa H_0,
+        \label{eq:olcek_turev_operatoru}
+    \end{equation}
+    where $H_0 \equiv -\dot{\lambda}/\lambda$ is the universal contraction rate.
+\end{definition}
+
+\subsection{Fundamental Theorems of Scale Calculus}
+
+\begin{theorem}[Relative Velocity and the Hubble Identity]
+    \label{thm:hubble_teoremi}
+    Let $\mathbf{R}(t) \equiv \frac{\mathbf{x}}{\lambda(t)}$ denote the physical distance between two bound states at rest in the static background ($d\mathbf{x}/dt = 0$), measured with a contracting local ruler $\lambda(t)$. The time derivative of this distance is:
+    \begin{equation}
+        \mathbf{v}_{\mathrm{obs}} = \frac{d\mathbf{R}}{dt} = \frac{\mathbf{v}_{\mathrm{trans}}}{\lambda(t)} + H_0 \mathbf{R}(t),
+        \label{eq:hubble_ispat}
+    \end{equation}
+    which, for zero translational coordinate velocity ($\mathbf{v}_{\mathrm{trans}} = 0$), reduces directly to:
+    \begin{equation}
+        \mathbf{v}_{\mathrm{obs}} = H_0 \mathbf{R}.
+        \label{eq:hubble_saf}
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    Applying the product rule of calculus to $\mathbf{R}(t) = \mathbf{x}(t) \cdot \lambda^{-1}(t)$:
+    \begin{align*}
+        \mathbf{v}_{\mathrm{obs}} & = \frac{d}{dt} \left( \mathbf{x}(t) \lambda^{-1}(t) \right)                                                                            \\
+                                  & = \frac{d\mathbf{x}}{dt} \lambda^{-1}(t) + \mathbf{x}(t) \frac{d(\lambda^{-1}(t))}{dt}                                                 \\
+                                  & = \frac{\mathbf{v}_{\mathrm{trans}}}{\lambda(t)} + \mathbf{x}(t) \left( -\frac{\dot{\lambda}(t)}{\lambda^2(t)} \right)                 \\
+                                  & = \frac{\mathbf{v}_{\mathrm{trans}}}{\lambda(t)} + \left(-\frac{\dot{\lambda}(t)}{\lambda(t)}\right) \frac{\mathbf{x}(t)}{\lambda(t)}.
+    \end{align*}
+    Substituting $H_0 \equiv -\frac{\dot{\lambda}(t)}{\lambda(t)}$ and $\mathbf{R}(t) = \frac{\mathbf{x}(t)}{\lambda(t)}$:
+    $$\mathbf{v}_{\mathrm{obs}} = \frac{\mathbf{v}_{\mathrm{trans}}}{\lambda(t)} + H_0 \mathbf{R}(t).$$
+    For bodies at rest in coordinate space ($\mathbf{v}_{\mathrm{trans}} = 0$):
+    $$\mathbf{v}_{\mathrm{obs}} = H_0 \mathbf{R}.$$
+    This completes the proof.
+\end{proof}
+
+\section{Three Distinct Velocity Regimes}
+\label{sec:uc_hiz}
+
+In Scale Calculus, the concept of velocity separates into distinct categories:
+
+\begin{table}[h!]
+    \centering
+    \small
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        \textbf{Velocity Type}                 & \textbf{Symbol}               & \textbf{Mathematical Definition}                                                & \textbf{Physical Meaning}                         \\ \midrule
+        \textbf{Coordinate Velocity}           & $\mathbf{v}_{\mathrm{trans}}$ & $\frac{d\mathbf{x}}{dt}$ ($v < c$)                                              & Matter translation on static background          \\
+        \textbf{Intrinsic Phase Velocity}      & $v_c$                         & $1/\sqrt{\varepsilon_0\mu_0} = c$                                               & Elastic vacuum phase propagation ceiling          \\
+        \textbf{Vacuum Phase (Light) Velocity} & $v_{\mathrm{phase}}$          & $\frac{\omega}{|\mathbf{k}|} = c$                                               & Phase speed relative to contracting observer      \\
+        \textbf{Apparent (Scale) Velocity}     & $\mathbf{v}_{\mathrm{obs}}$   & $\mathbb{D}_t \mathbf{R} = \frac{v_{\mathrm{trans}}}{\lambda} + H_0 \mathbf{R}$ & Apparent velocity recorded by contracting ruler   \\ \bottomrule
+    \end{tabular}
+    }
+    \caption{Hierarchy of velocity definitions in Scale-Time Algebra.}
+    \label{tab:hiz_hiyerarsisi}
+\end{table}
+
+\subsection{Coordinate Separation Velocity (\texorpdfstring{$v_{\mathrm{sep}} \le 2c$}{vsep <= 2c})}
+\label{sec:ayrilma_hizi}
+
+The relativistic postulate that no physical signal can exceed $c$ applies strictly to \textbf{local information and particle propagation through the vacuum} ($v_{\mathrm{local}} \le c$). On our static Euclidean manifold ($\mathcal{E}_\infty$), the rate of separation between two independent wavefronts is an unconstrained kinematic quantity:
+
+\begin{definition}[Coordinate Separation Velocity - $v_{\mathrm{sep}}$]
+    \label{def:koordinat_ayrilma_hizi_sc}
+    Let two photons propagate in opposite directions ($180^\circ$) across the static vacuum with positions $\mathbf{x}_1(t) = -c t \, \hat{n}$ and $\mathbf{x}_2(t) = +c t \, \hat{n}$. The Euclidean distance between them is $D(t) \equiv |\mathbf{x}_2(t) - \mathbf{x}_1(t)| = 2ct$. The coordinate separation velocity is:
+    \begin{equation}
+        v_{\mathrm{sep}} \equiv \frac{d D}{dt} = 2c.
+        \label{eq:ayrilma_hizi_2c}
+    \end{equation}
+    This does not violate causality, as neither individual wavefront propagates through the vacuum at a speed exceeding $c$.
+\end{definition}
+
+\subsection{The Scale-Locking Principle}
+\label{sec:olceksel_kilitlenme}
+
+The stability of bound states across atomic and celestial mechanics is governed by the \textbf{Scale-Locking} condition:
+\begin{equation}
+    \mathbb{D}_t \left( \frac{\mathbf{x}(t)}{\lambda(t)} \right) = 0 \iff \mathbf{R}(t) = \text{const}.
+    \label{eq:scale_locking_tanim}
+\end{equation}
+As a system contracts ($\dot{\lambda} < 0$), its local length standards shrink at the identical rate, maintaining a constant dimensionless coordinate $\mathbf{R}(t)$ in its comoving frame.
+
+\section{Scale-Covariant Wave Equation}
+\label{sec:dalga_denklemi}
+
+Generalizing the d'Alembert operator via $\mathbb{D}_\mu = (\frac{1}{v_c}\mathbb{D}_t, \nabla)$:
+\begin{equation}
+    \mathbb{D}^\mu \mathbb{D}_\mu \Psi = \left( -\frac{1}{v_c^2} \left(\frac{\partial}{\partial t} + \kappa H_0\right)^2 + \nabla^2 \right) \Psi = 0.
+    \label{eq:genel_dalga_operatoru}
+\end{equation}
+Applying the nilpotency relation $\kappa^2 = 0$, the wave operator simplifies to:
+\begin{equation}
+    \left( -\frac{1}{v_c^2} \frac{\partial^2}{\partial t^2} - \frac{2\kappa H_0}{v_c^2} \frac{\partial}{\partial t} + \nabla^2 \right) \Psi = 0.
+    \label{eq:acik_dalga}
+\end{equation}
+The cross term $\frac{2\kappa H_0}{v_c^2} \frac{\partial}{\partial t}$ is the geometric scale-damping term that accounts for why photons propagating through a quiescent vacuum are registered as \textbf{redshifted} by contracting atomic detectors.
+
+\section{Scale-Covariant Phase Space and Heisenberg Uncertainty}
+\label{sec:faz_uzayi_heisenberg}
+
+By Liouville's theorem in classical and quantum statistical mechanics, phase space volume is conserved under Hamiltonian time evolution: $d\Gamma = d^3\mathbf{x} \, d^3\mathbf{p} = \text{const}$. In a framework where the observer's spatial scale contracts ($\lambda(t) \to 0$):
+
+\begin{theorem}[Scale-Invariance of Phase Space Volume]
+    \label{thm:faz_uzayi_degismezligi_sc}
+    As the characteristic spatial dimension of a bound quantum state contracts ($\Delta x(t) = \lambda(t) \Delta x_0$), its momentum uncertainty expands reciprocally via the de Broglie relation ($\lambda_{\mathrm{dB}} = \hbar / p$):
+    \begin{equation}
+        \Delta p(t) = \frac{\Delta p_0}{\lambda(t)}.
+        \label{eq:momentum_genlesme}
+    \end{equation}
+    Consequently, the differential volume element of Scalor phase space is strictly \textbf{scale-invariant}:
+    \begin{equation}
+        d\Gamma(t) \equiv d^3\mathbf{x}(t) \, d^3\mathbf{p}(t) = \left( \lambda^3(t) d^3\mathbf{x}_0 \right) \cdot \left( \lambda^{-3}(t) d^3\mathbf{p}_0 \right) = d^3\mathbf{x}_0 \, d^3\mathbf{p}_0.
+        \label{eq:faz_hacmi_korunumu}
+    \end{equation}
+\end{theorem}
+
+\begin{corollary}[Geometric Origin of the Heisenberg Uncertainty Principle]
+    \label{cor:heisenberg_kokeni_sc}
+    The Heisenberg uncertainty relation:
+    \begin{equation}
+        \Delta x(t) \cdot \Delta p(t) = \left( \lambda(t) \Delta x_0 \right) \left( \frac{\Delta p_0}{\lambda(t)} \right) = \Delta x_0 \Delta p_0 \ge \frac{\hbar}{2},
+        \label{eq:heisenberg_turetilis}
+    \end{equation}
+    is a direct consequence of the \textbf{topological conservation of Scalor phase space volume under conformal contraction}.
+\end{corollary}
+
+\section{Scale-Covariant Hamilton--Lagrange Mechanics and Dual Super-Manifolds}
+\label{sec:lagrange_mekanigi}
+
+Dynamical evolution and conservation laws in Scale-Time Calculus are derived variationally from the principle of least action ($\delta \mathcal{S} = 0$).
+
+\subsection{Dual Super-Manifold $\mathcal{M}^{(4|1)}$ and the Berezin Integral}
+To formally embed the nilpotent generator $\kappa$ ($\kappa^2 = 0$, Clifford~\cite{clifford1873} dual numbers) into differential geometry, we define a 5-dimensional **Dual Super-Manifold** $\mathcal{M}^{(4|1)}$ extending 4-dimensional Euclidean spacetime by a nilpotent Grassmann axis:
+\begin{equation}
+    Z^A \equiv \left( x^\mu, \theta \right), \quad \theta \equiv \kappa, \quad \kappa^2 = 0, \quad \mu \in \{0, 1, 2, 3\}.
+    \label{eq:super_koordinat_sc}
+\end{equation}
+A dynamic Scalor super-field defined on this manifold takes the form:
+\begin{equation}
+    \mathbb{S}\left(x^\mu, \kappa\right) = \mathbf{X}_0^\mu(x) + \kappa \cdot \lambda(x).
+    \label{eq:skalor_super_alan_sc}
+\end{equation}
+Using Berezin~\cite{berezin1966} integration rules:
+\begin{equation}
+    \int d\kappa \, 1 = 0, \qquad \int d\kappa \, \kappa = 1,
+    \label{eq:berezin_kurallari_sc}
+\end{equation}
+the total Action Functional on the Dual Super-Manifold is defined as:
+\begin{equation}
+    \mathcal{S}[\mathbb{S}] = \int d^4x \int d\kappa \, \mathcal{L}\left(\mathbb{S}, \mathbb{D}_\mu \mathbb{S}\right).
+    \label{eq:skalor_eylem_fonksiyoneli_sc}
+\end{equation}
+
+\subsection{Scale-Covariant Euler--Lagrange Equations}
+Applying $\delta \mathcal{S} = 0$ yields the generalized \textbf{Scale-Covariant Euler--Lagrange Equations}:
+\begin{equation}
+    \mathbb{D}_\mu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \right) - \frac{\partial \mathcal{L}}{\partial \mathbb{S}} = 0.
+    \label{eq:euler_lagrange_olcek}
+\end{equation}
+For a free Scalor field with Lagrangian density $\mathcal{L} = -\frac{1}{2} (\mathbb{D}_\mu \mathbb{S})(\mathbb{D}^\mu \mathbb{S}) - \frac{1}{2} m^2 \mathbb{S}^2$, Eq.~(\ref{eq:euler_lagrange_olcek}) analytically yields the Scale-Covariant Wave Equation~(\ref{eq:acik_dalga}).
+
+\subsection{Scale-Covariant Noether Theorem and Energy-Momentum Conservation}
+\label{sec:noether_ve_enerji}
+
+In standard field theory, Noether's Theorem~\cite{noether1918} relates spacetime translation symmetries to conservation laws ($\partial_\mu T^{\mu\nu} = 0$). In a contracting universe where the atomic scale factor is time-dependent ($\lambda(t) = e^{-H_0 t}$), pure coordinate time translation ($t \to t + \delta t$) is not an isolated symmetry. Scale-Time Calculus resolves this directly by coupling scale and time:
+
+\begin{definition}[Scale-Covariant Energy-Momentum Tensor]
+    \label{def:olcek_enerji_momentum_tensoru_sc}
+    The canonical energy-momentum tensor derived from diffeomorphism variations of the scale-covariant action is:
+    \begin{equation}
+        T^\mu_{\phantom{\mu}\nu} \equiv \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \mathbb{D}_\nu \mathbb{S} - \delta^\mu_\nu \mathcal{L}.
+        \label{eq:olcek_enerji_momentum_tensoru}
+    \end{equation}
+\end{definition}
+
+\begin{theorem}[Covariant Conservation of Energy-Momentum]
+    \label{thm:kovaryant_korunum_sc}
+    In an isolated contracting Scalor system, the Scale-Covariant divergence of the energy-momentum tensor vanishes identically:
+    \begin{equation}
+        \mathbb{D}_\mu T^{\mu\nu} = 0.
+        \label{eq:kovaryant_korunum}
+    \end{equation}
+    Expanding in terms of partial derivatives on the flat background:
+    \begin{equation}
+        \partial_\mu T^{\mu\nu} + \kappa^\mu H_0 T_{\mu}^{\phantom{\mu}\nu} = 0.
+    \end{equation}
+    For the temporal component ($\nu = 0$), this yields the differential balance equation:
+    \begin{equation}
+        \frac{\partial T^{00}}{\partial t} + \nabla \cdot \mathbf{T}^{0} = - H_0 \left( T^{00} + \sum_{i=1}^3 T^{ii} \right).
+        \label{eq:enerji_bilancosu}
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    Consider the variation of the action under combined \textit{Scale-Time Translations}. Applying an infinitesimal coordinate shift $x^\mu \to x^\mu + \epsilon^\mu$ accompanied by the scale transformation $\lambda \to \lambda - \epsilon^\mu \kappa_\mu H_0 \lambda$, the field perturbation transforms covariantly as $\delta (\mathbb{D}_\mu \mathbb{S}) = \epsilon^\nu \mathbb{D}_\nu (\mathbb{D}_\mu \mathbb{S})$. Expanding via the chain rule and the Euler--Lagrange equations~(\ref{eq:euler_lagrange_olcek}):
+    \begin{align*}
+        \mathbb{D}_\mu \mathcal{L} & = \frac{\partial \mathcal{L}}{\partial \mathbb{S}} \mathbb{D}_\mu \mathbb{S} + \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\nu \mathbb{S})} \mathbb{D}_\mu (\mathbb{D}_\nu \mathbb{S})                                                               \\
+                                    & = \left[ \mathbb{D}_\nu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\nu \mathbb{S})} \right) \right] \mathbb{D}_\mu \mathbb{S} + \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\nu \mathbb{S})} \mathbb{D}_\nu (\mathbb{D}_\mu \mathbb{S}) \\
+                                    & = \mathbb{D}_\nu \left[ \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\nu \mathbb{S})} \mathbb{D}_\mu \mathbb{S} \right].
+    \end{align*}
+    Equating this with $\delta^\nu_\mu \mathbb{D}_\nu \mathcal{L}$ directly gives $\mathbb{D}_\nu T^\nu_{\phantom{\nu}\mu} = 0$. Due to nilpotency ($\kappa^2 = 0$), higher-order scale perturbations vanish identically, establishing exact covariant conservation.
+\end{proof}
+
+\begin{corollary}[Matter Mass Growth and Vacuum Flux Energy Balance]
+    \label{cor:madde_vakum_enerji_dengesi_sc}
+    Equation~(\ref{eq:enerji_bilancosu}) elucidates the physical exchange between matter contraction and the surrounding vacuum flow:
+    \begin{enumerate}
+        \item \textbf{Local Rest-Mass Energy Increase:} As $\lambda(t) \to 0$, conformal mass scaling dictates that particle rest energy increases as $E_{\mathrm{matter}}(t) = E_0 e^{H_0 t} \implies \frac{d E_{\mathrm{matter}}}{dt} = + H_0 E_{\mathrm{matter}}$.
+        \item \textbf{Vacuum Flux Energy Supply:} The $-H_0 T^{00}$ term in Eq.~(\ref{eq:enerji_bilancosu}) demonstrates that this energy does not appear ex nihilo; it is precisely supplied by the radial vacuum inflow ($\mathcal{S}_{\mathrm{sink}}$) drawn from the surrounding continuum: $\frac{d E_{\mathrm{vacuum}}}{dt} = - H_0 E_{\mathrm{matter}}$.
+        \item \textbf{Total Hyper-Energy Conservation:} When matter and its vacuum inflow basin are treated as a unified Scalor system, total energy is strictly conserved:
+              \begin{equation}
+                  \frac{d}{dt} \left( E_{\mathrm{matter}} + E_{\mathrm{vacuum}} \right) = 0 \iff \mathbb{D}_\mu T^{\mu\nu} = 0.
+              \end{equation}
+    \end{enumerate}
+\end{corollary}
+
+\section{Scale-Covariant Newtonian Mechanics and Orbital Stability}
+\label{sec:newton_mekanigi}
+
+The physical position vector defined with respect to the contracting atomic ruler is $\mathbf{R}(t) \equiv \mathbf{X}_0 / \lambda(t)$. Successive time derivatives yield:
+\begin{align}
+    \frac{d\mathbf{R}}{dt}     & = \frac{\dot{\mathbf{X}}_0}{\lambda} - \frac{\mathbf{X}_0 \dot{\lambda}}{\lambda^2} = \mathbf{v}_{\mathrm{local}} + H_0 \mathbf{R}, \label{eq:olcek_hiz} \\
+    \frac{d^2\mathbf{R}}{dt^2} & = \mathbf{a}_{\mathrm{local}} + 2 H_0 \mathbf{v}_{\mathrm{local}} + H_0^2 \mathbf{R}. \label{eq:olcek_ivme}
+\end{align}
+The term $H_0 \mathbf{R}$ represents the kinematic scale recession drift arising from ruler contraction.
+
+\begin{theorem}[Scale-Covariant Newton Equation of Motion]
+    \label{thm:olcek_newton_hareket_sc}
+    For a gravitational acceleration field $\mathbf{a}_{\mathrm{local}} = -\nabla V_{\mathrm{vacuum}}(\mathbf{R})$, the equation of motion in the contracting frame is:
+    \begin{equation}
+        m \frac{d^2\mathbf{R}}{dt^2} = - m \nabla V_{\mathrm{vacuum}}(\mathbf{R}) + 2 m H_0 \mathbf{v}_{\mathrm{local}} + m H_0^2 \mathbf{R}.
+        \label{eq:olcek_newton_ana}
+    \end{equation}
+    This encompasses three physical contributions:
+    \begin{enumerate}
+        \item \textbf{Vacuum Inflow Force (Local Gravity):} $-m \nabla V_{\mathrm{vacuum}}(\mathbf{R})$.
+        \item \textbf{Scale Damping Term:} $2 m H_0 \mathbf{v}_{\mathrm{local}}$ (cosmic Coriolis drag).
+        \item \textbf{Apparent Cosmic Drift:} $m H_0^2 \mathbf{R}$ (corresponding to the geometric counterpart of Dark Energy / $\Lambda$).
+    \end{enumerate}
+\end{theorem}
+
+\begin{corollary}[Local Locking vs. Cosmic Recession: Why the Moon Remains Bound]
+    \label{cor:yerel_kilitlenme_kozmik_kaciklik_sc}
+    Examining the distance scaling in Eq.~(\ref{eq:olcek_newton_ana}):
+    \begin{itemize}
+        \item \textbf{At Close Distances (Atomic to Lunar Scales):} Gravitational acceleration scales as $g_{\mathrm{vacuum}} = \frac{GM}{R^2} \propto R^{-2}$, whereas cosmic drift scales as $H_0^2 R \propto R$. At the Earth--Moon distance ($R \approx 3.84 \times 10^8\text{ m}$):
+              \begin{equation}
+                  g_{\mathrm{vacuum}} \approx 2.7 \times 10^{-3}\text{ m/s}^2 \quad \gg \quad H_0^2 R \approx 2.0 \times 10^{-27}\text{ m/s}^2.
+              \end{equation}
+              Gravitational binding dominates cosmic drift by \textbf{24 orders of magnitude ($10^{24}$ times)}. Consequently, the Moon is locked into its bound orbit, dynamically decoupling from cosmological expansion in accordance with the McVittie theorem. Solar System ephemeris telemetry limits are preserved.
+        \item \textbf{At Intergalactic Distances ($R \gg 1\text{ Mpc}$):} Gravitational inflow decays to zero ($g_{\mathrm{vacuum}} \to 0$). Local locking vanishes, leaving only the Kinematic Scale Drift:
+              \begin{equation}
+                  \frac{d\mathbf{R}}{dt} \approx H_0 \mathbf{R} \quad \text{(Apparent Hubble Expansion)}.
+              \end{equation}
+    \end{itemize}
+\end{corollary}
+
+\section{Conclusion}
+\label{sec:sonuc}
+
+The Scale-Time Algebra formulated in this paper (the generator $\kappa$, Scalor space, and the operator $\mathbb{D}_t$) provides the requisite mathematical machinery to describe contracting matter in a static, non-expanding universe. Hubble's law is transformed from an empirical postulate into an exact calculus theorem, while photon propagation and atomic contraction are reconciled within a unified scale-covariant wave equation.
+
+\begin{thebibliography}{99}
+    \bibitem{main_paper}
+    M.~F.~Haydari, ``The Unified Contraction Hypothesis and Scale-Time Calculus: A Conformal Geometric Treatise on Cosmology and Fundamental Interactions'', \textit{Zenodo Monograph}, 2026.
+
+    \bibitem{paper1}
+    M.~F.~Haydari, ``The Contracting Atom Metric and Conformal Action Principle: Testing Type Ia Supernovae (Pantheon+) and DESI 2024 BAO Without Dark Energy'' (Paper 1 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{paper4}
+    M.~F.~Haydari, ``Derivation of Gravitation as Spherical Vacuum Inflow Geometry: 3+1 ADM Action and the Painlevé--Gullstrand Metric'' (Paper 4 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{paper5}
+    M.~F.~Haydari, ``Electrodynamics, Vacuum Phase Waves, and Atomic Stability: Kinematic Pitch Interpretation of the Sommerfeld Constant $\alpha \approx 1/137$'' (Paper 5 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{paper6}
+    M.~F.~Haydari, ``Strong Nuclear Force, Quark Confinement, and Flux Tube Geometry in Scale-Time Calculus'' (Paper 6 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{paper7}
+    M.~F.~Haydari, ``Weak Nuclear Interaction, Chiral Phase Leakage, and Intermediate Vector Boson Scales'' (Paper 7 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{wetterich2013}
+    C.~Wetterich, ``A universe without expansion,'' \textit{Phys. Dark Univ.}, vol.~2, pp.~184--187, 2013.
+
+    \bibitem{hoyle1964}
+    F.~Hoyle and J.~V.~Narlikar, ``A new theory of gravitation,'' \textit{Proc. R. Soc. Lond. A}, vol.~282, no.~1389, pp.~191--212, 1964.
+
+    \bibitem{weyl1918}
+    H.~Weyl, ``Gravitation und Elektrizit\"at,'' \textit{Sitzungsber. Preuss. Akad. Wiss.}, pp.~465--480, 1918.
+
+    \bibitem{clifford1873}
+    W.~K.~Clifford, ``Preliminary sketch of biquaternions,'' \textit{Proc. London Math. Soc.}, vol.~4, pp.~381--395, 1873.
+
+    \bibitem{berezin1966}
+    F.~A.~Berezin, \textit{The Method of Second Quantization}, Academic Press, New York, 1966.
+
+    \bibitem{noether1918}
+    E.~Noether, ``Invariante Variationsprobleme,'' \textit{Nachr. Ges. Wiss. G\"ottingen, Math.-Phys. Kl.}, vol.~1918, pp.~235--257, 1918.
+\end{thebibliography}
+
+\end{document}

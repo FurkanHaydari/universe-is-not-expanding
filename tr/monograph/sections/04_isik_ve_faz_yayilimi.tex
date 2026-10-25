@@ -1,0 +1,139 @@
+\section{Durağan Vakumda Işığın Doğası, Yönlü Faz İletimi ve Büzüşen Madde ile Etkileşim}
+\label{sec:isik_yonlu_yayilim}
+
+Modelimizde yanıtlanması gereken en temel soru şudur: \textit{``Eğer statik uzay zemininde vakum durağansa ve foton maddesel bir öteleme taşımıyorsa, ışık neden belirli bir yöne doğru yayılır? Güneş'ten çıkan ışık Dünya'ya nasıl 8.3 dakikada ulaşır? Durgun bir ortamda faz iletimi ne anlama gelir?''}
+
+\subsection{Fotonun Ontolojik ve Geometrik Tanımı: Durağan Vakumda Faz İletimi}
+\label{sec:foton_tanim}
+
+\begin{definition}[Foton: Durağan Vakumun Topolojik Soliton Dalgası]
+    \label{def:foton_tanimi_main}
+    Foton; mutlak durağan Öklid vakum dokusu ($\mathcal{E}_\infty, \mathbf{v}_{\mathrm{uzay}}=0$) üzerinde, atomik ölçek geçişlerindeki kuantum momentum geri tepmesiyle ($\mathbf{p} = \hbar \mathbf{k}$) tetiklenen \textbf{enine elektromanyetik faz salınımı ve elastik gerilim dalga paketidir (soliton)}.
+    \begin{itemize}
+        \item \textbf{Vakumun Durgunluğu:} Arka plan vakum dokusu akmaz, uzay genleşmez ($\mathbf{v}_{\mathrm{uzay}} = 0$). Foton uzayda maddesel bir bilye gibi ötelenmez.
+        \item \textbf{Işık Hızı ($c$):} Vakumun elastik faz iletim hızı ile madde girdaplarının içsel relativistik kuantum faz tavan hızı özdeş olduğundan ($v_c = 1/\sqrt{\varepsilon_0\mu_0} = c$), büzülen atomik cetvel ve saatlerimizle ölçtüğümüzde bu serbest faz cephesini \textbf{bize bağıl olarak tam $c$ hızında kaydederiz}.
+    \end{itemize}
+\end{definition}
+
+\subsection{Vakum Durgunluğu ve Yönlü Faz Dalgası: Momentum Korunumu}
+Arka plan uzayı $(\mathcal{M}, \eta_{\mu\nu})$ ve elektromanyetik 4-potansiyel $A_\mu$, durgun bir göl yüzeyi gibi durağandır. Foton ise bu durgun süreklilik üzerinde uyarılmış \textbf{yönlü bir faz dalgası paketidir}.
+
+Işığın yönlü karakteri, atomik emisyon sırasındaki yerel momentum korunumundan türer. Güneş koronası veya bir atomdaki elektron dipol geçişi yaptığında belirli bir yönde ivmelenir. Yerel momentum korunumu uyarınca:
+\begin{equation}
+    \Delta \mathbf{p}_{\mathrm{atom}} = -\hbar \mathbf{k} \implies \mathbf{p}_{\mathrm{foton}} = +\hbar \mathbf{k},
+    \label{eq:momentum_korunumu}
+\end{equation}
+burada $\mathbf{k}$ dalga vektörüdür ($|\mathbf{k}| = \omega / v_c$). Yayılan dalga fonksiyonu yönlü bir skaler faz gradyanı taşır:
+\begin{equation}
+    A_\mu(\mathbf{x}, t) = \epsilon_\mu e^{i \Phi(\mathbf{x}, t)}, \quad \nabla \Phi = \mathbf{k}, \quad \frac{\partial \Phi}{\partial t} = -\omega.
+    \label{eq:yonlu_faz_denklemi}
+\end{equation}
+Salıcı atom geriye teperken vakum dokusuna Dünya'ya doğru yönelen bir faz gerilimi bırakır; yeryüzündeki bir dedektör atomu da bu gelen faz cephesini yakaladığında aynı momentumu soğurur.
+
+\subsection{Neden Dalga Hızı Maddenin İçsel Faz Tavan Hızıdır (\texorpdfstring{$v_c = c$}{vc})?}
+Suya bir taşın hangi hızla atıldığından bağımsız olarak dairesel dalgaların yayılma hızı yalnızca suyun elastik özelliklerine bağlıdır. Benzer biçimde atomik bir girdap da vakum dokusunu ortamın karakteristik iletim hızından ($v_c = 1/\sqrt{\varepsilon_0\mu_0} = c$) daha hızlı uyaramaz:
+\begin{equation}
+    \Box A_\mu = \left( -\frac{1}{v_c^2} \frac{\partial^2}{\partial t^2} + \nabla^2 \right) A_\mu = J_\mu.
+    \label{eq:dalga_operatoru_vc}
+\end{equation}
+İçsel atomik saatlerimizin referans ritmiyle ($v_c = c$) ölçüldüğünde, dalga cephesinin yayılma hızı daima kesin olarak $c$ bulunur.
+
+\subsection{Mekanik Dalga Analojisi, Vakum Esnekliği ve İp--Düğüm Modeli}
+\label{sec:tel_ve_dugum_ontolojisi}
+
+Foton gergin bir teldeki enine dalga ise, bu telin fiziksel karşılığı nedir?
+
+\subsubsection{Mekanik Tel ile Maxwell Denklemlerinin Matematiksel Özdeşliği}
+Gergin bir teldeki enine dalga hızı, telin gerilimi ($T$) ile çizgisel kütle yoğunluğunun ($\mu$) oranıyla belirlenir:
+\begin{equation}
+    v_{\mathrm{tel}} = \sqrt{\frac{T}{\mu}} = \sqrt{\frac{\text{Elastik Gerilim}}{\text{Eylemsizlik Yoğunluğu}}}.
+    \label{eq:mekanik_tel_hizi}
+\end{equation}
+Maxwell'in boşluktaki ışık hızı formülü bu mekanik bağıntıyla biçimsel ve fiziksel olarak birebir özdeştir:
+\begin{equation}
+    c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}} = \sqrt{\frac{1/\varepsilon_0}{\mu_0}} = \sqrt{\frac{\text{Vakumun Elektriksel Gerilim Modülü}}{\text{Vakumun Manyetik Eylemsizlik Yoğunluğu}}}.
+    \label{eq:vakum_tel_ozdeslik}
+\end{equation}
+\begin{itemize}
+    \item \textbf{Elektriksel Gerilim Modülü ($1/\varepsilon_0$):} Vakumun elektriksel polarizasyona ve yer değiştirmeye karşı gösterdiği elastik dirençtir.
+    \item \textbf{Manyetik Eylemsizlik Yoğunluğu ($\mu_0$):} Manyetik alan değişimine karşı ortamın gösterdiği öz-indüktif dirençtir.
+    \item \textbf{Vakumun Karakteristik Empedansı ($Z_0 \approx 377\,\Omega$):} Boşluk mutlak bir hiçlik değildir; sonlu bir dalga empedansına sahiptir:
+          \begin{equation}
+              Z_0 \equiv \sqrt{\frac{\mu_0}{\varepsilon_0}} \approx 376.73\,\Omega.
+              \label{eq:vakum_empedansi_tanim}
+          \end{equation}
+\end{itemize}
+
+\subsubsection{İp ve Düğüm Ontolojisi: Madde ile Fotonun Ortak Kaynağı}
+\begin{itemize}
+    \item \textbf{İp (Vakum Sürekliliği):} Statik Öklid uzayı $\mathcal{E}_\infty$ üzerindeki elektromanyetik 4-potansiyel alanı $A_\mu$'dur.
+    \item \textbf{Foton (Serbest Faz Dalgası):} Alanda serbestçe yayılan, kütlesiz ($m_\gamma = 0$) ve büzülmeyen enine faz uyarılmasıdır ($v_{\mathrm{faz}} = c$).
+    \item \textbf{Madde (Topolojik Girdap Düğümü):} Alan çizgilerinin kendi içine büzüşerek kapalı havza oluşturduğu, eylemsizliğe ($E = mc^2$) sahip kararlı topolojik solitondur ($v < c$).
+\end{itemize}
+
+\subsection{Güneş'ten Dünya'ya Işığın Varışı: 8.3 Dakikalık Nedensellik Mekanizması}
+\label{sec:kavramsal_netlik_main}
+
+Güneş'ten çıkan ışığın Dünya'ya 8.3 dakikada ulaşması dört aşamalı nedensel bir zincirle açıklanır:
+\begin{enumerate}
+    \item \textbf{Güneş'te Emisyon:} Uyarılmış bir hidrojen atomu seviye değiştirirken geriye teper ve durağan vakum dokusuna yönlü bir faz gerilimi ($\mathbf{k}$) bırakır.
+    \item \textbf{Uzayda Faz İletimi:} Güneş ile Dünya arasındaki uzay akmaz ($\mathbf{v}_{\mathrm{uzay}} = 0$). Vakumun komşu kuantum hücreleri uyarılmayı $c = 1/\sqrt{\varepsilon_0\mu_0} \approx 300{,}000\text{ km/s}$ faz hızıyla birbirine aktarır.
+    \item \textbf{8.3 Dakika Gecikme (Statik Öklid Mesafesi):} Statik Öklid uzaklığı $d = 1.496 \times 10^{11}\text{ m}$'dir. $c$ hızındaki faz cephesinin bu aralığı kat etmesi mutlak olarak:
+          \begin{equation}
+              \Delta t = \frac{d}{c} = \frac{1.496 \times 10^{11}\text{ m}}{2.998 \times 10^8\text{ m/s}} \approx 499\text{ saniye} \approx 8.3\text{ dakika}
+          \end{equation}
+          sürer. Kozmik nedensellik ve ışık konisi korunur.
+    \item \textbf{Dünya'da Soğurulma (Phase-Pinning):} Yeryüzündeki bir atomun rezonans soğurmasıyla ($\hbar\omega = \Delta E, v_c = c$) gelen dalga o atomun yerel büzülme sınırına kilitlenir.
+\end{enumerate}
+
+\subsection{Hız Hiyerarşisi: Madde Neden \texorpdfstring{$c$}{c}'den Yavaş Giderken Işık \texorpdfstring{$c$}{c} ile Yayılır?}
+\label{sec:hiz_hiyerarsisi_cozum}
+
+\begin{itemize}
+    \item \textbf{Kütleli Madde (Skalor Düğümler -- $0 \le v < c$):} Kapalı bir girdap düğümünün durağan vakum örgüsü içinde ötelenmesi ortamın eylemsizlik direncine tabidir; bu yüzden maddesel hız daima $v < c$'dir.
+    \item \textbf{Foton (Serbest Faz Dalgası -- $v_{\mathrm{faz}} = c$):} Ortamın kendisindeki elastik faz deformasyonu olduğundan maddesel eylemsizliğe takılmaz; ortamın karakteristik hızı olan $c$'de ilerler.
+    \item \textbf{Koordinat Ayrılma Hızı ($v_{\mathrm{sep}} \le 2c$):} Zıt yönlerde ($180^\circ$) yayılan iki dalga cephesi arasındaki Öklid mesafesi $2c$ hızıyla açılır; yerel hiçbir parçacık $c$'yi aşmadığından görelilik ilkeleri tam olarak korunur.
+\end{itemize}
+
+\begin{table}[h!]
+    \centering
+    \small
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{@{}p{3.0cm}p{4.5cm}p{4.0cm}p{3.8cm}@{}}
+        \toprule
+        \textbf{Rejim}                                     & \textbf{Yapısı}                                                                                                    & \textbf{Hareketi}                                                                     & \textbf{Hız Limiti}                                                                                                \\ \midrule
+        \textbf{Kütleli Madde} \newline (Elektron, Proton) & Vakumu kendi içine hapsederek büzüşen kapalı bir topolojik girdap düğümüdür (Skalor Düğümü).                       & Durağan vakum örgüsü içinde koordinat değiştirerek ötelenir/sürüklenir.               & Eylemsizliği ve kütlesi olduğundan ortamın direncine tabidir; daima $v_{\mathrm{trans}} < c$ hızında hareket eder. \\ \addlinespace
+        \textbf{Foton} \newline (Elektromanyetik Işıma)    & Kapalı bir girdap düğümü DEĞİLDİR; vakum örgüsünün komşu hücreleri arasındaki serbest elastik titreşim dalgasıdır. & Maddesel bir öteleme hareketi yoktur ($v_{\mathrm{trans}} = 0$); dalga fazı iletilir. & Büzülen gözlemcimize bağıl olarak tam $v_{\mathrm{faz}} = c$ hızında gözlemlenir.                                  \\ \addlinespace
+        \textbf{İki Zıt Foton}                             & $180^\circ$ zıt yöne yayılan iki dalga cephesi.                                                                    & Statik Öklid ızgarasındaki mesafe açılma hızı.                                        & Koordinat ayrılma hızı $v_{\mathrm{sep}} = 2c$ (yerel hiçbir parçacık $c$'yi aşmaz).                               \\ \bottomrule
+    \end{tabular}
+    }
+    \caption{Madde, foton ve zıt ışın rejimlerinin yapısal, kinematik ve hız karşılaştırması.}
+    \label{tab:rejim_karsilastirma}
+\end{table}
+
+\subsection{Foton Neden Büzülmez ve Büzülseydi Ne Olurdu? (Kırmızıya Kaymanın Temel Şartı)}
+\label{sec:foton_neden_buzulmez}
+
+\begin{theorem}[Kırmızıya Kaymanın Varlık Şartı Teoremi]
+    \label{thm:kirmiziya_kayma_varlik_sarti}
+    Eğer fotonlar da maddesel bağlı yapılar gibi zamanla büzülseydi ($\lambda_{\mathrm{foton}}(t) \propto \lambda(t)$), büzülen atomik cetvellerimizle ($\lambda_{\mathrm{atom}}(t) \propto \lambda(t)$) yapılan spektroskopik ölçümlerde ölçülen boyutsuz dalga boyu oranı:
+    \begin{equation}
+        \frac{\lambda_{\mathrm{foton}}(t)}{\lambda_{\mathrm{atom}}(t)} = \frac{\lambda_0 e^{-H_0 t}}{r_0 e^{-H_0 t}} = \frac{\lambda_0}{r_0} = \text{sabit} \implies z \equiv 0.
+    \end{equation}
+    Kozmolojik kırmızıya kayma \textbf{kesinlikle gözlemlenemezdi!} Kozmik kırmızıya kaymanın gözlemlenebilmesi ($1+z = \lambda_{\mathrm{obs}}/\lambda_{\mathrm{lab}}$) için gerekli ve yeter şart; fotonun durağan vakum dokusundaki mutlak Öklid dalga boyunu koruması ($\lambda_{\mathrm{foton}} = \text{sabit}$), buna karşın atomik cetvellerin yerel olarak büzülmesidir ($\lambda_{\mathrm{atom}}(t) \to 0$).
+\end{theorem}
+
+\begin{proof}
+    Kütlesiz parçacıklar ($m_\gamma = 0$) konformal kütle ölçeklenmesine uğramaz ($0 \times e^{H_0 t} = 0$). Durağan vakuma bırakılan foton, mutlak Öklid dalga boyunu ($\lambda_{\text{gercek}}$) korur; yalnızca ölçüm yapan atomik cetveller büzüşür.
+\end{proof}
+
+\subsection{Fotonların Boyutu ve Kozmik Evrim: Fotonların Dalga Boyu Skalası}
+\label{sec:fotonlar_neden_devasa_degil}
+
+Yayılan bir fotonun dalga boyu, salıcı atomun geometrik boyutları tarafından belirlenir:
+\begin{enumerate}
+    \item \textbf{Atom Boyutu Dalga Boyunu Belirler:} Atomik seviyeler arasındaki enerji farkı $\Delta E(t) \propto e^2 / r_{\mathrm{atom}}(t)$ ile ölçeklendiğinden $\lambda_{\mathrm{foton, emisyon}}(t) \propto r_{\mathrm{atom}}(t)$'dir.
+    \item \textbf{Günümüz Fotonları:} Günümüzün küçülmüş atomları ($r_{\mathrm{atom}} \sim 10^{-10}\text{ m}$) tarafından salınır ve görünür ışık bandına ($\lambda \sim 400\text{--}700\text{ nm}$) yerleşir.
+    \item \textbf{Geçmiş Fotonlar:} Geçmişte daha büyük atomlar tarafından salınmış dalgalar, günümüzün küçük cetvelleriyle ölçüldüğünde kırmızıya kaymış görünür.
+    \item \textbf{En Yaşlı Fotonlar (CMB, $z \sim 1100$):} Atomların bugünkünden $1100$ kat daha büyük olduğu dönemde salınmıştır; orijinal morötesi/kızılötesi ışıma ($\sim 1\text{ }\mu\mathrm{m}$) günümüzün hızlanan saatleriyle \textbf{$\lambda \sim 1\text{ mm}$ ($2.73\text{ K}$)} mikrodalga olarak algılanır.
+\end{enumerate}

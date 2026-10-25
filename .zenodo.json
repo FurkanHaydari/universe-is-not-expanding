@@ -1,0 +1,44 @@
+{
+  "title": "The Unified Contraction Hypothesis & Scale-Time Calculus: A Conformal Geometric Treatise on Cosmology, Gravitation, and Fundamental Interactions",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "version": "1.0.0",
+  "language": "eng",
+  "imprint_publisher": "Independent Publications in Natural Philosophy and Fundamental Physics",
+  "imprint_place": "Istanbul, Turkey",
+  "creators": [
+    {
+      "name": "Haydari, Muhammed Furkan",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0003-2854-3947"
+    }
+  ],
+  "description": "<p><strong>The Unified Contraction Hypothesis & Scale-Time Calculus</strong> presents a comprehensive theoretical framework, a series of 7 standalone research preprints, and an open-source Python numerical solver package (<code>scale-cmb-solver</code>) investigating an alternative conformal representation of cosmology and fundamental interactions. Within this framework, physical background spacetime is parameterized as a static, flat Euclidean/Minkowski continuum, while cosmological redshift, gravitational dynamics, and atomic scales originate from the secular, conformal contraction of local atomic and nuclear measurement standards (<em>r</em><sub>atom</sub>(<em>t</em>) &prop; (1+<em>z</em>)<sup>-1</sup>). This work extends the conformal scale duality framework of Hoyle & Narlikar (1964) and Wetterich (2013).</p><h3>📌 Core Theoretical Hypotheses</h3><ul><li><strong>Static Background and Contracting Length Standards:</strong> Cosmological redshift is interpreted not as metric spatial expansion, but as the secular conformal contraction of local bound atomic standards (&lambda;&#775;/&lambda; = -<em>H</em><sub>0</sub>).</li><li><strong>Speed of Light and Vacuum Phase Transmission:</strong> Photons carry no translational mass displacement (<em>v</em><sub>trans</sub> = 0), propagating across the stationary vacuum as transverse elastic phase waves (<em>v</em><sub>phase</sub> = <em>c</em>), while the internal quantum phase ceiling of bound systems is locked to this threshold (<em>v</em><sub>c</sub> = <em>c</em>).</li><li><strong>Gravitation as Vacuum Inflow:</strong> In Painlev&eacute;&ndash;Gullstrand coordinates, gravitational acceleration is formulated as the effective convective inflow velocity of the vacuum continuum into contracting matter centers (<em>v</em>(<em>r</em>) = -&radic;(2<em>GM</em>/<em>r</em>)).</li><li><strong>Sommerfeld Fine-Structure Constant:</strong> The dimensionless coupling &alpha; &approx; 1/137.036 represents the kinematic spiral pitch ratio between the tangential Bohr orbital velocity and the radial phase transmission ceiling (&alpha; = <em>v</em><sub>Bohr</sub> / <em>c</em>).</li><li><strong>Effective Radial Flux Regimes:</strong> Fundamental interaction potentials are categorized by the geometric dimension (&gamma;) of the vacuum flux: &gamma; = 1 (3D spherical dilution: gravity and Coulomb), &gamma; = -1 (1D collimated vortex tube: hadronic quark confinement), and &gamma; &rarr; exponential (barrier leakage: weak interaction).</li></ul><h3>📊 Empirical Validation & Numerical Suite (scale-cmb-solver)</h3><ul><li><strong>Pantheon+ Type Ia Supernovae:</strong> Evaluated with the official full covariance matrix without dark energy (&Omega;<sub>&Lambda;</sub> &equiv; 0), yielding best-fit <em>H</em><sub>0</sub> = 70.75 &plusmn; 0.14 km/s/Mpc (&chi;<sup>2</sup><sub>cov</sub>/dof = 3.748 on the 26 binned sample, and &chi;<sup>2</sup><sub>cov</sub>/dof = 0.945 on the unbinned <em>N</em>=1580 Hubble flow sample), naturally bridging the early Planck and local SH0ES Hubble tension.</li><li><strong>DESI 2024 Baryon Acoustic Oscillations (BAO):</strong> The transverse comoving sound horizon ratio (<em>c</em> / (<em>H</em><sub>0</sub> <em>r</em><sub>d</sub>) &approx; 28.81) matches all 5 DESI 2024 tracer measurements across <em>z</em> = 0.51 &ndash; 2.33 at &lt; 0.85&sigma; residual tension.</li><li><strong>Planck 2018 CMB Acoustic Peaks:</strong> An analytical plasma transfer parameterization reproduces the first three acoustic peak locations (&ell;<sub>1</sub> = 220.9, &ell;<sub>2</sub> = 518.4, &ell;<sub>3</sub> = 820.2), peak height ratios, and the Silk damping envelope.</li><li><strong>Tolman & Goldhaber Concordance:</strong> Conformal invariance preserves Etherington's reciprocity relation (<em>d</em><sub>L</sub> = (1+<em>z</em>)<sup>2</sup> <em>d</em><sub>A</sub>), rigorously satisfying the Tolman (1+<em>z</em>)<sup>-4</sup> surface brightness dimming law and supernova light curve (1+<em>z</em>) time dilation.</li></ul><h3>📂 Distribution Contents (Bilingual: EN & TR)</h3><p>The distribution package contains 16 compiled PDFs and the reproducible Python analysis archive:</p><ul><li><strong>English Corpus (<code>en/</code>):</strong> Comprehensive Research Monograph (54 pp.) + 7 Standalone Research Preprints (Papers 01&ndash;07).</li><li><strong>Turkish Corpus (<code>tr/</code>):</strong> Kapsaml&#305; Ara&#351;t&#305;rma Monografisi (68 pp.) + 7 Ba&#287;&#305;ms&#305;z Ara&#351;t&#305;rma Makalesi (Makaleler 01&ndash;07).</li><li><strong>Analysis Package:</strong> <code>scale-cmb-solver-1.0.0-code-and-data.zip</code> containing all analysis scripts, data loaders, and official Pantheon+ data tables.</li><li><strong>Provenance:</strong> Cryptographic verification table <code>CHECKSUMS.sha256</code>.</li></ul><h3>📜 Licensing</h3><p>All research manuscripts, preprints, monographs, and documentation are licensed under the <strong>Creative Commons Attribution 4.0 International License (CC-BY 4.0)</strong>. The numerical solver suite (<code>scale-cmb-solver</code>) is licensed under the <strong>MIT License</strong>.</p><hr><p><em>🇹🇷 T&uuml;rk&ccedil;e K&uuml;lliyat Notu: Bu paket, Birle&#351;ik B&uuml;z&uuml;lme Hipotezi ve &Ouml;l&ccedil;ek-Zaman Kalk&uuml;l&uuml;s&uuml; ba&#351;l&#305;kl&#305; T&uuml;rk&ccedil;e b&uuml;y&uuml;k monografi ve 7 ba&#287;&#305;ms&#305;z T&uuml;rk&ccedil;e ara&#351;t&#305;rma makalesini de eksiksiz olarak i&ccedil;ermektedir.</em></p>",
+  "keywords": [
+    "cosmology",
+    "conformal gravity",
+    "scale-time calculus",
+    "static universe",
+    "pantheon+",
+    "planck 2018",
+    "cosmic microwave background",
+    "quark confinement",
+    "fine-structure constant",
+    "river model of gravity",
+    "desi 2024",
+    "conformal cosmology",
+    "etherington reciprocity",
+    "tolman surface brightness",
+    "hubble tension",
+    "dark energy"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/FurkanHaydari/universe-is-not-expanding",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

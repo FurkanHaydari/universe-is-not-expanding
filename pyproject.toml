@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scale-cmb-solver"
+version = "1.0.0"
+description = "Minimal numerical solver for CMB acoustic angular power spectrum under the Unified Contraction Hypothesis"
+readme = "README.md"
+authors = [{ name = "Muhammed Furkan Haydari" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.22.0",
+    "scipy>=1.8.0",
+    "matplotlib>=3.5.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/FurkanHaydari/universe-is-not-expanding"
+"Repository" = "https://github.com/FurkanHaydari/universe-is-not-expanding"
+
+[tool.setuptools]
+packages = ["analysis"]

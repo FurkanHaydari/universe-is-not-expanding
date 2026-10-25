@@ -1,0 +1,189 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{physics}
+\usepackage{tikz}
+\usetikzlibrary{babel,arrows.meta}
+
+\usepackage{listings}
+
+\hypersetup{
+    pdftitle={Birleşik Büzülme Hipotezi ve Ölçek-Zaman Kalkülüsü: Genişlemeyen Bir Evrende Kozmoloji, Kütleçekim ve Dört Temel Etkileşimin Geometrik Külliyatı},
+    pdfauthor={Muhammed Furkan Haydari},
+    pdfsubject={Kuramsal Fizik, Doğa Felsefesi, Kozmoloji ve Kütleçekim},
+    pdfkeywords={Birleşik Büzülme Hipotezi, Ölçek-Zaman Kalkülüsü, Konformal Kozmoloji, Nehir Modeli, 137 İnce Yapı Sabiti, Kuark Hapsi, CMB, Pantheon+},
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=red!70!black,
+    urlcolor=blue!80!black
+}
+
+% --- Listings Settings for Python Code ---
+\definecolor{codegreen}{rgb}{0,0.55,0.2}
+\definecolor{codegray}{rgb}{0.45,0.45,0.45}
+\definecolor{codepurple}{rgb}{0.55,0.1,0.75}
+\definecolor{codeblue}{rgb}{0.1,0.2,0.8}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.98}
+
+\lstdefinestyle{pythoncode}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen}\itshape,
+    keywordstyle=\color{codeblue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=6pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    rulecolor=\color{gray!30},
+    extendedchars=true,
+    literate={ğ}{{\u{g}}}1 {ü}{{\"{u}}}1 {ş}{{\c{s}}}1 {ı}{{\i}}1 {ö}{{\"{o}}}1 {ç}{{\c{c}}}1
+             {Ğ}{{\u{G}}}1 {Ü}{{\"{U}}}1 {Ş}{{\c{S}}}1 {İ}{{\.I}}1 {Ö}{{\"{O}}}1 {Ç}{{\c{C}}}1
+             {²}{{$^2$}}1 {±}{{$\pm$}}1 {χ}{{$\chi$}}1 {Ω}{{$\Omega$}}1 {Λ}{{$\Lambda$}}1 {μ}{{$\mu$}}1 {ℓ}{{$\ell$}}1 {ϕ}{{$\phi$}}1
+}
+\lstset{style=pythoncode}
+
+% --- Theorem Environments ---
+\newtheorem{theorem}{Teorem}[section]
+\newtheorem{definition}{Tanım}[section]
+\newtheorem{axiom}{Aksiyom}[section]
+\newtheorem{corollary}{Sonuç}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}{Not}[section]
+
+\title{\textbf{Birleşik Büzülme Hipotezi ve Ölçek-Zaman Kalkülüsü: \\ Genişlemeyen Bir Evrende Kozmoloji, Kütleçekim ve Dört Temel Etkileşimin Geometrik Külliyatı}}
+
+\author{
+    \textbf{Muhammed Furkan Haydari} \\
+    \textit{Bağımsız Araştırma / Doğa Felsefesi ve Temel Fizik Üzerine Kavramsal Denemeler} \\
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+}
+
+\date{\today}
+
+\begin{document}
+\shorthandoff{=}
+
+\maketitle
+
+\begin{abstract}
+    Bu çalışmada, statik ve genişlemeyen bir arka plan uzay-zamanında yerel maddenin ölçek dinamikleri üzerinden doğadaki dört temel etkileşimi tek bir çerçevede yeniden formüle eden birleşik bir geometrik model öneriyoruz. Bu \textit{Birleşik Büzülme Hipotezi} çerçevesinde, kozmolojik kırmızıya kayma, yerel atomik yapıların değişmez arka plan metriğine göre sürekli ve ölçek-değişmez biçimde mekânsal olarak küçülmesinin ($r_{\mathrm{atom}}(t) \to 0$) doğrudan bir tezahürüdür. Konformal dönüşümler aracılığıyla, atomik ölçeklerdeki bu küçülmenin kozmik şişme veya karanlık enerji gibi varsayımlara ihtiyaç duymaksızın uzak gök cisimlerinin kırmızıya kaymasını ve zaman genişlemesini eksiksiz biçimde açıkladığını gösteriyoruz.
+
+    Bu büzülme mekanizmasını alan gradyanlarına genişlettiğimizde, yerel kütle-enerjinin büzülmesinin çevreleyen vakum alan yoğunluğunda merkeze doğru sürekli bir koordinat akışı ve sürüklenme yarattığını ortaya koyuyoruz. Makroskopik sınırda bu vakum akışı kütleçekimin Painlev\'e--Gullstrand formülasyonunu tam olarak yeniden üretir; böylece yerçekimsel ivmelenme, yörünge mekaniği ve yerel büzülme/akış hızının ışık hızı $c$'yi aştığı olay ufuklarında ışığın hapsolması doğal biçimde açıklanır. Alt-atomik ölçeklerde ise elektronun çekirdeğe düşmesi problemi ölçek-değişmez bir asimptotik çekici olarak çözülür: elektron çekirdeğe doğru sarmal çizdikçe yerel uzunluk ölçekleri de orantılı olarak büzülür ve böylece ışımasal çöküş olmaksızın dinamik kararlılık korunur.
+
+    Son olarak, elektrodinamiğin doğasını ve foton yayılımını ele alıyoruz. Elektromanyetik uyarılmaların temel olarak değişmez arka plan manifoldunun durağan yerel pertürbasyonları olduğunu; gözlemlenen ışık hızı $c$'nin ise doğrudan vakumun elastik faz iletim ve maddenin içsel kuantum faz tavan hızını nicellediğini ortaya koyuyoruz. Işığın yansıması, saçılması ve spektral algının bu büzülen gözlemci çerçevesinde nasıl çalıştığını matematiksel olarak formalize ederek, kütleçekimsel, elektromanyetik ve nükleer kuvvetlerin tek bir geometrik ölçek dinamiğine indirgenmesine yönelik kapsamlı bir yol haritası sunuyoruz.
+\end{abstract}
+
+\vspace{1em}
+\noindent\textbf{Anahtar Kelimeler:} Birleşik Alan Teorisi, Konformal Kütleçekim, Büzülen Madde Kozmolojisi, Kozmolojik Kırmızıya Kayma, Painlev\'e--Gullstrand Metriği, Dalga Mekaniği, Durağan Vakum Elektrodinamiği.
+
+\vspace{1em}
+\hrule
+\vspace{0.8em}
+\tableofcontents
+\vspace{0.8em}
+\hrule
+\vspace{1.5em}
+
+% --- Modüler Bölümler ---
+\input{sections/00_epistemolojik_manifest.tex}
+\input{sections/01_giris.tex}
+\input{sections/02_standart_metrikler.tex}
+\input{sections/03_buzulme_ve_nehir_modeli.tex}
+\input{sections/04_isik_ve_faz_yayilimi.tex}
+\input{sections/05_mikroskobik_kararlilik.tex}
+\input{sections/06_kozmoloji_ve_cmb.tex}
+\input{sections/07_kuantum_olcum.tex}
+\input{sections/08_olcek_kalkulusu.tex}
+\input{sections/09_nukleer_kuvvetler.tex}
+\input{sections/10_mekanizma_ve_deneyler.tex}
+\input{sections/11_mantik_zincirleri.tex}
+\input{sections/12_ek_kodlar.tex}
+
+\newpage
+\begin{thebibliography}{99}
+    \bibitem{wetterich2013}
+    C.~Wetterich, ``A universe without expansion,'' \textit{Phys. Dark Univ.}, vol.~2, pp.~184--187, 2013.
+
+    \bibitem{fixsen1996}
+    D.~J.~Fixsen et al., ``The Cosmic Microwave Background spectrum from the full COBE FIRAS data set,'' \textit{Astrophys. J.}, vol.~473, p.~576, 1996.
+
+    \bibitem{hoyle1964}
+    F.~Hoyle and J.~V.~Narlikar, ``A new theory of gravitation,'' \textit{Proc. R. Soc. Lond. A}, vol.~282, no.~1389, pp.~191--212, 1964.
+
+    \bibitem{painleve1921}
+    P.~Painlev\'e, ``La m\'ecanique classique et la th\'eorie de la relativit\'e,'' \textit{C. R. Acad. Sci. (Paris)}, vol.~173, pp.~677--680, 1921.
+
+    \bibitem{gullstrand1922}
+    A.~Gullstrand, ``Allgemeine L\"osung des statischen Eink\"orperproblems in der Einsteinschen Gravitationstheorie,'' \textit{Ark. Mat. Astron. Fys.}, vol.~16, no.~8, pp.~1--15, 1922.
+
+    \bibitem{hamilton2008}
+    A.~J.~S.~Hamilton and J.~P.~Lisle, ``The river model of black holes,'' \textit{Am. J. Phys.}, vol.~76, no.~6, pp.~519--532, 2008.
+
+    \bibitem{milgrom1983}
+    M.~Milgrom, ``A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis,'' \textit{Astrophys. J.}, vol.~270, pp.~365--370, 1983.
+
+    \bibitem{scully1982}
+    M.~O.~Scully and K.~Dr\"uhl, ``Quantum eraser: A proposed photon correlation experiment concerning observation and 'delayed choice' in quantum mechanics,'' \textit{Phys. Rev. A}, vol.~25, no.~4, pp.~2208--2213, 1982.
+
+    \bibitem{kim2000}
+    Y.-H.~Kim, R.~Yu, S.~P.~Kulik, Y.~Shih, and M.~O.~Scully, ``Delayed 'choice' quantum eraser,'' \textit{Phys. Rev. Lett.}, vol.~84, no.~1, pp.~1--5, 2000.
+
+    \bibitem{bohren1983}
+    C.~F.~Bohren, ``How can a particle absorb more than the light incident on it?,'' \textit{Am. J. Phys.}, vol.~51, no.~5, pp.~473--474, 1983.
+
+    \bibitem{paul1982}
+    H.~Paul, ``Photons and localizability,'' \textit{Rev. Mod. Phys.}, vol.~54, no.~4, pp.~1061--1102, 1982.
+
+    \bibitem{pantheon_scolnic}
+    D.~M.~Scolnic et al., ``The Complete Light-curve Sample of Spectroscopically Confirmed SNe Ia from Pan-STARRS1 and Cosmological Constraints,'' \textit{Astrophys. J.}, vol.~859, no.~2, p.~101, 2018.
+
+    \bibitem{pantheon_brout}
+    D.~Brout et al., ``The Pantheon+ Analysis: Cosmological Constraints,'' \textit{Astrophys. J.}, vol.~938, no.~2, p.~110, 2022.
+
+    \bibitem{planck2018}
+    N.~Aghanim et al. (Planck Collaboration), ``Planck 2018 results. VI. Cosmological parameters,'' \textit{Astron. Astrophys.}, vol.~641, p.~A6, 2020.
+
+    \bibitem{haydari_cosmo}
+    M.~F.~Haydari, ``Büzülen Atom Metriği ve Konformal Eylem İlkesi: Karanlık Enerjisiz Bir Evrende Tip Ia Süpernova (Pantheon+) ve DESI 2024 BAO Testleri'' (Bu seride Makale 1), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{haydari_calculus}
+    M.~F.~Haydari, ``Ölçek-Zaman Cebiri ve Konformal Kalkülüs: Büzüşen Sistemler İçin Yeni Bir Matematiksel Formalizm'' (Bu seride Makale 2), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{haydari_jwst}
+    M.~F.~Haydari, ``James Webb Uzay Teleskobu ile Gözlemlenen Yüksek Kırmızıya Kaymalı Olgun Galaksilere Konformal Bir Ölçekleme Yaklaşımı'' (Bu seride Makale 3), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{haydari_gravity}
+    M.~F.~Haydari, ``Kütleçekimin Küresel Vakum Akışı Geometrisi Olarak Türetimi: 3+1 ADM Eylemi ve Painlevé--Gullstrand Metriği'' (Bu seride Makale 4), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{haydari_em}
+    M.~F.~Haydari, ``Elektromanyetizma, Vakum Faz Dalgaları ve Kuantum Kararlılık: Sommerfeld İnce Yapı Sabiti $\alpha \approx 1/137$'nin Kinematik Hatve Yorumu'' (Bu seride Makale 5), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{haydari_strong}
+    M.~F.~Haydari, ``Güçlü Nükleer Kuvvet, Kuark Hapsi ve Akı Tüpü Geometrisi'' (Bu seride Makale 6), \textit{Zenodo Ön-Baskıları}, 2026.
+
+    \bibitem{haydari_weak}
+    M.~F.~Haydari, ``Zayıf Nükleer Kuvvet, Kiral Faz Sızıntısı ve W/Z Bozon Ölçekleri'' (Bu seride Makale 7), \textit{Zenodo Ön-Baskıları}, 2026.
+\end{thebibliography}
+
+\end{document}

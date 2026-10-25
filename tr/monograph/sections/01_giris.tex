@@ -1,0 +1,80 @@
+\section{Giriş}
+\label{sec:giris}
+
+Modern fizik, olağanüstü derecede başarılı fakat birbiriyle bağdaşmayan iki temel sütun üzerinde yükselmektedir: Kütleçekimi uzay-zamanın geometrik eğriliği olarak tanımlayan Genel Görelilik (GG) ve elektromanyetik, zayıf ve güçlü etkileşimleri eğri veya düz uzayda ayar teorileriyle açıklayan Standart Model. Yaklaşık bir asırlık yoğun teorik çabaya rağmen dört temel kuvvetin tek bir çatıda birleştirilmesi henüz başarılamamıştır. Eş zamanlı olarak, standart kozmolojik paradigma ($\Lambda$CDM), evrenin karanlık enerji ve erken dönem kozmik şişme (enflasyon) tarafından sürülen bir metrik genişleme içinde olduğunu varsaymaktadır.
+
+Bu çalışmada alternatif bir temel önermeyi inceliyoruz: \textbf{Uzay-zaman arka planı bütünüyle statiktir; gözlemlenen kozmolojik ve kütleçekimsel fenomenler ise doğrudan maddenin sürekli ve ölçeğe bağlı olarak büzülmesinden kaynaklanmaktadır.}
+
+Bu ikiliğin kavramsal kökleri konformal dönüşüm matematiğinde yer almaktadır (örneğin Wetterich~\cite{wetterich2013}, Hoyle ve Narlikar~\cite{hoyle1964}). $g_{\mu\nu} \to \Omega^2(t) \eta_{\mu\nu}$ konformal dönüşümü altında, parçacık kütlelerinin sabit olduğu genişleyen bir Friedmann--Lema\^itre--Robertson--Walker (FLRW) uzay-zamanı, parçacık kütlelerinin zamanla arttığı ve karakteristik kuantum uzunluklarının (Bohr yarıçapı $a_0 = \hbar^2/(m_e e^2)$ ve Compton dalga boyu $\lambda_C = \hbar/(mc)$) kozmik zaman boyunca küçüldüğü statik bir Minkowski uzay-zamanına matematiksel olarak birebir eşlenebilir:
+\begin{equation}
+      r_{\mathrm{atom}}(t) \propto \frac{1}{m(t)} \propto a(t)^{-1}.
+      \label{eq:konformal_olcekleme}
+\end{equation}
+
+Bu noktada altı çizilmesi gereken en temel metodolojik ayrım şudur: Bu model, 1930'ların fotonun yolda enerji kaybettiğini varsayan klasik ve kusurlu ``Yorgun Işık'' (Tired Light) hipotezi veya statik uzayda durağan kalan Bondi--Gold modelleriyle özdeşleştirilemez. Konformal çerçevede geçmişe gidildikçe atomlar daha büyük olduğundan ($t \to -\infty \implies \lambda \to \infty$), geçmiş dönemde madde birbirinin içine geçmiş, optik derinliği aşırı yüksek ($\tau \gg 1$) ve termal dengeye (LTE) oturmuş yoğun bir plazma fazındadır. Yani standart $\Lambda$CDM'nin erken evren termodinamiği (CMB kara cisim ışıması ve nükleosentez dengesi), konformal ikililik sayesinde eksiksiz olarak muhafaza edilir.
+
+Daha önceki konformal yaklaşımlar bu dönüşümü çoğunlukla matematiksel bir koordinat denkliği olarak ele almışken, biz madde büzülmesini hem kozmolojik ölçekleri hem de yerel etkileşimleri yöneten temel bir fiziksel ilke konumuna yükseltiyoruz.
+
+\subsection{İncelenen Temel Fiziksel Sorular ve Geometrik Temalar}
+\label{sec:temel_sorular}
+
+Bu monografi, konformal ölçek-kovaryans ve büzülen ölçüm standartları çerçevesinde aşağıdaki temel fiziksel soruları ve araştırma temalarını analitik olarak incelemektedir:
+
+\begin{enumerate}
+      \item \textbf{Atomik Taban Durumunun Kararlılığı (Bohr Yarıçapı):} \\
+            Klasik elektrodinamikte ivmelenen yükün Larmor ışımasıyla çekirdeğe çökmesi riski, kısa mesafelerde Heisenberg momentum belirsizliğinden türeyen kuantum kinetik basıncın ($E_{\mathrm{kin}} \propto 1/r^2$) çekici Coulomb potansiyelini ($-1/r$) dengelemesiyle giderilir; Ölçek-Zaman türevi ($\mathbb{D}_t(r/\lambda) = 0$) ise büzülen evrende bu taban durumunun konformal bir çekici olarak korunduğunu gösterir (Bölüm~\ref{sec:mikroskopik_kararlilik}).
+
+      \item \textbf{Kütleçekimsel Potansiyel ve Zamanın Yavaşlaması:} \\
+            Zaman, atomik sistemlerin büzülme sürecindeki kuantum faz evrimiyle parametrize edildiğinde ($dt = -d\ln\lambda/H_0$), kütleçekimsel vakum akıntı hızına ($v(r) = -\sqrt{2GM/r}$) karşı duran saatlerin akıntı direncine bağlı olarak $d\tau = dt\sqrt{1 - v^2(r)/c^2}$ biçiminde daha yavaş tıkırdaması incelenir (Bölüm~\ref{sec:buzulme_metrikleri}).
+
+      \item \textbf{İnce Yapı Sabiti ($\alpha \approx 1/137.036$) ve Kinematik Hatve:} \\
+            Boyutsuz Sommerfeld kuplaj sabiti $\alpha \approx 1/137.036$, elektronun teğetsel Bohr orbital hızı ($v_\theta \approx 2187\text{ km/s}$) ile vakumun içsel faz iletim tavan hızı ($v_c = c$) arasındaki \textbf{kinematik spiral hatve oranı} olarak değerlendirilir ($\alpha = v_{\mathrm{Bohr}} / v_c$). $Z\alpha \to 1$ rölativistik Dirac eşiği ise teğetsel hızın $c$'ye yaklaştığı alt-atomik sınır rejimine karşılık gelir (Bölüm~\ref{sec:olcek_kalkulusu_ana}).
+
+      \item \textbf{Hubble Bağıntısının Kinematik Niteliği ($v = H_0 d$):} \\
+            $v = H_0 d$ bağıntısı, kalkülüsün klasik çarpım kuralının $[(f\cdot g)' = f'g + fg']$ büzülen bir cetvele uygulanmasından doğan bir diferansiyel özdeşlik olarak ele alınır (Bölüm~\ref{sec:olcek_kalkulusu_ana}).
+
+      \item \textbf{Kozmik Mikrodalga Arka Plan Işıması (CMB, 2.73 K) ve Termal Geçmiş:} \\
+            CMB, geçmişte atomik ölçeklerin büyük olduğu ve maddenin yoğun plazma fazında bulunduğu dönemin akustik plazma rezonansları ve Kompaneets kinetiği ile yerel termodinamik dengeye (LTE) oturan ışıması olarak incelenir (Bölüm~\ref{sec:cmb_karanlik_madde}).
+
+      \item \textbf{Kuantum Faz Kilitlenmesi ve İnterferometri Deneyleri:} \\
+            Foton vakum faz dalgası olarak ele alındığında, ölçüm süreci dalganın detektör atomunun büzülme fazına kilitlenmesi (phase-pinning) olarak modellenir; kuantum silgisi deneylerinde ortogonal fazların yeniden mikslenmesiyle girişim deseni geri kazanılır (Bölüm~\ref{sec:kuantum_olcum_main}).
+
+      \item \textbf{Hadronik Ölçek ve Kuark Hapsi Modeli:} \\
+            Femtometre ölçeğinde ($r \sim 10^{-15}\text{ m}$) vakum akışının küresel seyreltiden 1-boyutlu silindirik tüpe geçişi incelenerek birim uzunluk geriliminin ($\sigma \approx 1\text{ GeV/fm}$) ve $V(r) = \sigma r$ lineer hapis potansiyelinin geometrisi modellenir (Bölüm~\ref{sec:nukleer_kuvvetler}).
+
+      \item \textbf{Etkileşimlerin Efektif Boyutsal Akış Rejimleri:} \\
+            Kütleçekim, Coulomb, hadronik hapis ve zayıf etkileşim potansiyelleri, tek bir boyutsal akış formülasyonunun ($(v/c)^2 = 2\mathcal{C}r^{-\gamma}$) farklı geometrik boyut indisleri ($\gamma = 1, -1, \text{exp}$) altında karşılaştırmalı olarak ele alınır (Bölüm~\ref{sec:nukleer_kuvvetler}).
+
+      \item \textbf{Kiral Ölçekleme Dinamiği ve Baryon Asimetrisi:} \\
+            Tek yönlü evrensel büzülme akışının ($\dot{\lambda} < 0$) tanımladığı zaman oku ($dt = -d\ln\lambda/H_0$), kiral simetri kırınımı dinamiklerinin ve sağ kiral nükleonların kararlılığının incelenmesine kuramsal zemin sağlar (Bölüm~\ref{sec:olcek_kalkulusu_ana}).
+
+      \item \textbf{Temel Büyüklüklerin Parametrik İlişkisi:} \\
+            Zaman ($t$), konum ($\mathbf{x}$), kütle ($m$) ve faz hızı ($c$) parametrelerinin, maddenin ölçek parametresi ($\lambda(t)$) ve ölçek-zaman kalkülüsü dahilinde ortak bir çerçevede nasıl ilişkilendirilebileceği incelenir (Bölüm~\ref{sec:ontolojik_indirgeme}).
+\end{enumerate}
+
+\subsection{Ontolojik Zorunluluk: Dört Temel Postulatın Tek Bir Mekanizmada Eritilmesi}
+\label{sec:ontolojik_indirgeme}
+
+Modern teorik fiziğin (Genel Görelilik ve Standart Model) en derin kavramsal tıkanıklığı, doğayı tanımlarken kullandığı dört temel sütunu birbirinden bütünüyle bağımsız ve bağlantısız birer aksiyom (postulat) olarak kabul etmesidir:
+\begin{enumerate}
+      \item \textbf{Zaman ($t$):} Kendi başına akan dördüncü bir koordinat boyutu veya kuantum durumlarının üzerinde evrildiği dışsal bir skaler parametre olarak postüle edilir.
+      \item \textbf{Konum / Uzay ($\mathbf{x}$):} Maddenin içinde yer aldığı ya bükülen bir zemin (Genel Görelilik) ya da kuantum alanlarının üzerinde dalgalandığı eylemsiz bir sahne olarak postüle edilir.
+      \item \textbf{Kütle ($m, M$):} Parçacıklara ya dışarıdan atanan bir eylemsizlik katsayısı ya da Higgs mekanizmasıyla keyfi Yukawa bağlaşımları üzerinden kazandırılan bir özellik olarak postüle edilir.
+      \item \textbf{Işık Hızı ($c$):} Evrenin mutlak hız sınırı ve nedensellik sabiti olarak postüle edilir.
+\end{enumerate}
+
+Bu dört büyüklük birbirinden kopuk primitifler olarak kaldığı sürece, bunların türevleri olan dört temel kuvvetin (Kütleçekim, Elektromanyetizma, Güçlü ve Zayıf Nükleer) tek bir çatıda birleştirilmesi epistemolojik olarak imkansızdır. Kütleçekim uzay-zamanı bükerken, kuantum alanları sabit uzay-zaman üzerinde ayar simetrileri işletir; zaman kuantumda mutlak, görelilikte dinamiktir.
+
+\textbf{Birleşik Büzülme Hipotezinin ve bu çalışmanın temel felsefi ve matematiksel iddiası şudur:}
+\textit{Dört temel kuvveti tek bir formülde eritebilmek için, evvela bu kuvvetlerin ifade edildiği zaman, konum, kütle ve ışık hızı kavramlarının kendileri tek bir ortak parametrenin ve fiziksel mekanizmanın farklı tezahürleri olarak çözülmelidir!}
+
+Modelimizde bu ortak temel parametre, \textbf{Maddenin Durağan Vakumdaki Ölçek Dinamiği ($\lambda(t)$ ve Büzülme Jeneratörü $\kappa$)}'dır:
+\begin{itemize}
+      \item \textbf{Işık Hızı ($c$):} Vakumun serbest elastik dalga iletim hızı ile vakum girdabı olan maddenin karakteristik kuantum faz hızını ($v_c = 1/\sqrt{\varepsilon_0\mu_0} = c$) niceler.
+      \item \textbf{Zaman ($t$):} Atomların kendi içine büzüşürken kaydettiği logaritmik kuantum faz günlüğüdür ($dt \equiv -\frac{1}{H_0} d\ln\lambda$).
+      \item \textbf{Konum / Uzaklık ($R$):} Statik arka plan noktası $\mathbf{X}_0$'ın büzülen atomik cetvele $\lambda(t)$ bölünmesiyle türeyen boyutsuz bir orandır ($R(t) = \mathbf{X}_0 / \lambda(t)$).
+      \item \textbf{Kütle ($M$):} Vakum akışının ivme alanının (hız gradyanının) kapalı bir yüzey boyunca net akısıdır ($M \equiv \frac{1}{4\pi G} \oint_{\partial \Omega} |(\mathbf{v}_{\mathrm{inflow}} \cdot \nabla) \mathbf{v}_{\mathrm{inflow}}| \, dA$).
+\end{itemize}
+
+Bu dört temel kavram tek bir parametrede ($\lambda(t)$) eritildiğinde, dört temel kuvvet artık farklı ve uzlaştırılamaz alanlar olmaktan çıkar; tek bir evrensel vakum akış denkleminin ($(v/c)^2 = 2\mathcal{C}r^{-\gamma}$) farklı geometrik boyut ($\gamma=1, -1$) ve doyum hallerindeki doğal yansımalarına dönüşür.
+

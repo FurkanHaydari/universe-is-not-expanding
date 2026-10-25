@@ -1,0 +1,310 @@
+\section{Scale-Time Calculus and the Kinematic Velocity Theorem}
+\label{sec:olcek_kalkulusu_ana}
+
+In classical physics (Newtonian mechanics and General Relativity), spatial coordinates $\mathbf{x}$ and time $t$ are posited as primitive, a priori background grids. However, in a static universe where bound systems undergo continuous scale contraction, a generalized calculus is required to formulate both kinematic velocity theorems and the ontological origins of space and time. To this end, we formulate \textbf{Scale-Time Algebra} and introduce the nilpotent algebraic generator $\kappa$ (the Contraction Generator).
+
+\subsection{Algebraic Architecture: The Unit \texorpdfstring{$\kappa$}{kappa} and Scalor Space}
+Let $\kappa$ denote an algebraic unit outside the real numbers satisfying the nilpotent property:
+\begin{equation}
+    \kappa \neq 0, \quad \kappa^2 = 0 \quad (\text{nilpotent}).
+    \label{eq:kappa_main}
+\end{equation}
+While the imaginary unit $i$ ($i^2 = -1$) endows real numbers with phase and rotational dimensions, the unit $\kappa$ acts as a \textbf{conformal contraction operator}, encoding internal scale shrinkage while preserving the invariant static background coordinate.
+
+An entity combining an invariant spatial coordinate $\mathbf{X}_0$ with a time-dependent atomic scale factor $\lambda(t)$ into a single hyper-complex state is termed a \textbf{Scalor}:
+\begin{equation}
+    \mathbb{S}(t) \equiv \mathbf{X}_0 + \kappa \cdot \lambda(t).
+    \label{eq:skalor_main}
+\end{equation}
+
+\subsection{Nilpotent Algebra (\texorpdfstring{$\kappa^2 = 0$}{kappa\texttwosuperior{} = 0}) and Matter--Antimatter Annihilation}
+\label{sec:nilpotent_main}
+In standard real analysis, zero is the unique real number whose square vanishes ($x^2 = 0 \iff x = 0$). Within the Clifford dual number algebra and Grassmann exterior algebra to which $\kappa$ belongs, non-zero elements exist whose square is identically zero:
+\begin{equation}
+    z = b\kappa \implies z^2 = b^2 \kappa^2 \equiv 0 \quad (\forall b \in \mathbb{R}, \; b \neq 0).
+    \label{eq:nilpotent_kare}
+\end{equation}
+
+This property mathematically represents \textbf{Matter--Antimatter Annihilation}. Matter and antimatter are opposing chiral vortices ($\pm \boldsymbol{\omega}_0 \kappa$) in the quiescent vacuum. When they meet, their superposition yields a nilpotent contact interaction:
+\begin{equation}
+    \mathbb{S}_{\mathrm{interaction}} \propto (\kappa) \cdot (\kappa) = \kappa^2 \equiv 0.
+\end{equation}
+The vortices mutually cancel, rest mass vanishes, and rotational energy is released into the static vacuum as free electromagnetic radiation ($\gamma$ photons). Because our universe is static and global contraction ($\dot{\lambda} < 0$) establishes a unidirectional arrow of time ($dt = -d\ln\lambda/H_0$), chiral symmetry is dynamically broken: right-handed vortices (matter) contract into stable bound states, while left-handed vortices (antimatter) are destabilized and eliminated.
+
+\subsubsection{Geometric Freeze-Out: Evading Complete Annihilation via Contraction}
+\label{sec:geometrik_donma_main}
+Why did matter and antimatter not annihilate completely, leaving only photons?
+
+The annihilation rate in the quiescent vacuum is $\Gamma_{\mathrm{ann}}(t) = n(t) \sigma_{\mathrm{ann}}(t) v_c$. The interaction cross-section scales with the square of the vortex radius:
+\begin{equation}
+    \sigma_{\mathrm{ann}}(t) = \pi r_{\mathrm{vortex}}^2(t) = \sigma_0 \lambda^2(t) = \sigma_0 e^{-2 H_0 t}.
+    \label{eq:tesir_kesiti_main}
+\end{equation}
+In the early epoch when atoms were large ($\lambda \gg 1$), cross-sections were enormous, driving intense annihilation that produced the $2.73\text{ K}$ CMB radiation bath.
+
+As matter contracted exponentially ($\dot{\lambda} < 0$), the geometric cross-section ($\sigma \propto \lambda^2$) collapsed much faster than the contraction rate itself. When the collision frequency dropped below the contraction rate:
+\begin{equation}
+    \Gamma_{\mathrm{ann}}(t) < H_0,
+    \label{eq:donma_kriteri_main}
+\end{equation}
+\textbf{Geometric Freeze-Out} occurred. Matter particles contracted to such small physical cross-sections that the probability of intersecting an opposing antimatter vortex in Euclidean space dropped to zero, preserving our matter-dominated universe.
+
+\subsection{Ontological Derivation of Time, Space, and the Void}
+\label{sec:zaman_konum_turetilis_main}
+
+In Scale-Time Algebra, the universe possesses a single invariant: \textbf{The scaleless, frictionless, static Euclidean continuum $\mathcal{E}_\infty$}. A bound physical entity is a dynamic Scalor $\mathbb{S} = \mathbf{X}_0 + \kappa \lambda(t)$. From this, time and space are derived:
+
+\begin{axiom}[Static Euclidean Continuum]
+    \label{ax:statik_sureklilik_main}
+    The universal background is a static, metric-free, smooth continuum ($\mathbf{X}_0 \in \mathcal{E}_\infty$, $\dot{\mathbf{X}}_0 = 0$). Space possesses no intrinsic meter or clock. Its sole physical properties are permittivity ($\varepsilon_0$), permeability ($\mu_0$), and the Planck mechanical tension ceiling ($F_{\mathrm{Planck}} = c^4/G$).
+\end{axiom}
+
+\begin{theorem}[Derivation of Time: Time as the Contraction Phase Log]
+    \label{thm:zaman_turetilis}
+    Physical time $t$ is derived as the integral of the logarithmic contraction rate of internal scale $\lambda$:
+    \begin{equation}
+        dt \equiv -\frac{1}{H_0} \frac{d\lambda}{\lambda} = -\frac{1}{H_0} d(\ln \lambda) \implies \lambda(t) = \lambda_0 e^{-H_0 t}.
+        \label{eq:zaman_turetilis_main}
+    \end{equation}
+    The Arrow of Time reflects the strict monotonicity of contraction ($\dot{\lambda} < 0$). In uncontracted systems, $d\lambda = 0$ and physical time ceases to elapse ($dt = 0$).
+\end{theorem}
+
+\begin{proof}
+    An observer cannot measure absolute time directly; they register only the internal quantum frequency of bound periodic systems: $\omega(\lambda) = \frac{\hbar}{m(\lambda) \lambda^2}$. As a system contracts, this frequency accelerates: $\omega(t) = \omega_0 e^{H_0 t}$. Identifying accumulated phase $\Phi = \int \omega(t) dt$ with logarithmic scale change $d\lambda/\lambda$ establishes $dt \propto -d\ln\lambda$. Normalizing by $H_0^{-1}$ completes the proof.
+\end{proof}
+
+\begin{corollary}[The $t = 0$ Epoch: Contraction Phase Transition Threshold]
+    \label{cor:t_sifir_faz_esigi_main}
+    In standard cosmology, $t = 0$ is a singular explosion from zero volume. In Scale-Time Calculus, $t = 0$ marks the **critical phase transition where matter began contracting into the quiescent vacuum.** Prior to this epoch ($t \le 0$), matter existed in an uncontracted, timeless quantum oscillation state ($d\lambda = 0 \implies dt = 0$). When contraction was triggered ($\dot{\lambda} < 0$), the physical time arrow initiated, geometric freeze-out arrested total annihilation, and collective inflows seeded galactic structures.
+\end{corollary}
+
+\begin{theorem}[Derivation of Position and Distance: Distance as Ruler Count]
+    \label{thm:konum_uzaklik_turetilis_main}
+    Physical distance $\mathbf{R}_{\mathrm{obs}}$ is the dimensionless ratio of the invariant background coordinate $\mathbf{X}_0$ to the contracted local ruler $\lambda(t)$:
+    \begin{equation}
+        \mathbf{R}_{\mathrm{obs}}(t) \equiv \frac{\mathbf{X}_0}{\lambda(t)} = \frac{\mathbf{X}_0}{\lambda_0} e^{H_0 t}.
+        \label{eq:konum_turetilis_main}
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    Distance is quantified in units of the atomic radius $r_{\mathrm{atom}}(t) = r_0 \lambda(t)$. The count of atomic ruler units spanning the stationary interval $|\mathbf{X}_0|$ is:
+    \begin{equation}
+        N(t) \equiv \frac{|\mathbf{X}_0|}{r_{\mathrm{atom}}(t)} = \frac{|\mathbf{X}_0|}{r_0 \lambda_0} e^{H_0 t} = N_0 e^{H_0 t}.
+        \label{eq:cetvel_sayimi_ispat}
+    \end{equation}
+    Although absolute background coordinates remain invariant ($\dot{\mathbf{X}}_0 = 0$), as atomic rulers shrink ($r_{\mathrm{atom}} \to 0$), the ruler count grows exponentially, creating the appearance of spatial expansion ($v = H_0 d$).
+\end{proof}
+
+\begin{quote}
+    \small
+    \textbf{Epistemological Synthesis: Resolution of the Newton vs. Leibniz--Mach Debate:} \\
+    While Newton regarded space as an absolute container, Leibniz and Mach argued that space is merely the relational configuration among bodies. Scale-Time Calculus unifies this historical debate:
+    \begin{itemize}
+        \item \textbf{Background (Newtonian Absolute):} Space itself ($\mathcal{E}_\infty$) is an absolute, quiescent, uncurved, and non-expanding Euclidean continuum.
+        \item \textbf{Distance and Separation (Machian Relational):} All perceived and measured distances are relational projections of a contracting atomic network ($R \sim 1/\lambda$).
+    \end{itemize}
+    This ontological duality clarifies two limiting regimes: In a local laboratory, matter contraction cannot be detected by internal comparisons (since both the sample and the ruler contract concurrently):
+    \begin{equation}
+        \lim_{\lambda(t) \to 0} \frac{L(t)}{r_{\mathrm{ruler}}(t)} = \lim_{\lambda \to 0} \frac{L_0 \lambda(t)}{1\text{ m} \cdot \lambda(t)} = L_0 = \text{Constant},
+        \label{eq:lhopital_oran_monograph}
+    \end{equation}
+    preserving exact internal scale invariance.
+
+    Conversely, the conventional observable universe horizon ($\sim 93$ billion light-years) is not a physical boundary of space nor the total cosmic volume. The "light-year" is a relative ruler locked to the contraction cadence of local atomic clocks ($1\text{ ly} \equiv c \times 1\text{ local atomic year}$). Because the background continuum ($\mathcal{E}_\infty$) is strictly static and infinite ($X = \text{const}$), measuring an invariant Euclidean separation with shrinking atomic rulers yields:
+    \begin{equation}
+        d_{\mathrm{obs}}(t) = \frac{X}{\lambda(t)} \xrightarrow{\lambda(t) \to 0} \infty.
+        \label{eq:sonsuz_arka_plan_iraksama_monograph}
+    \end{equation}
+    The universe does not expand; rather, shrinking rulers register the quiescent infinity as an apparent expansion. The 93-billion-light-year boundary is merely the optical horizon integrated backward over our contracted coordinate window; beyond it, absolute static Euclidean space extends indefinitely.
+\end{quote}
+
+\subsection{Ontology of the Planck Scale: $\ell_P$, $t_P$, and Spacetime Continuity}
+\label{sec:planck_ontolojisi_main}
+
+\begin{theorem}[Planck Length as the Vacuum Saturation Threshold]
+    \label{thm:planck_uzunlugu_doyum_main}
+    The vacuum continuum $\mathcal{E}_\infty$ is strictly smooth and continuous; space has no discrete pixels. The Planck length $\ell_P \equiv \sqrt{\hbar G/c^3} \approx 1.6 \times 10^{-35}\text{ m}$ is the \textbf{Topological Saturation Threshold} where the Compton wavelength ($\lambda_C = \hbar/mc$) intersects the Schwarzschild radius ($r_s = 2Gm/c^2$):
+    \begin{equation}
+        \lambda_C \sim r_s \implies \frac{\hbar}{mc} \sim \frac{Gm}{c^2} \implies r_{\mathrm{min}} \sim \sqrt{\frac{\hbar G}{c^3}} \equiv \ell_P.
+        \label{eq:planck_uzunluk_turetilis_main}
+    \end{equation}
+    Because the maximum tension the vacuum can sustain is bounded by $F_{\mathrm{Planck}} = c^4/G \approx 1.21 \times 10^{44}\text{ N}$, no bound system can be compressed below $\ell_P$ without triggering a dimensional collapse into a 1D saturated flux tube ($\gamma = -1$).
+\end{theorem}
+
+\begin{theorem}[Planck Time as Maximum Clock Frequency]
+    \label{thm:planck_zamani_frekans_main}
+    With time governed by $dt \equiv -\frac{1}{H_0} d\ln\lambda$, the Planck time $t_P \equiv \ell_P/c \approx 5.4 \times 10^{-44}\text{ s}$ is the \textbf{duration of a single phase revolution of the most saturated physical quantum oscillator possible}:
+    \begin{equation}
+        t_P = \frac{\ell_P}{c} = \sqrt{\frac{\hbar G}{c^5}} \implies \omega_{\mathrm{max}} = \frac{1}{t_P} \approx 1.85 \times 10^{43}\text{ s}^{-1}.
+        \label{eq:planck_zamani_turetilis_main}
+    \end{equation}
+    Intervals shorter than $t_P$ are physically meaningless because no physical clock mechanism in nature can oscillate at a higher frequency.
+\end{theorem}
+
+\begin{corollary}[Timescale to Planck Saturation: $\sim 785$ Billion Years]
+    \label{cor:planck_boyuna_inme_zamani_monograph}
+    As atomic radii contract according to $r_{\mathrm{atom}}(t) = a_0 e^{-H_0 \Delta t}$, the time required to reach the mechanical saturation limit $\ell_P$ ($r_{\mathrm{atom}}(\Delta t) = \ell_P$) is given by:
+    \begin{equation}
+        \Delta t_{\mathrm{Planck}} = \frac{1}{H_0} \ln\left( \frac{a_0}{\ell_P} \right) = t_H \ln\left( \frac{a_0}{\ell_P} \right).
+        \label{eq:planck_zamani_hesap_monograph}
+    \end{equation}
+    Substituting the Hubble time $t_H \equiv 1/H_0 \approx 13.90\text{ Gyr}$, the Bohr radius $a_0 \approx 5.29 \times 10^{-11}\text{ m}$, and the Planck length $\ell_P \approx 1.62 \times 10^{-35}\text{ m}$:
+    \begin{equation}
+        \frac{a_0}{\ell_P} \approx 3.27 \times 10^{24} \implies \ln\left( \frac{a_0}{\ell_P} \right) \approx 56.45.
+    \end{equation}
+    The future epoch at which 3D atomic shells reach the Planck saturation ceiling is:
+    \begin{equation}
+        \Delta t_{\mathrm{Planck}} \approx 56.45 \times 13.90\text{ Gyr} \approx \mathbf{785\text{ Billion Years}}.
+        \label{eq:785_milyar_yil_monograph}
+    \end{equation}
+    (For a proton radius $r_p \approx 0.84\text{ fm}$, $\Delta t \approx \mathbf{631\text{ Billion Years}}$). Three-dimensional atomic physics will operate uninterrupted for roughly $57$ times the current age of the universe.
+\end{corollary}
+
+\begin{theorem}[Invariance of Dimensionless Ratios and Laboratory Null Tests]
+    \label{thm:boyutsuz_oranlar}
+    Because all bound matter states scale synchronously according to $m(t) = m_0 e^{H_0 t}$, the measured ratio of any two masses remains invariant:
+    \begin{equation}
+        \frac{d}{dt}\left( \frac{m_{\mathrm{test}}}{m_{\mathrm{ref}}} \right) = \frac{d}{dt}\left( \frac{m_{1,0} e^{H_0 t}}{m_{2,0} e^{H_0 t}} \right) \equiv 0.
+        \label{eq:boyutsuz_kutle_korunumu}
+    \end{equation}
+    Similarly, $\dot{\alpha}/\alpha = 0$ and $\dot{\mu}/\mu = 0$. Consequently, Eötvös torsion balances and the MICROSCOPE satellite experiment observe differential accelerations vanishing to $\eta < 10^{-15}$, fully consistent with the Weak Equivalence Principle.
+\end{theorem}
+
+\subsection{Scale-Covariant Derivative and Proof of the Hubble Identity}
+In contracting coordinate systems, the Newtonian derivative is generalized to the \textbf{Scale-Covariant Derivative}:
+\begin{equation}
+    \mathbb{D}_t \equiv \frac{d}{dt} + \kappa H_0.
+    \label{eq:olcek_turev_main}
+\end{equation}
+Applying the product rule of calculus to the physical position $\mathbf{R}(t) = \mathbf{x}(t)/\lambda(t)$:
+\begin{equation}
+    \mathbf{v}_{\mathrm{obs}} = \frac{d}{dt}\left( \frac{\mathbf{x}(t)}{\lambda(t)} \right) = \frac{1}{\lambda(t)} \frac{d\mathbf{x}}{dt} - \frac{\mathbf{x}(t)}{\lambda^2(t)} \dot{\lambda}(t) = \frac{\mathbf{v}_{\mathrm{trans}}}{\lambda(t)} + H_0 \mathbf{R}(t).
+    \label{eq:hubble_turev_ispat}
+\end{equation}
+For bodies stationary in the background ($\mathbf{v}_{\mathrm{trans}} = 0$):
+\begin{equation}
+    \mathbf{v}_{\mathrm{obs}} = H_0 \mathbf{R}.
+    \label{eq:hubble_dogrudan}
+\end{equation}
+The Hubble relation is an exact \textbf{calculus theorem} resulting from differentiating with respect to a contracting ruler.
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        \textbf{Velocity Definition}          & \textbf{Symbol}               & \textbf{Formulation}                                                            & \textbf{Physical Interpretation}                  \\ \midrule
+        \textbf{Static Coordinate Velocity}   & $\mathbf{v}_{\mathrm{trans}}$ & $d\mathbf{X}_0/dt$                                                              & Translation across the static background          \\
+        \textbf{Intrinsic Quantum Phase Speed} & $v_c$                         & $1/\sqrt{\varepsilon_0\mu_0} = c$                                               & Vacuum elastic speed and quantum ceiling          \\
+        \textbf{Apparent (Scale) Velocity}    & $\mathbf{v}_{\mathrm{obs}}$   & $\mathbb{D}_t \mathbf{R} = \frac{v_{\mathrm{trans}}}{\lambda} + H_0 \mathbf{R}$ & Relative velocity measured by contracting rulers  \\ \bottomrule
+    \end{tabular}
+    \caption{Hierarchy of velocity definitions in Scale-Time Calculus.}
+    \label{tab:hiz_hiyerarsisi_main}
+\end{table}
+
+\subsection{Scale-Covariant Action and Euler--Lagrange Mechanics}
+\label{sec:olcek_lagrange_ana}
+
+\subsubsection{1. Dual Super-Manifold Coordinates and the Berezin Integral}
+To link the nilpotent contraction generator $\kappa$ ($\kappa^2 = 0$) to formal differential geometry, we define a 5-dimensional **Dual Super-Manifold** $\mathcal{M}^{(4|1)}$ extending 4D static Euclidean spacetime with a nilpotent Grassmann axis:
+\begin{equation}
+    Z^A \equiv \left( x^\mu, \theta \right), \quad \theta \equiv \kappa, \quad \kappa^2 = 0, \quad \mu \in \{0, 1, 2, 3\}.
+    \label{eq:super_koordinat}
+\end{equation}
+A dynamic Scalor super-field defined on this manifold takes the form:
+\begin{equation}
+    \mathbb{S}\left(x^\mu, \kappa\right) = \mathbf{X}_0^\mu(x) + \kappa \cdot \lambda(x).
+    \label{eq:skalor_super_alan}
+\end{equation}
+Under the axioms of Berezin integration, integration along the nilpotent axis provides projective reduction:
+\begin{equation}
+    \int d\kappa \, 1 = 0, \qquad \int d\kappa \, \kappa = 1.
+    \label{eq:berezin_kurallari}
+\end{equation}
+Consequently, the total Action Functional ($\mathcal{S}$) on the Dual Super-Manifold is formulated as:
+\begin{equation}
+    \mathcal{S}[\mathbb{S}] = \int d^4x \int d\kappa \, \mathcal{L}\left(\mathbb{S}, \mathbb{D}_\mu \mathbb{S}\right).
+    \label{eq:skalor_eylem_fonksiyoneli}
+\end{equation}
+
+\subsubsection{2. Variational Derivation of the Scale-Covariant Euler--Lagrange Equation}
+\begin{theorem}[Scale-Covariant Euler--Lagrange Equation]
+    \label{thm:euler_lagrange_ispat}
+    Stationarity of the action under dynamic Scalor perturbations ($\mathbb{S} \to \mathbb{S} + \delta \mathbb{S}$), $\delta \mathcal{S} = 0$, dictates the equation of motion:
+    \begin{equation}
+        \mathbb{D}_\mu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \right) - \frac{\partial \mathcal{L}}{\partial \mathbb{S}} = 0.
+        \label{eq:euler_lagrange_tam_denklem}
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+    Taking the first variation of the action functional (\ref{eq:skalor_eylem_fonksiyoneli}):
+    \begin{equation}
+        \delta \mathcal{S} = \int d^4x d\kappa \left[ \frac{\partial \mathcal{L}}{\partial \mathbb{S}} \delta \mathbb{S} + \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \delta (\mathbb{D}_\mu \mathbb{S}) \right].
+    \end{equation}
+    Since the Scale-Covariant Derivative commutes with the variational operator, $[\delta, \mathbb{D}_\mu] = 0$:
+    \begin{equation}
+        \delta(\mathbb{D}_\mu \mathbb{S}) = \mathbb{D}_\mu (\delta \mathbb{S}).
+    \end{equation}
+    Applying Scale-Covariant integration by parts to the second term:
+    \begin{equation}
+        \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \mathbb{D}_\mu (\delta \mathbb{S}) = \mathbb{D}_\mu \left[ \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \delta \mathbb{S} \right] - \left[ \mathbb{D}_\mu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \right) \right] \delta \mathbb{S}.
+    \end{equation}
+    The first term generates a surface integral vanishing at the asymptotic boundary ($\delta \mathbb{S}\big|_{\partial \mathcal{M}} = 0$) by Gauss's theorem. The remaining integral:
+    \begin{equation}
+        \delta \mathcal{S} = \int d^4x d\kappa \left[ \frac{\partial \mathcal{L}}{\partial \mathbb{S}} - \mathbb{D}_\mu \left( \frac{\partial \mathcal{L}}{\partial (\mathbb{D}_\mu \mathbb{S})} \right) \right] \delta \mathbb{S} = 0.
+    \end{equation}
+    Because $\delta \mathbb{S}$ is an arbitrary continuous variation, the expression in brackets must vanish identically, completing the proof of Theorem~\ref{thm:euler_lagrange_ispat}.
+\end{proof}
+
+\subsubsection{3. Dynamical Field Equation of Cosmological Contraction: Conformal Scalar-Tensor Formulation}
+\label{sec:konformal_skalar_tensor}
+To reconcile the atomic contraction rate ($\dot{\lambda}/\lambda = -H_0$) with standard conformal field theory, we construct the action in terms of a scalar field $\chi(x)$ determining the local mass scale ($m_i(\chi) = y_i \chi$ and $r_{\mathrm{atom}} \propto \chi^{-1}$):
+\begin{equation}
+    S[\chi, g_{\mu\nu}] = \int d^4x \sqrt{-g} \left[ \frac{1}{2} \chi^2 R - \frac{1}{2} g^{\mu\nu} \partial_\mu \chi \partial_\nu \chi - V(\chi) + \mathcal{L}_{\mathrm{matter}}(g_{\mu\nu}, \psi, \chi) \right].
+    \label{eq:wetterich_skalar_eylem}
+\end{equation}
+Variation with respect to the scalar field $\chi$ ($\delta S / \delta \chi = 0$) yields:
+\begin{equation}
+    \Box \chi - \chi R + \frac{dV}{d\chi} = -\frac{\partial \mathcal{L}_{\mathrm{matter}}}{\partial \chi} = \frac{1}{\chi} T^\mu_{\mu(\mathrm{matter})},
+    \label{eq:chi_alan_denklemi}
+\end{equation}
+representing a Klein--Gordon-type dynamical equation of motion.
+
+In accordance with the foundational axiom of the Unified Contraction Hypothesis, the spacetime metric is flat Minkowski ($g_{\mu\nu} = \eta_{\mu\nu} = \text{diag}(-c^2, 1, 1, 1)$, hence Ricci scalar $R \equiv 0$ and $\sqrt{-g}=1$). In a homogeneous field configuration ($\nabla \chi = 0$), the d'Alembertian reduces to $\Box \chi = -\frac{1}{c^2}\ddot{\chi}$. In natural units ($c=1$), choosing the cosmological vacuum potential as:
+\begin{equation}
+    V(\chi) = -\frac{1}{2} H_0^2 \chi^2,
+    \label{eq:vakum_baryon_potansiyel}
+\end{equation}
+the unperturbed field equation ($\ddot{\chi} - \frac{dV}{d\chi} = 0$) becomes:
+\begin{equation}
+    \ddot{\chi}(t) - H_0^2 \chi(t) = 0 \implies \chi(t) = c_1 e^{H_0 t} + c_2 e^{-H_0 t}.
+    \label{eq:chi_ustel_cozum}
+\end{equation}
+For $t > 0$, the growing stable cosmological attractor solution is $\chi(t) = \chi_0 e^{H_0 t}$. Because the atomic ruler scale is $\lambda(t) \equiv \chi_0 / \chi(t)$:
+\begin{equation}
+    \lambda(t) = e^{-H_0 t} \implies \frac{\dot{\lambda}(t)}{\lambda(t)} = -H_0.
+    \label{eq:hubble_baryon_turetilis}
+\end{equation}
+\textbf{Analytical Conclusion:} The universal Hubble rate ($H_0$) is the **stable cosmological attractor of the conformal scalar field action on flat space.**
+
+\begin{remark}[Microscopic Dynamics and Open Theoretical Frontiers]
+    \label{rem:mikroskobik_dinamik}
+    In this formulation, $H_0$ is derived macroscopically as the cosmological attractor of the conformal scalar field on a flat Minkowski background. The complete microscopic coupling of the $\chi$ field to the electroweak Higgs sector, vacuum condensates, and Planck-scale zero-point quantum fluctuations represents an open theoretical frontier reserved for future quantum-gravitational modeling.
+\end{remark}
+
+\subsection{Scale-Covariant Noether Theorem and Energy Conservation}
+\label{sec:noether_enerji_main}
+
+Under the combined Scale-Time translation symmetry ($\delta x^\mu = \epsilon^\mu$, $\delta\lambda = -\epsilon^\mu \kappa_\mu H_0 \lambda$), the energy-momentum tensor satisfies exact covariant conservation:
+\begin{equation}
+    \mathbb{D}_\mu T^{\mu\nu} = 0 \implies \partial_\mu T^{\mu 0} + \nabla \cdot \mathbf{T}^0 = - H_0 \left( T^{00} + \sum_{i=1}^3 T^{ii} \right).
+    \label{eq:kovaryant_korunum_main}
+\end{equation}
+This balance equation proves that the rest-mass energy gained by contracting matter ($\dot{E}_{\mathrm{matter}} = + H_0 E_{\mathrm{matter}}$) is supplied by the radial vacuum inflow drawn from the surrounding continuum ($\dot{E}_{\mathrm{vacuum}} = - H_0 E_{\mathrm{matter}}$):
+\begin{equation}
+    \frac{d}{dt} \left( E_{\mathrm{matter}} + E_{\mathrm{vacuum}} \right) = 0.
+    \label{eq:toplam_enerji_korunumu}
+\end{equation}
+Total energy is strictly conserved through continuous resonance exchange between the vacuum potential and localized atomic phases.

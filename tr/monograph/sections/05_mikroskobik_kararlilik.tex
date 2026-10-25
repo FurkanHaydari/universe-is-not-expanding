@@ -1,0 +1,50 @@
+\section{Mikroskobik Kararlılık: Kiral Yük, Coulomb Mekanizması ve Elektronun Düşmemesi}
+\label{sec:mikroskopik_kararlilik}
+
+Klasik elektrodinamikte ivmelenen bir elektron Larmor formülü uyarınca enerji yayar:
+\begin{equation}
+    P = \frac{e^2 a^2}{6\pi \varepsilon_0 v_c^3}.
+    \label{eq:larmor_klasik}
+\end{equation}
+Bu enerji kaybı nedeniyle elektronun $\sim 10^{-11}$ saniye içinde protonun üzerine sarmal çizerek çökmesi gerekirdi. Kuantum mekaniği bunu dalga fonksiyonunun belirsizlik ilkesi ($\Delta x \Delta p \ge \hbar/2$) ile postüle eder ancak fiziksel bir geometrik mekanizma sunmaz.
+
+\subsection{Elektriksel Yükün Kiral Girdap Geometrisi}
+Elektriksel yük, vakum akışkanının \textbf{Kiral Burulmasıdır (Chiral Vorticity - $\vec{\omega}$)}:
+\begin{itemize}
+    \item \textbf{Pozitif Yük ($+$ / Proton):} Vakum dokusunda sağ-kiral (saat yönünde) dolaşıma sahip bir girdap yutağıdır ($\vec{\omega} > 0$).
+    \item \textbf{Negatif Yük ($-$ / Elektron):} Vakum dokusunda sol-kiral (saat yönünün tersine) dolaşıma sahip bir girdap yutağıdır ($\vec{\omega} < 0$).
+    \item \textbf{Coulomb Çekimi (Dişli Çark Etkisi):} Zıt kiraliteli iki girdap (+ ve -) karşılaştığında, aralarındaki temas bölgesinde akış çizgileri birbirini destekleyen yönde akar. Bernoulli prensibi uyarınca ara bölgede vakum basıncı düşer ve iki parçacık birbirine doğru çekilir.
+    \item \textbf{Coulomb İtmesi (Basınç Bariyeri):} Aynı kiraliteli iki girdap (+ ve + veya - ve -) karşılaştığında ise temas yüzeyinde akıntılar kafa kafaya çarpışır; yerel vakum basıncı fırlayarak parçacıkları birbirinden iter.
+\end{itemize}
+
+\subsection{Heisenberg Girdap Basıncı ve Ölçeksel Kilitlenme}
+Elektronun proton üzerine çöküşü kuantum mekaniksel ve ölçek-geometrik iki temel ilkeyle imkansız kılınır:
+\begin{enumerate}
+    \item \textbf{Heisenberg Kuantum Kinetik Basıncı (Fiziksel Çöküş Bariyeri):} Faz uzayı diferansiyel hacmi $d\Gamma = d^3\mathbf{x} \, d^3\mathbf{p}$ topolojik bir korunum yasasıdır. Elektron çekirdeğe yaklaştıkça ($\Delta x \to 0$), Heisenberg belirsizliği gereği radyal momentum ve sıfır noktası kinetik enerjisi $E_{\mathrm{kin}} \sim \hbar^2 / (2m_e \Delta x^2)$ biçiminde $1/r^2$ ile fırlar. Buna karşılık çekici Coulomb potansiyeli yalnızca $-1/r$ ile derinleşir. Kısa mesafelerde kuantum kinetik basınç çekici potansiyeli kesin olarak yener ve sistemi $r = a_0$ Bohr yarıçapında kararlı bir taban durumuna kilitler; ışımasal çöküş dinamik olarak durdurulur.
+    \item \textbf{Ölçeksel Kovaryans ve Asimptotik Çekici ($\mathbb{D}_t(r/\lambda) = 0$):} Atomun taban durumu oluştuktan sonra, evrensel ölçek büzülmesi atomun tüm yapısını ve gözlemci cetvelini eşzamanlı olarak $\lambda(t)$ ile küçültür. Ölçek-kovaryant türev altında $\mathbb{D}_t(r/\lambda) = 0$ olduğundan, bağlı sistem kendi içsel koordinatlarında mutlak bir konformal çekici (conformal attractor) olarak kararlılığını milyarlarca yıl muhafaza eder.
+\end{enumerate}
+
+\subsection{Sommerfeld İnce Yapı Sabiti ve Rölativistik Hatve Oranı}
+\label{sec:alpha_main}
+Kuantum elektrodinamiğinde boyutsuz elektromanyetik kuplaj sabiti olan Sommerfeld ince yapı sabiti:
+\begin{equation}
+    \alpha \equiv \frac{e^2}{4\pi \varepsilon_0 \hbar c} \approx \frac{1}{137.035999...},
+\end{equation}
+Ölçek-Zaman formalizminde iki tamamlayıcı fiziksel perspektifle analiz edilir:
+\begin{enumerate}
+    \item \textbf{Kinematik Spiral Hatve Oranı:} Hidrojen atomunda elektronun en iç Bohr yörünge hızı $v_{\mathrm{Bohr}} = e^2 / (4\pi \varepsilon_0 \hbar) \approx 2187\text{ km/s}$'dir. Vakum dokusundaki karakteristik içsel faz iletim tavan hızı ise $v_c = c$'dir. Bu iki hızın oranı:
+          \begin{equation}
+              \tan\theta_{\mathrm{hatve}} \equiv \frac{v_{\mathrm{Bohr}}}{v_c} = \frac{e^2}{4\pi \varepsilon_0 \hbar c} \equiv \alpha \approx \frac{1}{137.036},
+          \end{equation}
+          bağıntısını verir. Bu kinematik bağıntı, kuantum elektrodinamik kuplajın ölçek kalkülüsünde radyal faz tavanı ile orbital teğetsel hız arasındaki rölativistik hatve açısı olarak temsil edildiğini gösterir.
+    \item \textbf{Kızılötesi Sınır ve Süperkritik Dirac Eşiği ($Z\alpha \to 1$):} QED'de $\alpha$ vakum polarizasyonu sebebiyle enerjiye bağlı koşan bir parametredir ($\beta(\alpha) = \alpha^2/3\pi$). Atomik bağlı durumların yaşadığı asimptotik kızılötesi (Thomson) sınırında ($Q^2 \to 0$), $\alpha \approx 1/137.036$ değeri yörünge hatve eğimini kilitler. Ağır çekirdeklerde rölativistik Dirac sınırına ($Z\alpha \to 1$) ulaşıldığında ise temel durum negatif enerjili Dirac denizine gömülerek kendiliğinden elektron-pozitron çift üretimiyle (Schwinger/Pomeranchuk mekanizması) süperkritik alanı perdeler.
+\end{enumerate}
+
+\begin{quote}
+    \small
+    \textbf{Kavramsal ve Fiziksel Özet (Atomik Kararlılık ve Kiral Yük):} \\
+    1. Elektrik yükü, durağan vakum dokusundaki topolojik faz girdabının kiralitesini (dönel yönelimini) temsil eder; karşıt kiraliteler arasındaki faz gradyanı çekici Coulomb potansiyelini üretir. \\
+    2. Elektronun çekirdeğe düşmemesi, Heisenberg belirsizlik ilkesi ($\Delta x \Delta p \ge \hbar/2$) uyarınca yarıçap küçüldükçe momentum ve sıfır noktası kinetik enerjisinin hızla artarak dışa doğru bir kuantum basınç bariyeri oluşturmasıyla güvenceye alınır. \\
+    3. Büzülen gözlemci çerçevesinde yerel uzunluk cetveli de atomla eş zamanlı küçüldüğünden ($\mathbb{D}_t(r/\lambda) = 0$), bağlı sistem dinamik bir asimptotik çekici durumunda kararlı kalır.
+\end{quote}
+

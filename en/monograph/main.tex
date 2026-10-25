@@ -1,0 +1,188 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{physics}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\usepackage{listings}
+
+\hypersetup{
+    pdftitle={Unified Contraction Hypothesis and Scale-Time Calculus: A Comprehensive Geometric Treatise on Cosmology, Gravitation, and the Four Fundamental Interactions in a Non-Expanding Universe},
+    pdfauthor={Muhammed Furkan Haydari},
+    pdfsubject={Theoretical Physics, Natural Philosophy, Cosmology and Gravitation},
+    pdfkeywords={Unified Contraction Hypothesis, Scale-Time Calculus, Conformal Cosmology, River Model, Fine-Structure Constant 137, Quark Confinement, CMB, Pantheon+},
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=red!70!black,
+    urlcolor=blue!80!black
+}
+
+% --- Listings Settings for Python Code ---
+\definecolor{codegreen}{rgb}{0,0.55,0.2}
+\definecolor{codegray}{rgb}{0.45,0.45,0.45}
+\definecolor{codepurple}{rgb}{0.55,0.1,0.75}
+\definecolor{codeblue}{rgb}{0.1,0.2,0.8}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.98}
+
+\lstdefinestyle{pythoncode}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen}\itshape,
+    keywordstyle=\color{codeblue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=6pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    rulecolor=\color{gray!30},
+    extendedchars=true,
+    literate={ğ}{{\u{g}}}1 {ü}{{\"{u}}}1 {ş}{{\c{s}}}1 {ı}{{\i}}1 {ö}{{\"{o}}}1 {ç}{{\c{c}}}1
+             {Ğ}{{\u{G}}}1 {Ü}{{\"{U}}}1 {Ş}{{\c{S}}}1 {İ}{{\.I}}1 {Ö}{{\"{O}}}1 {Ç}{{\c{C}}}1
+             {²}{{$^2$}}1 {±}{{$\pm$}}1 {χ}{{$\chi$}}1 {Ω}{{$\Omega$}}1 {Λ}{{$\Lambda$}}1 {μ}{{$\mu$}}1 {ℓ}{{$\ell$}}1 {ϕ}{{$\phi$}}1
+}
+\lstset{style=pythoncode}
+
+% --- Theorem Environments ---
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}{Remark}[section]
+
+\title{\textbf{Unified Contraction Hypothesis and Scale-Time Calculus: \\ A Comprehensive Geometric Treatise on Cosmology, Gravitation, and the Four Fundamental Interactions in a Non-Expanding Universe}}
+
+\author{
+    \textbf{Muhammed Furkan Haydari} \\
+    \textit{Independent Research / Conceptual Essays on Natural Philosophy and Fundamental Physics} \\
+    \small ORCID: \href{https://orcid.org/0009-0003-2854-3947}{0009-0003-2854-3947}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    In this treatise, we propose a unified geometric framework that reformulates the four fundamental interactions of nature via the scale dynamics of localized matter embedded in a static, non-expanding background spacetime. Within this \textit{Unified Contraction Hypothesis}, cosmological redshift is derived not as metric stretching of space, but as the direct manifestation of a continuous, scale-conformal shrinkage of local atomic structures ($r_{\mathrm{atom}}(t) \to 0$) relative to the invariant Euclidean background. Through conformal transformations, we demonstrate that this intrinsic atomic shrinkage accounts for the cosmological redshift and time dilation of distant celestial sources without requiring cosmic expansion or dark energy.
+
+    Extending this contraction mechanism to spatial field gradients, we demonstrate that the scale contraction of localized mass-energy continuously draws the surrounding stationary vacuum fabric inward, inducing an effective velocity field. In the macroscopic limit, this vacuum inflow reproduces the Painlev\'e--Gullstrand formulation of general-relativistic gravitation; gravitational acceleration, orbital geodesics, and event horizon light trapping emerge naturally where the inflow velocity reaches $c$. At sub-atomic scales, the classical dilemma of orbital electron collapse is resolved through a scale-invariant conformal attractor: as an electron spirals inward, local length scales contract proportionally ($\mathbb{D}_t(r/\lambda) = 0$), preserving dynamic equilibrium without radiative runaway.
+
+    Finally, we analyze the foundations of electrodynamics and photon propagation. Electromagnetic excitations represent stationary wave perturbations of the invariant background manifold, while the observed speed of light $c = 1/\sqrt{\varepsilon_0\mu_0}$ quantifies the elastic phase velocity of the vacuum fabric. Formalizing wave reflection, scattering, and spectral perception within a contracting observer reference frame, we provide a complete roadmap unifying gravitational, electromagnetic, strong, and weak interactions under a single geometric scale calculus.
+\end{abstract}
+
+\vspace{1em}
+\noindent\textbf{Keywords:} Unified Field Theory, Conformal Gravity, Contracting Matter Cosmology, Cosmological Redshift, Painlev\'e--Gullstrand Metric, Wave Mechanics, Stationary Vacuum Electrodynamics.
+
+\vspace{1em}
+\hrule
+\vspace{0.8em}
+\tableofcontents
+\vspace{0.8em}
+\hrule
+\vspace{1.5em}
+
+% --- Modular Sections ---
+\input{sections/00_epistemological_manifest.tex}
+\input{sections/01_introduction.tex}
+\input{sections/02_standard_metrics.tex}
+\input{sections/03_contraction_and_river_model.tex}
+\input{sections/04_light_and_phase_propagation.tex}
+\input{sections/05_microscopic_stability.tex}
+\input{sections/06_cosmology_and_cmb.tex}
+\input{sections/07_quantum_measurement.tex}
+\input{sections/08_scale_calculus.tex}
+\input{sections/09_nuclear_forces.tex}
+\input{sections/10_mechanisms_and_experiments.tex}
+\input{sections/11_logical_chains.tex}
+\input{sections/12_appendix_codes.tex}
+
+\newpage
+\begin{thebibliography}{99}
+    \bibitem{wetterich2013}
+    C.~Wetterich, ``A universe without expansion,'' \textit{Phys. Dark Univ.}, vol.~2, pp.~184--187, 2013.
+
+    \bibitem{fixsen1996}
+    D.~J.~Fixsen et al., ``The Cosmic Microwave Background spectrum from the full COBE FIRAS data set,'' \textit{Astrophys. J.}, vol.~473, p.~576, 1996.
+
+    \bibitem{hoyle1964}
+    F.~Hoyle and J.~V.~Narlikar, ``A new theory of gravitation,'' \textit{Proc. R. Soc. Lond. A}, vol.~282, no.~1389, pp.~191--212, 1964.
+
+    \bibitem{painleve1921}
+    P.~Painlev\'e, ``La m\'ecanique classique et la th\'eorie de la relativit\'e,'' \textit{C. R. Acad. Sci. (Paris)}, vol.~173, pp.~677--680, 1921.
+
+    \bibitem{gullstrand1922}
+    A.~Gullstrand, ``Allgemeine L\"osung des statischen Eink\"orperproblems in der Einsteinschen Gravitationstheorie,'' \textit{Ark. Mat. Astron. Fys.}, vol.~16, no.~8, pp.~1--15, 1922.
+
+    \bibitem{hamilton2008}
+    A.~J.~S.~Hamilton and J.~P.~Lisle, ``The river model of black holes,'' \textit{Am. J. Phys.}, vol.~76, no.~6, pp.~519--532, 2008.
+
+    \bibitem{milgrom1983}
+    M.~Milgrom, ``A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis,'' \textit{Astrophys. J.}, vol.~270, pp.~365--370, 1983.
+
+    \bibitem{scully1982}
+    M.~O.~Scully and K.~Dr\"uhl, ``Quantum eraser: A proposed photon correlation experiment concerning observation and 'delayed choice' in quantum mechanics,'' \textit{Phys. Rev. A}, vol.~25, no.~4, pp.~2208--2213, 1982.
+
+    \bibitem{kim2000}
+    Y.-H.~Kim, R.~Yu, S.~P.~Kulik, Y.~Shih, and M.~O.~Scully, ``Delayed 'choice' quantum eraser,'' \textit{Phys. Rev. Lett.}, vol.~84, no.~1, pp.~1--5, 2000.
+
+    \bibitem{bohren1983}
+    C.~F.~Bohren, ``How can a particle absorb more than the light incident on it?,'' \textit{Am. J. Phys.}, vol.~51, no.~5, pp.~473--474, 1983.
+
+    \bibitem{paul1982}
+    H.~Paul, ``Photons and localizability,'' \textit{Rev. Mod. Phys.}, vol.~54, no.~4, pp.~1061--1102, 1982.
+
+    \bibitem{pantheon_scolnic}
+    D.~M.~Scolnic et al., ``The Complete Light-curve Sample of Spectroscopically Confirmed SNe Ia from Pan-STARRS1 and Cosmological Constraints,'' \textit{Astrophys. J.}, vol.~859, no.~2, p.~101, 2018.
+
+    \bibitem{pantheon_brout}
+    D.~Brout et al., ``The Pantheon+ Analysis: Cosmological Constraints,'' \textit{Astrophys. J.}, vol.~938, no.~2, p.~110, 2022.
+
+    \bibitem{planck2018}
+    N.~Aghanim et al. (Planck Collaboration), ``Planck 2018 results. VI. Cosmological parameters,'' \textit{Astron. Astrophys.}, vol.~641, p.~A6, 2020.
+
+    \bibitem{haydari_cosmo}
+    M.~F.~Haydari, ``The Contracting Atom Metric and Conformal Action Principle: Testing Type Ia Supernovae (Pantheon+) and DESI 2024 BAO Without Dark Energy'' (Paper 1 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{haydari_calculus}
+    M.~F.~Haydari, ``Scale-Time Algebra and Conformal Calculus: A New Mathematical Formalism for Contracting Systems'' (Paper 2 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{haydari_jwst}
+    M.~F.~Haydari, ``On the High-Redshift Mature Galaxies Observed by JWST: A Conformal Atomic Scale Interpretation'' (Paper 3 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{haydari_gravity}
+    M.~F.~Haydari, ``Derivation of Gravitation as Spherical Vacuum Inflow Geometry: 3+1 ADM Action and the Painlevé--Gullstrand Metric'' (Paper 4 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{haydari_em}
+    M.~F.~Haydari, ``Electrodynamics, Vacuum Phase Waves, and Atomic Stability: Kinematic Pitch Interpretation of the Sommerfeld Constant $\alpha \approx 1/137$'' (Paper 5 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{haydari_strong}
+    M.~F.~Haydari, ``Strong Nuclear Force, Quark Confinement, and Flux Tube Geometry in Scale-Time Calculus'' (Paper 6 in this series), \textit{Zenodo Preprints}, 2026.
+
+    \bibitem{haydari_weak}
+    M.~F.~Haydari, ``Weak Nuclear Interaction, Chiral Phase Leakage, and Intermediate Vector Boson Scales'' (Paper 7 in this series), \textit{Zenodo Preprints}, 2026.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,264 @@
+\section{The Unified Contraction Hypothesis: Contraction Velocity (\texorpdfstring{$v_c$}{vc}) and Metric Reconstruction}
+\label{sec:buzulme_metrikleri}
+
+Inverting the standard metric paradigm, we proceed from the premise that space does not expand; rather, matter undergoes scale contraction.
+
+\subsection{The Fundamental Invariant: Contraction Velocity (\texorpdfstring{$v_c$}{vc}) in Lieu of Postulated Light Speed}
+In standard physics, the constant $c$ is postulated as the invariant speed of light in vacuum. We state the following fundamental axiom:
+
+\begin{quote}
+    \textbf{Axiom 1 (Vacuum Phase Propagation and the Intrinsic Quantum Phase Ceiling of Matter):}
+    The static background space and the vacuum continuum are strictly stationary ($\mathbf{v}_{\mathrm{space}} = 0$). Photons are transverse elastic phase stress waves propagating across neighboring cells of this stationary vacuum continuum ($v_{\mathrm{trans}} = 0$). This phase wave propagates across Euclidean space at the characteristic transmission speed of the vacuum: $v_{\mathrm{phase}} = 1/\sqrt{\varepsilon_0\mu_0}$.
+
+    Matter, constituted by closed topological vortex solitons (Scalor knots) in this vacuum, exhibits an intrinsic relativistic quantum phase circulation velocity ceiling ($v_c$) that matches the elastic transmission speed of the medium:
+    \begin{equation}
+        v_c \equiv \frac{1}{\sqrt{\varepsilon_0\mu_0}} = c \approx 2.99792 \times 10^8 \text{ m/s}.
+        \label{eq:buzulme_hizi_tanim}
+    \end{equation}
+    Two distinct velocity regimes must be carefully distinguished:
+    \begin{enumerate}
+        \item \textbf{Intrinsic Quantum Phase Velocity ($v_c = c$):} The elastic phase propagation speed of the vacuum and the internal relativistic circulation ceiling of the atomic vortex ($c \approx 3 \times 10^8\text{ m/s}$).
+        \item \textbf{Cosmological Scale Contraction Rate ($|\dot{r}_{\mathrm{atom}}| = H_0 r_{\mathrm{atom}}$):} The secular rate at which atomic radii contract ($|\dot{r}_{\mathrm{atom}}| \approx (2.3 \times 10^{-18}\text{ s}^{-1}) \times (10^{-10}\text{ m}) \approx 2.3 \times 10^{-28}\text{ m/s}$). This rate is 36 orders of magnitude ($10^{36}$) smaller than $c$, ensuring atomic stability over billions of years.
+    \end{enumerate}
+    When measured using contracting atomic rulers and clocks, the propagation speed of this free phase wave is recorded as exactly $c$ relative to our internal phase standard ($v_{\mathrm{phase}} = v_c = c$). Cosmological redshift originates from the secular contraction ($r_{\mathrm{atom}}(t) \to 0$) of the atomic rulers recording this constant-wavelength vacuum oscillation.
+\end{quote}
+
+The fundamental line element on the invariant background coordinates ($\mathbf{x}, t$) remains flat:
+\begin{equation}
+    d\Sigma^2 = -v_c^2 dt^2 + d\mathbf{x}^2.
+    \label{eq:statik_arkaplan_metrigi}
+\end{equation}
+
+\subsection{Cosmological Metric: Contracting Atomic Standards vs. Expanding Space}
+Spatial coordinates $\mathbf{x}$ do not expand ($d\mathbf{x} = \text{const}$). However, all measurement standards (atomic rulers $r_{\mathrm{atom}}$) contract with time. We define the dimensionless atomic scale function:
+\begin{equation}
+    \lambda(t) \equiv \frac{r_{\mathrm{atom}}(t)}{r_{\mathrm{atom}}(t_0)} = \frac{1}{a(t)}, \quad \lambda(t_0) = 1.
+    \label{eq:olcek_fonksiyonu}
+\end{equation}
+The contraction rate is given by the logarithmic derivative:
+\begin{equation}
+    \frac{\dot{\lambda}(t)}{\lambda(t)} = -H_0.
+    \label{eq:buzulme_hubble}
+\end{equation}
+
+The differential length $d\mathbf{x}_{\mathrm{obs}}$ measured by a contracting ruler relates to background coordinate displacement $d\mathbf{x}$ as:
+\begin{equation}
+    d\mathbf{x}_{\mathrm{obs}} = \frac{d\mathbf{x}}{\lambda(t)} \implies d\mathbf{x} = \lambda(t) d\mathbf{x}_{\mathrm{obs}}.
+    \label{eq:cetvel_donusumu}
+\end{equation}
+Substituting this into the static background metric~\eqref{eq:statik_arkaplan_metrigi}:
+\begin{equation}
+    d\Sigma^2 = -v_c^2 dt^2 + \lambda^2(t) d\mathbf{x}_{\mathrm{obs}}^2.
+    \label{eq:buzulen_cetvel_metrigi}
+\end{equation}
+For a local observer assuming their contracted ruler to be invariant, the effective metric is obtained by conformal rescaling $ds_{\mathrm{eff}}^2 = \lambda^{-2}(t) d\Sigma^2$:
+\begin{equation}
+    ds_{\mathrm{eff}}^2 = -\frac{v_c^2}{\lambda^2(t)} dt^2 + d\mathbf{x}_{\mathrm{obs}}^2 = -v_c^2 d\tau^2 + a^2(\tau) d\mathbf{x}_{\mathrm{static}}^2,
+    \label{eq:etkin_flrw}
+\end{equation}
+where $d\tau = \lambda^{-1}(t) dt = a(t) dt$ is the conformal cosmological time.
+
+\textbf{Mathematical Conclusion:} The FLRW metric of standard $\Lambda$CDM cosmology is the exact conformal projection of contracting atomic rulers in a static Minkowski space. Redshift ($z$) reflects the lower transition frequencies of larger atoms in the past ($t_e$):
+\begin{equation}
+    1 + z = \frac{\nu_{\mathrm{ref}}}{\nu_{\mathrm{obs}}} = \frac{m(t_0)}{m(t_e)} = \frac{r_{\mathrm{atom}}(t_e)}{r_{\mathrm{atom}}(t_0)} = \frac{\lambda(t_e)}{\lambda(t_0)}.
+    \label{eq:bizim_redshift}
+\end{equation}
+
+\subsection{Gravitational Vacuum-Inflow Metric and Continuity Equation}
+A mass $M$ is a localized concentration of contracting atomic vortices. The continuous contraction of matter draws an inward vacuum flux (inflow velocity field) from the surrounding stationary continuum.
+
+\subsubsection{Variational Derivation: 3+1 ADM Action and River Velocity in Flat Space}
+\label{sec:adm_eylem_turetilis}
+The vacuum inflow velocity $v(r) = -\sqrt{2GM/r}$ in the River Model is the **exact variational Euler--Lagrange solution of the Einstein--Hilbert action subject to a flat Euclidean spatial constraint.**
+
+In the Arnowitt--Deser--Misner (ADM) 3+1 decomposition, the metric is:
+\begin{equation}
+    ds^2 = -\left(N^2 - \beta_i \beta^i\right) v_c^2 dt^2 + 2 \beta_i v_c dt dx^i + \gamma_{ij} dx^i dx^j,
+    \label{eq:adm_metrik_ayrisim}
+\end{equation}
+where $N$ is the lapse, $\boldsymbol{\beta}$ is the shift vector, and $\gamma_{ij}$ is the spatial 3-metric.
+
+Constraining the spatial slice to a flat Euclidean continuum with uniform coordinate time slicing:
+\begin{equation}
+    \gamma_{ij} = \delta_{ij} \quad (\text{Flat Euclidean Space}, \; R^{(3)} = 0), \qquad N = 1 \quad (\text{Uniform Time Slicing}).
+    \label{eq:duz_uzay_kisit}
+\end{equation}
+The sole dynamical degree of freedom of the gravitational field is the shift vector:
+\begin{equation}
+    \boldsymbol{\beta}(\mathbf{r}) \equiv -\frac{\mathbf{v}_{\mathrm{vacuum}}(\mathbf{r})}{v_c}.
+    \label{eq:shift_vektor_tanim}
+\end{equation}
+The extrinsic curvature tensor is given by:
+\begin{equation}
+    K_{ij} \equiv \frac{1}{2N} \left( \nabla_i \beta_j + \nabla_j \beta_i \right) = -\frac{1}{2 v_c} \left( \partial_i v_j + \partial_j v_i \right), \qquad K \equiv K^i_i = -\frac{1}{v_c} \nabla \cdot \mathbf{v}.
+    \label{eq:dissal_egrilik_shift}
+\end{equation}
+
+Under the flat-space constraint, the Einstein--Hilbert action $S_{\mathrm{EH}} = \frac{v_c^3}{16\pi G} \int d^4x \sqrt{-g} R$ reduces to:
+\begin{equation}
+    S_{\mathrm{grav}}[\mathbf{v}] = \frac{v_c^3}{16\pi G} \int dt d^3x \left( K_{ij} K^{ij} - K^2 \right) + S_{\mathrm{matter}}[\mathbf{v}].
+    \label{eq:adm_grav_eylem}
+\end{equation}
+For a spherically symmetric, stationary radial flow ($\mathbf{v} = v(r) \hat{\mathbf{r}}$), the extrinsic curvature components are:
+\begin{equation}
+    K_{rr} = -\frac{1}{v_c} \frac{dv}{dr}, \qquad K_{\theta\theta} = K_{\phi\phi} = -\frac{1}{v_c} \frac{v(r)}{r},
+\end{equation}
+yielding the kinetic curvature scalar:
+\begin{equation}
+    K_{ij} K^{ij} - K^2 = -\frac{2}{v_c^2} \left( \frac{v}{r} \frac{dv}{dr} + \frac{v^2}{r^2} \right) = -\frac{1}{v_c^2 r^2} \frac{d}{dr}\left( r v^2 \right).
+    \label{eq:kinetik_egrilik_ozdeslik}
+\end{equation}
+Varying the total action with respect to $v(r)$ for a point mass $M$ at rest ($\delta S / \delta v(r) = 0$):
+\begin{equation}
+    \frac{\delta S_{\mathrm{grav}}}{\delta v(r)} = 0 \implies \nabla \cdot \left( v \frac{dv}{dr} \hat{\mathbf{r}} \right) = -4\pi G M \delta^3(\mathbf{r}) \implies v(r) \frac{dv(r)}{dr} = -\frac{GM}{r^2}.
+    \label{eq:varyasyon_akis_sonuc}
+\end{equation}
+Imposing the asymptotic quiescence condition $v(\infty) = 0$:
+\begin{equation}
+    \mathbf{v}_{\mathrm{vacuum}}(r) = -\sqrt{\frac{2GM}{r}} \hat{\mathbf{r}}.
+    \label{eq:vakum_cekis_hizi}
+\end{equation}
+This confirms that the Painlevé--Gullstrand velocity field is the unique Euler--Lagrange extremum of the ADM action in flat space.
+
+\subsubsection{Where Does the Vacuum Go? The Nilpotent Sink and Vacuum Divergence}
+In classical fluid mechanics, continuous inward flow requires accumulation or an infinite density singularity. Two regimes must be distinguished:
+\begin{enumerate}
+    \item \textbf{Empty Space Regime ($r > 0, \rho_M = 0$):} The divergence of the velocity field in flat Euclidean space is:
+    \begin{equation}
+        \nabla \cdot \mathbf{v}_{\mathrm{vacuum}} = -\frac{3}{2} \sqrt{\frac{2GM}{r^3}} = - v_c K.
+        \label{eq:extrinsic_curvature_trace}
+    \end{equation}
+    This divergence does not signify fluid annihilation in vacuum; rather, in the 3+1 ADM decomposition, it corresponds to the trace of the extrinsic curvature of constant-time hypersurfaces ($K \equiv K^i_i = -\frac{1}{v_c}\nabla\cdot\mathbf{v}$), quantifying the rate of coordinate contraction toward the center.
+    \item \textbf{Matter Core and Nilpotent Sink ($r \to 0, \rho_M \neq 0$):} At the origin where the flow converges upon matter, the continuity equation is balanced by a nilpotent sink term:
+    \begin{equation}
+        \nabla \cdot \mathbf{v}_{\mathrm{physical}} = -4\pi G \rho_M \kappa = \mathcal{S}_{\mathrm{sink}}.
+        \label{eq:sureklilik_main}
+    \end{equation}
+    The 3-dimensional vacuum flux entering the center does not accumulate in space. Due to the nilpotency condition $\kappa^2 = 0$, spatial flux is converted into the intrinsic quantum phase frequency ($\omega = M c^2 / \hbar$) and internal scale contraction rate ($\dot{\lambda} = -H_0 \lambda$) of matter. Curvature singularities at $r=0$ are thus resolved as phase-conversion boundaries.
+\end{enumerate}
+
+The line element experienced by a test particle or wave in this inflow is:
+\begin{equation}
+    ds^2 = -v_c^2 dt^2 + \left( dr - v_{\mathrm{vacuum}}(r) dt \right)^2 + r^2 d\Omega^2.
+    \label{eq:bizim_vakum_metrigi}
+\end{equation}
+Expanding the quadratic term:
+\begin{equation}
+    ds^2 = -\left(1 - \frac{v_{\mathrm{vacuum}}^2(r)}{v_c^2}\right) v_c^2 dt^2 - 2 v_{\mathrm{vacuum}}(r) dt dr + dr^2 + r^2 d\Omega^2.
+    \label{eq:vakum_metrik_acik}
+\end{equation}
+Substituting $v_{\mathrm{vacuum}}(r) = -\sqrt{2GM/r}$:
+\begin{equation}
+    ds^2 = -\left(1 - \frac{2GM}{v_c^2 r}\right) v_c^2 dt^2 + 2\sqrt{\frac{2GM}{r}} dt dr + dr^2 + r^2 d\Omega^2.
+    \label{eq:bizim_yercekimi_tam}
+\end{equation}
+
+\paragraph{3D Flat Slices and 4D Riemann Curvature (Gauss--Codazzi Relation):}
+Having Euclidean spatial slices ($\gamma_{ij} = \delta_{ij}$, $^{(3)}R \equiv 0$) in Painlevé--Gullstrand coordinates does not imply that spacetime is flat. The full 4D spacetime curvature is generated via the 3+1 ADM Gauss--Codazzi equation ($^{(4)}R = K_{ij}K^{ij} - K^2$) by the extrinsic curvature tensor ($K_{ij} = -\frac{1}{2c}(\partial_i v_j + \partial_j v_i)$). The resulting Kretschmann invariant $\mathcal{K} \equiv R^{\alpha\beta\gamma\delta} R_{\alpha\beta\gamma\delta} = \frac{48 G^2 M^2}{c^4 r^6}$ matches the exact Schwarzschild geometry. Thus, the River Model provides an exact hydrodynamic representation of 4D spacetime curvature as a vacuum velocity gradient on a Euclidean background.
+
+\subsection{Acceleration Mechanism in Vacuum Flow: Convective Acceleration and $g = GM/r^2$}
+\label{sec:ivmelenme_ispat}
+
+Why does a falling body continuously accelerate ($g \approx 9.8\text{ m/s}^2$) rather than drifting at a constant velocity in the vacuum stream?
+
+The answer is dictated by Euler convective acceleration in a converging spherical flow:
+
+\subsubsection{1. Spherical Convergence and Escape Velocity}
+The spherical shell area is $A(r) = 4\pi r^2$. As vacuum flows toward the center, conservation of energy ($\frac{1}{2} v^2 - \frac{GM}{r} = 0$) dictates that velocity increases monotonically as $r^{-1/2}$:
+\begin{equation}
+    v_{\mathrm{inflow}}(r) = -\sqrt{\frac{2GM}{r}} \hat{\mathbf{r}}.
+\end{equation}
+At Earth's surface ($r = R_\oplus \approx 6371\text{ km}$):
+\begin{equation}
+    |v_{\mathrm{inflow}}(R_\oplus)| = \sqrt{\frac{2GM_\oplus}{R_\oplus}} \approx 11.186\text{ km/s},
+\end{equation}
+which is exactly Earth's escape velocity.
+
+\subsubsection{2. Euler Convective Acceleration Proof}
+In fluid mechanics, the acceleration of a particle in a velocity field is governed by the material derivative:
+\begin{equation}
+    \mathbf{a} = \frac{D\mathbf{v}}{Dt} = \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla)\mathbf{v}.
+\end{equation}
+For a stationary mass, $\partial \mathbf{v}/\partial t = 0$. The convective radial acceleration experienced by a free particle falling through the stream is:
+\begin{equation}
+    a_r(r) = v(r) \frac{dv(r)}{dr}.
+    \label{eq:konvektif_ivme_tanim}
+\end{equation}
+Evaluating the radial gradient step by step:
+\begin{equation}
+    a_r(r) = \left( -\sqrt{2GM} \, r^{-1/2} \right) \left( \frac{1}{2} \sqrt{2GM} \, r^{-3/2} \right) = \mathbf{-\frac{GM}{r^2}}.
+    \label{eq:g_ispat_sonuc}
+\end{equation}
+At Earth's surface:
+\begin{equation}
+    a_r(R_\oplus) = -\frac{GM_\oplus}{R_\oplus^2} = -g \approx -9.807\text{ m/s}^2.
+\end{equation}
+Gravitational acceleration ($g$) is the \textbf{Euler convective velocity gradient ($v \frac{dv}{dr}$)} of the vacuum stream accelerating into converging spherical shells.
+
+\subsubsection{3. Origin of Weight ($W = mg$)}
+An observer in a freely falling elevator experiences weightlessness because they are co-moving with the convective stream ($a_{\mathrm{net}} = 0$). An observer standing on the ground is prevented from following this stream. The vacuum continuum rushes past their constituent atoms at $11.2\text{ km/s}$. The normal reaction force exerted by the ground to arrest this motion is:
+\begin{equation}
+    N = m \cdot \left( v \left|\frac{dv}{dr}\right| \right) = m \cdot \frac{GM}{r^2} = mg.
+\end{equation}
+
+\subsubsection{4. Absence of Aether Drag in Planetary Orbits}
+Planets orbiting the Sun do not experience frictional dissipation because:
+\begin{enumerate}
+    \item The vacuum continuum has zero shear viscosity ($\eta = 0$); it is an ideal non-dissipative superfluid.
+    \item The Painlevé--Gullstrand metric is a coordinate transformation of the Schwarzschild metric, ensuring that planetary geodesics conserve angular momentum ($L = r^2 \dot{\phi} = \text{const}$) with zero tangential drag ($\mathbf{F}_{\mathrm{drag}} = 0$).
+\end{enumerate}
+
+\subsubsection{5. Gravitational Light Deflection: The Factor of 2 ($\Delta\theta = 4GM/c^2 b$)}
+Integrating the null line element ($ds^2 = 0$) recovers Einstein's full deflection angle through two equal physical contributions:
+\begin{enumerate}
+    \item \textbf{Radial Convective Drag:} Direct coordinate dragging by the shift velocity field ($v(r) = \sqrt{2GM/r}$) contributes $\Delta\theta_1 = \frac{2GM}{c^2 b}$.
+    \item \textbf{Refractive Index Gradient via Fermat's Principle:} The convective velocity gradient creates an effective optical refractive index:
+          \begin{equation}
+              n(r) = \frac{c}{c - |v(r)|} \approx 1 + \sqrt{\frac{2GM}{c^2 r}} + \frac{GM}{c^2 r},
+          \end{equation}
+          whose phase-front retardation contributes an identical $\Delta\theta_2 = \frac{2GM}{c^2 b}$.
+\end{enumerate}
+Their sum yields the full deflection angle:
+\begin{equation}
+    \Delta\theta_{\mathrm{total}} = \Delta\theta_1 + \Delta\theta_2 = \frac{4GM}{c^2 b}.
+    \label{eq:sapma_tam_ispat}
+\end{equation}
+
+\subsection{Event Horizons and Black Hole Mechanics}
+The coordinate velocity of a photon propagating radially outward is:
+\begin{equation}
+    \frac{dr}{dt} = v_c + v_{\mathrm{vacuum}}(r) = v_c - \sqrt{\frac{2GM}{r}}.
+    \label{eq:isik_kacis_hizi}
+\end{equation}
+Three distinct regimes emerge:
+\begin{enumerate}
+    \item \textbf{Weak-Field Regime ($r > r_s$):} $|v_{\mathrm{vacuum}}(r)| < v_c \implies \frac{dr}{dt} > 0$. Light escapes outward, experiencing gravitational redshift.
+    \item \textbf{Event Horizon ($r = r_s$):} The inward vacuum velocity reaches the vacuum phase velocity ceiling:
+          \begin{equation}
+              \sqrt{\frac{2GM}{r_s}} = v_c \implies r_s = \frac{2GM}{v_c^2}.
+              \label{eq:olay_ufku_turetme}
+          \end{equation}
+          At the horizon, $\frac{dr}{dt} = v_c - v_c = 0$. The outward phase velocity is exactly balanced by inward vacuum flow.
+    \item \textbf{Interior Regime ($r < r_s$):} $|v_{\mathrm{vacuum}}(r)| > v_c \implies \frac{dr}{dt} < 0$. Inflow exceeds the phase ceiling $v_c$; all physical signals are swept inevitably inward.
+\end{enumerate}
+
+\subsection{Metric Comparison: Standard Physics vs. Unified Contraction Hypothesis}
+
+Table~\ref{tab:metrik_karsilastirma} summarizes the conceptual correspondence between standard general relativity and the Unified Contraction Hypothesis:
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Physical Domain}       & \textbf{Standard Physics (GR \& $\Lambda$CDM)}                & \textbf{Unified Contraction Hypothesis}                               \\ \midrule
+        \textbf{Background}            & Dynamic, curving, expanding spacetime                         & Invariant, static Minkowski/Euclidean space                           \\
+        \textbf{Fundamental Speed $c$} & Invariant speed of light in vacuum                            & Inward matter contraction phase ceiling ($v_c$)                       \\
+        \textbf{Cosmological Metric}   & $ds^2 = -c^2 dt^2 + a^2(t) d\mathbf{x}^2$                     & $d\Sigma^2 = -v_c^2 dt^2 + \lambda^2(t) d\mathbf{x}_{\mathrm{obs}}^2$ \\
+        \textbf{Redshift ($z$)}        & Metric stretching of photon wavelength                        & Atoms in the past being larger and oscillating slower                 \\
+        \textbf{Gravitation}           & Mass curving spacetime ($G_{\mu\nu} = 8\pi T_{\mu\nu}$)       & Contracting matter drawing a radial vacuum stream ($v_{\mathrm{inflow}}$) \\
+        \textbf{Event Horizon}         & Coordinate/geometric singularity of spacetime                 & Vacuum inflow velocity reaching the phase ceiling $v_c$               \\ \bottomrule
+    \end{tabular}
+    \caption{Conceptual and mathematical comparison between standard general relativity and the Unified Contraction Hypothesis.}
+    \label{tab:metrik_karsilastirma}
+\end{table}

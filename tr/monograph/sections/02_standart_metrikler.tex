@@ -1,0 +1,49 @@
+\section{Mevcut Fizikteki Standart Metrik Sistem}
+\label{sec:standart_metrik}
+
+Modern teorik fizik, uzay-zamanın geometrisini ve dinamiklerini tanımlamak için Riemann geometrisine dayalı metrik tensör formülasyonunu ($g_{\mu\nu}$) kullanır. Çizgisel diferansiyel uzunluk elemanı genel olarak şu şekilde ifade edilir:
+\begin{equation}
+    ds^2 = g_{\mu\nu} dx^\mu dx^\nu.
+    \label{eq:genel_cizgi_elemani}
+\end{equation}
+
+Standart fizikte temel yapı taşını oluşturan üç kritik metrik sistemi bulunmaktadır:
+
+\subsection{Düz Uzay-Zaman (Minkowski Metriği)}
+Özel görelilikte, kütleçekimin ve eğriliğin bulunmadığı eylemsiz referans sistemleri Minkowski metriği $\eta_{\mu\nu} = \mathrm{diag}(-1, 1, 1, 1)$ ile tanımlanır:
+\begin{equation}
+    ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2 = -c^2 dt^2 + dr^2 + r^2 d\Omega^2,
+    \label{eq:minkowski_metrik}
+\end{equation}
+burada $d\Omega^2 = d\theta^2 + \sin^2\theta d\phi^2$ açısal çizgisel elemandır. Bu metrikte $c$, kütlesiz elektrodinamik uyarımların (fotonların) mutlak boşluktaki değişmez yayılma hızı olarak kabul edilir; koordinat ızgarası ise rijit ve zamandan bağımsız varsayılır.
+
+\subsection{Genişleyen Evren Metriği (FLRW)}
+Standart $\Lambda$CDM kozmolojisinde, evrenin homojen ve izotropik olduğu varsayımı altında Friedmann--Lema\^itre--Robertson--Walker (FLRW) metriği kullanılır:
+\begin{equation}
+    ds^2 = -c^2 dt^2 + a^2(t) \left[ \frac{dr^2}{1 - kr^2} + r^2 d\Omega^2 \right],
+    \label{eq:flrw_metrik}
+\end{equation}
+burada $a(t)$ zamana bağlı boyutsuz kozmik ölçek faktörü, $k \in \{-1, 0, 1\}$ ise uzaysal eğrilik parametresidir. Düz bir evren için ($k=0$):
+\begin{equation}
+    ds^2 = -c^2 dt^2 + a^2(t) d\mathbf{x}^2.
+    \label{eq:flrw_duz}
+\end{equation}
+Standart yorumda, koordinat uzaklığı sabit kalan iki galaksi arasındaki fiziksel mesafe $R(t) = a(t) r$ zamanla artar. Uzak gök cisimlerinden gelen ışığın kırmızıya kayması ($z$), fotonun genişleyen uzay dokusu boyunca seyahat ederken dalga boyunun metrik tarafından gerilmesiyle açıklanır:
+\begin{equation}
+    1 + z = \frac{\lambda_{\mathrm{goz}}}{\lambda_{\mathrm{yay}}} = \frac{a(t_0)}{a(t_e)}.
+    \label{eq:standart_redshift}
+\end{equation}
+
+\subsection{Kütleçekimsel Eğrilik Metriği (Schwarzschild ve Painlev\'e--Gullstrand)}
+Dönmeyen, yüksüz ve küresel simetrik bir $M$ kütlesinin yarattığı uzay-zaman eğriliği standart olarak Schwarzschild koordinatlarında ifade edilir:
+\begin{equation}
+    ds^2 = -\left(1 - \frac{2GM}{c^2 r}\right) c^2 dt^2 + \left(1 - \frac{2GM}{c^2 r}\right)^{-1} dr^2 + r^2 d\Omega^2.
+    \label{eq:schwarzschild_standart}
+\end{equation}
+Bu metrik, sonsuzdan serbest düşüşe geçen bir gözlemcinin öz zamanı ($dt_{\mathrm{ff}} = dt + \frac{\sqrt{2GM/r}}{c(1 - 2GM/c^2 r)} dr$) cinsinden ifade edildiğinde Painlev\'e--Gullstrand koordinat formuna dönüşür~\cite{painleve1921, gullstrand1922}:
+\begin{equation}
+    ds^2 = -c^2 dt_{\mathrm{ff}}^2 + \left( dr + \sqrt{\frac{2GM}{r}} dt_{\mathrm{ff}} \right)^2 + r^2 d\Omega^2.
+    \label{eq:painleve_standart}
+\end{equation}
+Bu formülasyon kütleçekimin ``uzay nehri'' (river of space) modelini oluşturur: statik arka plan Öklid ızgarası ($\mathbf{X}_0$) yerinde sabit kalırken, vakum dokusundaki skaler faz akısı kütle merkezine doğru $v_{\mathrm{akis}}(r) = \sqrt{2GM/r}$ hızıyla içeri çekilmektedir (tıpkı bakır telin yerinde durması ama içinden elektrik akımının akması gibi).
+

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, theoretical framework, or numerical solvers, please cite it as below."
+title: "The Unified Contraction Hypothesis & Scale-Time Calculus"
+abstract: "Minimal reproducible numerical solver package and theoretical monograph corpus for the Unified Contraction Hypothesis in a static Euclidean continuum, including Planck 2018 CMB angular power spectrum and Pantheon+ supernova fits."
+authors:
+  - family-names: "Haydari"
+    given-names: "Muhammed Furkan"
+    orcid: "https://orcid.org/0009-0003-2854-3947"
+version: "1.0.0"
+date-released: "2026-10-25"
+license: "MIT"
+repository-code: "https://github.com/FurkanHaydari/universe-is-not-expanding"
+preferred-citation:
+  type: book
+  authors:
+    - family-names: "Haydari"
+      given-names: "Muhammed Furkan"
+      orcid: "https://orcid.org/0009-0003-2854-3947"
+  title: "The Unified Contraction Hypothesis & Scale-Time Calculus: A Conformal Geometric Treatise on Cosmology, Gravitation, and Fundamental Interactions"
+  year: 2026
+  publisher:
+    name: "Independent Publications in Natural Philosophy and Fundamental Physics"
+  url: "https://github.com/FurkanHaydari/universe-is-not-expanding"
+keywords:
+  - "cosmology"
+  - "cmb"
+  - "scale-calculus"
+  - "conformal-gravity"
+  - "static-universe"
+  - "planck-2018"
+  - "pantheon+"
+  - "fine-structure-constant"
+  - "river-model"
